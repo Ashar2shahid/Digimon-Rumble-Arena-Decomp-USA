@@ -1,0 +1,1875 @@
+{
+  "description": "Reviewed corrections to inherited heuristic boundaries. Preserve these kinds during regeneration; global labels and exact placement remain required.",
+  "overrides": [
+    {
+      "unit": "main",
+      "symbol": "func_8001F6F8",
+      "address": "0x8001F6F8",
+      "kind": "internal",
+      "parent": "func_8001F678",
+      "evidence": "Fifth target of jtbl_80010400. The parent sets a2 from a0 before dispatch; this tail consumes a2 without entry argument setup."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001F790",
+      "address": "0x8001F790",
+      "kind": "internal",
+      "parent": "func_8001F708",
+      "evidence": "Fifth target of jtbl_80010418. The parent sets a2 from a0 before dispatch; this tail consumes a2 without entry argument setup."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001F800",
+      "address": "0x8001F800",
+      "kind": "internal",
+      "parent": "func_8001F79C",
+      "evidence": "Stack restoration in the delay slot of jr ra at 0x8001F7FC; sector boundary was not a function boundary."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001F804",
+      "address": "0x8001F804",
+      "kind": "func",
+      "evidence": "Stack prologue immediately after the previous return delay slot; direct jal targets from game and title overlays."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800333CC",
+      "address": "0x800333CC",
+      "kind": "func",
+      "evidence": "Archive-header routine with an entry prologue and one complete stack-frame epilogue through 3347C; the inherited asm classification did not identify its compiled function."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033458",
+      "address": "0x80033458",
+      "kind": "internal",
+      "parent": "func_800333CC",
+      "evidence": "Error callback and common epilogue reached by local branches from 333CC; consumes its stack frame, s0/s1 and the a0 high half loaded in its branch delay slot."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036FE0",
+      "address": "0x80036FE0",
+      "kind": "func",
+      "evidence": "Complete circular-list counter through 3700C, crossing the inherited sector split."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80037000",
+      "address": "0x80037000",
+      "kind": "internal",
+      "evidence": "Loop branch, count increment and return of 36FE0; consumes v1/a0 initialized by its parent.",
+      "parent": "func_80036FE0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80037010",
+      "address": "0x80037010",
+      "kind": "func",
+      "evidence": "Direct callers pass 624-word state plus index; independent MT19937 twist/temper routine through371E4."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800371E8",
+      "address": "0x800371E8",
+      "kind": "func",
+      "evidence": "Independent state reset entry sets index625 then returns."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800371F8",
+      "address": "0x800371F8",
+      "kind": "func",
+      "evidence": "Independent seed entry initializes624words using69069 and sets index624."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80037250",
+      "address": "0x80037250",
+      "kind": "func",
+      "evidence": "Independent MD5 finalization prologue/epilogue through37454."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80037458",
+      "address": "0x80037458",
+      "kind": "asm",
+      "evidence": "Real MD5 block-transform entry; its complete body continues in the next slot, still assembly review."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80037800",
+      "address": "0x80037800",
+      "kind": "internal",
+      "evidence": "Sector boundary inside MD5 transform; consumes live arithmetic/register state from37458.",
+      "parent": "func_80037458"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027000",
+      "address": "0x80027000",
+      "kind": "internal",
+      "parent": "func_80026FE4",
+      "evidence": "Stack restoration in the jr ra delay slot at26FFC; next real entry is27004."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003A764",
+      "address": "0x8003A764",
+      "kind": "func",
+      "evidence": "Independent in-place heap shrink routine. Initializes t1/t0/t2 from its heap, allocation pointer and size arguments; complete body continues through3A830, crossing the sector split."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003A800",
+      "address": "0x8003A800",
+      "kind": "internal",
+      "parent": "func_8003A764",
+      "evidence": "Continuation of the heap shrink routine using t1/a3/t2 computed in3A764. No independent entry setup; ends at3A830."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003A000",
+      "address": "0x8003A000",
+      "kind": "internal",
+      "parent": "func_80039FB0",
+      "evidence": "Common epilogue of39FB0: restores ra,s1,s0 and its existing32-byte stack frame. Local branches from39FB0 reach it; not an independent function."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039750",
+      "address": "0x80039750",
+      "kind": "func",
+      "evidence": "Independent resource-unload entry with a40-byte prologue. Its complete epilogue ends39870 after crossing the old sector split."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039800",
+      "address": "0x80039800",
+      "kind": "internal",
+      "parent": "func_80039750",
+      "evidence": "Continuation consumes s0/s1/s3 and v0/v1 from39750; returns through that entry's stack frame at39870."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039874",
+      "address": "0x80039874",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039880",
+      "address": "0x80039880",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800398DC",
+      "address": "0x800398DC",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800399EC",
+      "address": "0x800399EC",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039AB0",
+      "address": "0x80039AB0",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039AF4",
+      "address": "0x80039AF4",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039B58",
+      "address": "0x80039B58",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039CF8",
+      "address": "0x80039CF8",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039E14",
+      "address": "0x80039E14",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039E64",
+      "address": "0x80039E64",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039EB0",
+      "address": "0x80039EB0",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039F00",
+      "address": "0x80039F00",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039FB0",
+      "address": "0x80039FB0",
+      "kind": "func",
+      "evidence": "Previously hidden global entry inside the39800 sector blob. Independent argument setup/prologue or complete leaf return; original alabel and byte range retained in a separate assembly body."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80039354",
+      "address": "0x80039354",
+      "kind": "func",
+      "evidence": "Complete independent 48-byte leaf: normalizes signed halfword argument, traverses D_801166B8 next links, stores at node+0x12, and returns through its own jr/delay slot. Direct title/E6AC callers and exact natural C corroborate; former asm classification was incorrect."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027888",
+      "address": "0x80027888",
+      "kind": "func",
+      "evidence": "Complete merged retail body, independent incoming argument use, local return, and audited direct callers. Former asm fragments shared live state and were not separate entries."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800278DC",
+      "address": "0x800278dc",
+      "kind": "internal",
+      "evidence": "Interior continuation of func_80027888 with live incoming registers/frame and no independent entry setup; merged body retains symbol."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027948",
+      "address": "0x80027948",
+      "kind": "internal",
+      "evidence": "Interior continuation of func_80027888 with live incoming registers/frame and no independent entry setup; merged body retains symbol."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027980",
+      "address": "0x80027980",
+      "kind": "func",
+      "evidence": "Complete merged retail body, independent incoming argument use, local return, and audited direct callers. Former asm fragments shared live state and were not separate entries."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800279B4",
+      "address": "0x800279b4",
+      "kind": "internal",
+      "evidence": "Interior continuation of func_80027980 with live incoming registers/frame and no independent entry setup; merged body retains symbol."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027AB0",
+      "address": "0x80027ab0",
+      "kind": "func",
+      "evidence": "Complete merged retail body, independent incoming argument use, local return, and audited direct callers. Former asm fragments shared live state and were not separate entries."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027AD0",
+      "address": "0x80027ad0",
+      "kind": "internal",
+      "evidence": "Interior continuation of func_80027AB0 with live incoming registers/frame and no independent entry setup; merged body retains symbol."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027AF8",
+      "address": "0x80027af8",
+      "kind": "internal",
+      "evidence": "Interior continuation of func_80027AB0 with live incoming registers/frame and no independent entry setup; merged body retains symbol."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027DD4",
+      "address": "0x80027DD4",
+      "kind": "internal",
+      "evidence": "Single addiu sp,sp,0x28 is the jr ra delay slot of full func_80027D70; preserved as internal alias."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027DD8",
+      "address": "0x80027DD8",
+      "kind": "func",
+      "evidence": "Actual next independent prologue allocates0x28-byte frame and saves caller registers; complete148-byte body ends at27E6C."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027FB0",
+      "address": "0x80027FB0",
+      "kind": "func",
+      "evidence": "Independent loader prologue, calls, return and stack restoration form one 84-byte function. Former data classification was incorrect; its final delay slot was split at the sector boundary."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028000",
+      "address": "0x80028000",
+      "kind": "internal",
+      "parent": "func_80027FB0",
+      "evidence": "Single addiu sp,sp,0x20 restores the frame in the preceding jr ra delay slot. Next independent entry is 80028004; retained as non-emitting alias."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800275FC",
+      "address": "0x800275FC",
+      "kind": "func",
+      "evidence": "Complete 604-byte control state machine: independent 0x20-byte frame prologue, local state/call paths and complete return at 27850/27854. Former data classification and sector split were incorrect; all original comments match retail bytes."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80027800",
+      "address": "0x80027800",
+      "kind": "internal",
+      "parent": "func_800275FC",
+      "evidence": "Begins with the load delay of parent's 277FC lw; consumes parent's v0, s0 and 0x20-byte frame, shares parent branch/return labels. No independent entry setup or direct callers; preserved as internal symbol."
+    },
+    {
+      "unit": "title",
+      "symbol": "func_8007A54C",
+      "address": "0x8007A54C",
+      "kind": "data",
+      "evidence": "Audited pointer tables and zero words at 7A54C..7A63F; 68C9C passes the address to 68F30, which dereferences it as data. All aliases retained; assembly words now use symbolic resource pointers. See analysis/us/title/7A54C_boundary_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002E1F4",
+      "address": "0x8002E1F4",
+      "kind": "func",
+      "evidence": "Complete resident BST lookup/insertion entry; caller E160 passes real root/node/key. Immutable full retail ASM and natural native C++ private match; analysis/us/main/wave10_worker_1E800_attempts.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002E2A4",
+      "address": "0x8002E2A4",
+      "kind": "func",
+      "evidence": "Complete resident BST lookup/insertion entry; caller E160 passes real root/node/key. Immutable full retail ASM and natural native C++ private match; analysis/us/main/wave10_worker_1E800_attempts.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002CFB0",
+      "address": "0x8002CFB0",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002D000",
+      "address": "0x8002D000",
+      "kind": "internal",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json",
+      "parent": "func_8002CFB0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002D6FC",
+      "address": "0x8002D6FC",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002D800",
+      "address": "0x8002D800",
+      "kind": "internal",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json",
+      "parent": "func_8002D6FC"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002E000",
+      "address": "0x8002E000",
+      "kind": "internal",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json",
+      "parent": "func_8002DDEC"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002D830",
+      "address": "0x8002D830",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002D86C",
+      "address": "0x8002D86C",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002D8B0",
+      "address": "0x8002D8B0",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DB54",
+      "address": "0x8002DB54",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DBC0",
+      "address": "0x8002DBC0",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DCC8",
+      "address": "0x8002DCC8",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DCE4",
+      "address": "0x8002DCE4",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DCF4",
+      "address": "0x8002DCF4",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DD18",
+      "address": "0x8002DD18",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DD34",
+      "address": "0x8002DD34",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DD48",
+      "address": "0x8002DD48",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DD5C",
+      "address": "0x8002DD5C",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DD84",
+      "address": "0x8002DD84",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DDC4",
+      "address": "0x8002DDC4",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002DDEC",
+      "address": "0x8002DDEC",
+      "kind": "func",
+      "evidence": "Reviewed complete retail code across sector cuts; all words verified. analysis/us/main/wave9_object_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002879C",
+      "address": "0x8002879C",
+      "kind": "func",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028804",
+      "address": "0x80028804",
+      "kind": "func",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028880",
+      "address": "0x80028880",
+      "kind": "func",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800288EC",
+      "address": "0x800288EC",
+      "kind": "func",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800289BC",
+      "address": "0x800289BC",
+      "kind": "func",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028BE0",
+      "address": "0x80028BE0",
+      "kind": "func",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028F98",
+      "address": "0x80028F98",
+      "kind": "func",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028800",
+      "address": "0x80028800",
+      "kind": "internal",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json",
+      "parent": "func_8002879C"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800288E8",
+      "address": "0x800288E8",
+      "kind": "internal",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json",
+      "parent": "func_80028880"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800289F4",
+      "address": "0x800289F4",
+      "kind": "internal",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json",
+      "parent": "func_800289BC"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028DDC",
+      "address": "0x80028DDC",
+      "kind": "internal",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json",
+      "parent": "func_80028BE0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80028E44",
+      "address": "0x80028E44",
+      "kind": "internal",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json",
+      "parent": "func_80028BE0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80029000",
+      "address": "0x80029000",
+      "kind": "internal",
+      "evidence": "Complete retail resource method; every word verified, direct vtable/entry references and live-frame fragments reviewed. analysis/us/main/wave18_resource_boundary_audit.json",
+      "parent": "func_80028F98"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800357DC",
+      "address": "0x800357DC",
+      "kind": "func",
+      "evidence": "Complete callback frame from357DC through35877; every word equals immutable retail. analysis/us/main/wave20_vfs_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80035800",
+      "address": "0x80035800",
+      "kind": "internal",
+      "evidence": "Complete callback frame from357DC through35877; every word equals immutable retail. analysis/us/main/wave20_vfs_contract_audit.json",
+      "parent": "func_800357DC"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800387E0",
+      "address": "0x800387E0",
+      "kind": "func",
+      "evidence": "Contiguous full insertion387E0..38847; every word equals immutable retail. analysis/us/main/wave20_sort_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80038800",
+      "address": "0x80038800",
+      "kind": "internal",
+      "evidence": "Contiguous full insertion387E0..38847; every word equals immutable retail. analysis/us/main/wave20_sort_contract_audit.json",
+      "parent": "func_800387E0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80038814",
+      "address": "0x80038814",
+      "kind": "internal",
+      "evidence": "Contiguous full insertion387E0..38847; every word equals immutable retail. analysis/us/main/wave20_sort_contract_audit.json",
+      "parent": "func_800387E0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80038510",
+      "address": "0x80038510",
+      "kind": "func",
+      "evidence": "Independent byte-validated MD5 Encode/Decode helpers called by37250/37458. analysis/us/main/wave21_md5_inventory_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80038560",
+      "address": "0x80038560",
+      "kind": "func",
+      "evidence": "Independent byte-validated MD5 Encode/Decode helpers called by37250/37458. analysis/us/main/wave21_md5_inventory_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002F5B4",
+      "address": "0x8002F5B4",
+      "kind": "func",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002F6D0",
+      "address": "0x8002F6D0",
+      "kind": "func",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002F8A4",
+      "address": "0x8002F8A4",
+      "kind": "func",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002FF80",
+      "address": "0x8002FF80",
+      "kind": "func",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030760",
+      "address": "0x80030760",
+      "kind": "func",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003084C",
+      "address": "0x8003084C",
+      "kind": "func",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800308DC",
+      "address": "0x800308DC",
+      "kind": "func",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002F800",
+      "address": "0x8002F800",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_8002F6D0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002F864",
+      "address": "0x8002F864",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_8002F6D0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030000",
+      "address": "0x80030000",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_8002FF80"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030800",
+      "address": "0x80030800",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_80030760"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030810",
+      "address": "0x80030810",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_80030760"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030888",
+      "address": "0x80030888",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_8003084C"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030930",
+      "address": "0x80030930",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_800308DC"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003097C",
+      "address": "0x8003097C",
+      "kind": "internal",
+      "evidence": "Primary bytes, independent entries and live-frame continuations reviewed. analysis/us/main/wave22_boundaries_contract_audit.json",
+      "parent": "func_800308DC"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030584",
+      "address": "0x80030584",
+      "kind": "func",
+      "evidence": "119 contiguous primary words; direct calls to30584, live-frame continuation30628. analysis/us/main/wave25_task_boundary_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030628",
+      "address": "0x80030628",
+      "kind": "internal",
+      "evidence": "119 contiguous primary words; direct calls to30584, live-frame continuation30628. analysis/us/main/wave25_task_boundary_contract_audit.json",
+      "parent": "func_80030584"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800315DC",
+      "address": "0x800315DC",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800318AC",
+      "address": "0x800318AC",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031A18",
+      "address": "0x80031A18",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031A78",
+      "address": "0x80031A78",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031AE8",
+      "address": "0x80031AE8",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031B40",
+      "address": "0x80031B40",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031B4C",
+      "address": "0x80031B4C",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031BB8",
+      "address": "0x80031BB8",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031E5C",
+      "address": "0x80031E5C",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031E68",
+      "address": "0x80031E68",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031E74",
+      "address": "0x80031E74",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031E80",
+      "address": "0x80031E80",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031F44",
+      "address": "0x80031F44",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031F58",
+      "address": "0x80031F58",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031F7C",
+      "address": "0x80031F7C",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031FA0",
+      "address": "0x80031FA0",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031FD8",
+      "address": "0x80031FD8",
+      "kind": "func",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031800",
+      "address": "0x80031800",
+      "kind": "internal",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json",
+      "parent": "func_800315DC"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80032000",
+      "address": "0x80032000",
+      "kind": "internal",
+      "evidence": "Primary words, previous return/independent prologue or complete leaf body; parent wave27_task_slots_contract_audit.json",
+      "parent": "func_80031FD8"
+    },
+    {
+      "unit": "st02",
+      "symbol": "func_800D87A8",
+      "address": "0x800D87A8",
+      "kind": "data",
+      "evidence": "Nine primary string-address words loaded byD48A0; wave28_stage_data_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031C20",
+      "address": "0x80031C20",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031C34",
+      "address": "0x80031C34",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031C48",
+      "address": "0x80031C48",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031D0C",
+      "address": "0x80031D0C",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031DB4",
+      "address": "0x80031DB4",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031E04",
+      "address": "0x80031E04",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031E8C",
+      "address": "0x80031E8C",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031EAC",
+      "address": "0x80031EAC",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031ECC",
+      "address": "0x80031ECC",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031EEC",
+      "address": "0x80031EEC",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031EF8",
+      "address": "0x80031EF8",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031F18",
+      "address": "0x80031F18",
+      "kind": "func",
+      "evidence": "Parent independently checked all189 primary words; complete entries replace monoliths. analysis/us/main/wave29_task_methods_contract_audit.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033B4C",
+      "address": "0x80033B4C",
+      "kind": "func",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033BCC",
+      "address": "0x80033BCC",
+      "kind": "internal",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json.",
+      "parent": "func_80033B4C"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033CA0",
+      "address": "0x80033CA0",
+      "kind": "func",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033CEC",
+      "address": "0x80033CEC",
+      "kind": "internal",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json.",
+      "parent": "func_80033CA0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033E04",
+      "address": "0x80033E04",
+      "kind": "internal",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json.",
+      "parent": "func_80033CA0"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033E20",
+      "address": "0x80033E20",
+      "kind": "func",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033E94",
+      "address": "0x80033E94",
+      "kind": "internal",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json.",
+      "parent": "func_80033E20"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033F2C",
+      "address": "0x80033F2C",
+      "kind": "func",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034000",
+      "address": "0x80034000",
+      "kind": "internal",
+      "evidence": "Reviewed continuous prologue/epilogue span; primary words unchanged. See analysis/us/main/wave32_boundaries_parent_contract_audit.json.",
+      "parent": "func_80033F2C"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800389E8",
+      "address": "0x800389E8",
+      "kind": "func",
+      "evidence": "Complete104-byte intrusive list insertion, direct389BC/39DD8calls; sharedSortInsertList. See analysis/us/main/wave33_list_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002C39C",
+      "address": "0x8002C39C",
+      "kind": "func",
+      "evidence": "Twelve primary words prove complete36-byte positive-only decrement and12-byte nonpositive test. See analysis/us/main/wave34_counter_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002C3B0",
+      "address": "0x8002C3B0",
+      "kind": "internal",
+      "evidence": "Twelve primary words prove complete36-byte positive-only decrement and12-byte nonpositive test. See analysis/us/main/wave34_counter_parent_contract_audit.json.",
+      "parent": "func_8002C39C",
+      "offset": 20
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002C3C0",
+      "address": "0x8002C3C0",
+      "kind": "func",
+      "evidence": "Twelve primary words prove complete36-byte positive-only decrement and12-byte nonpositive test. See analysis/us/main/wave34_counter_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002A7B8",
+      "address": "0x8002A7B8",
+      "kind": "func",
+      "evidence": "Virtual table80018D58 references2A7B8; full88-byte frame spans sectorcut;22 primary words unchanged. See analysis/us/main/wave41_destructor_boundary_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002A800",
+      "address": "0x8002A800",
+      "kind": "internal",
+      "evidence": "Virtual table80018D58 references2A7B8; full88-byte frame spans sectorcut;22 primary words unchanged. See analysis/us/main/wave41_destructor_boundary_parent_contract_audit.json.",
+      "parent": "func_8002A7B8",
+      "offset": 72
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80029FCC",
+      "address": "0x80029FCC",
+      "kind": "func",
+      "evidence": "Independent68-byte game frame loads dbg.tim through game archive loader, calls retained SonyTIM and gamefree. 17 primary words verified; static/runtime reachability unproven. See analysis/us/main/wave43_debug_tim_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002A000",
+      "address": "0x8002A000",
+      "kind": "internal",
+      "evidence": "Independent68-byte game frame loads dbg.tim through game archive loader, calls retained SonyTIM and gamefree. 17 primary words verified; static/runtime reachability unproven. See analysis/us/main/wave43_debug_tim_parent_contract_audit.json.",
+      "parent": "func_80029FCC",
+      "offset": 52
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031434",
+      "address": "0x80031434",
+      "kind": "func",
+      "evidence": "Independent complete frame after preceding return/delay. 375-word split agrees with primary.31434/58 actual init/finalization table callbacks;3147C/314C4 retained72/280-byte frames. See analysis/us/main/wave45_init_callbacks_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031458",
+      "address": "0x80031458",
+      "kind": "func",
+      "evidence": "Independent complete frame after preceding return/delay. 375-word split agrees with primary.31434/58 actual init/finalization table callbacks;3147C/314C4 retained72/280-byte frames. See analysis/us/main/wave45_init_callbacks_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003147C",
+      "address": "0x8003147C",
+      "kind": "func",
+      "evidence": "Independent complete frame after preceding return/delay. 375-word split agrees with primary.31434/58 actual init/finalization table callbacks;3147C/314C4 retained72/280-byte frames. See analysis/us/main/wave45_init_callbacks_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800314C4",
+      "address": "0x800314C4",
+      "kind": "func",
+      "evidence": "Independent complete frame after preceding return/delay. 375-word split agrees with primary.31434/58 actual init/finalization table callbacks;3147C/314C4 retained72/280-byte frames. See analysis/us/main/wave45_init_callbacks_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031054",
+      "address": "0x80031054",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031208",
+      "address": "0x80031208",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031230",
+      "address": "0x80031230",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031258",
+      "address": "0x80031258",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031298",
+      "address": "0x80031298",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800312D8",
+      "address": "0x800312d8",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031300",
+      "address": "0x80031300",
+      "kind": "asm",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031308",
+      "address": "0x80031308",
+      "kind": "asm",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031310",
+      "address": "0x80031310",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800313DC",
+      "address": "0x800313dc",
+      "kind": "func",
+      "evidence": "269 primary words preserve prefix byte-for-byte. Eight complete independent frames are func;31300/31308 return-zero stubs remain asm pending entry/reachability proof;31000 continuation remainsasm. See analysis/us/main/wave47_prefix_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80030F84",
+      "address": "0x80030F84",
+      "kind": "func",
+      "evidence": "52 unchanged primary words establish complete 208-byte frame; former sector alias is parent+0x7C. See analysis/us/main/wave48_complete_tim_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80031000",
+      "address": "0x80031000",
+      "kind": "internal",
+      "evidence": "52 unchanged primary words establish complete 208-byte frame; former sector alias is parent+0x7C. See analysis/us/main/wave48_complete_tim_frame_parent_contract_audit.json.",
+      "parent": "func_80030F84",
+      "offset": 124
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002EFDC",
+      "address": "0x8002EFDC",
+      "kind": "func",
+      "evidence": "23 unchanged primary words establish one92-byte frame; two existing direct C callers target EFDC, F000 falls through with live savedregisters. See analysis/us/main/wave53_matrix_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002F000",
+      "address": "0x8002F000",
+      "kind": "internal",
+      "evidence": "23 unchanged primary words establish one92-byte frame; two existing direct C callers target EFDC, F000 falls through with live savedregisters. See analysis/us/main/wave53_matrix_frame_parent_contract_audit.json.",
+      "parent": "func_8002EFDC",
+      "offset": 36
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034B38",
+      "address": "0x80034B38",
+      "kind": "func",
+      "evidence": "64 unchanged primary words establish two complete callback frames and three internal aliases; entry references33E20/33E94. See analysis/us/main/wave50_vfs_callbacks_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034B88",
+      "address": "0x80034B88",
+      "kind": "internal",
+      "evidence": "64 unchanged primary words establish two complete callback frames and three internal aliases; entry references33E20/33E94. See analysis/us/main/wave50_vfs_callbacks_parent_contract_audit.json.",
+      "parent": "func_80034B38",
+      "offset": 80
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034BC8",
+      "address": "0x80034BC8",
+      "kind": "internal",
+      "evidence": "64 unchanged primary words establish two complete callback frames and three internal aliases; entry references33E20/33E94. See analysis/us/main/wave50_vfs_callbacks_parent_contract_audit.json.",
+      "parent": "func_80034B38",
+      "offset": 144
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034E5C",
+      "address": "0x80034E5C",
+      "kind": "func",
+      "evidence": "64 unchanged primary words establish two complete callback frames and three internal aliases; entry references33E20/33E94. See analysis/us/main/wave50_vfs_callbacks_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034E78",
+      "address": "0x80034E78",
+      "kind": "internal",
+      "evidence": "64 unchanged primary words establish two complete callback frames and three internal aliases; entry references33E20/33E94. See analysis/us/main/wave50_vfs_callbacks_parent_contract_audit.json.",
+      "parent": "func_80034E5C",
+      "offset": 28
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002E700",
+      "address": "0x8002E700",
+      "kind": "func",
+      "evidence": "88 unchanged primary words establish one 352-byte handwritten renderer frame with a shared saved-register epilogue; seven discovered direct calls enter E700, none enter E800. See analysis/us/main/wave55_render_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002E800",
+      "address": "0x8002E800",
+      "kind": "internal",
+      "evidence": "88 unchanged primary words establish one 352-byte handwritten renderer frame with a shared saved-register epilogue; seven discovered direct calls enter E700, none enter E800. See analysis/us/main/wave55_render_frame_parent_contract_audit.json.",
+      "parent": "func_8002E700",
+      "offset": 256
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003470C",
+      "address": "0x8003470C",
+      "kind": "func",
+      "evidence": "Nine unchanged primary words establish an independent game callback/user setter, with two direct gameplay callers. Dispatcher forwards stored user word; compatible callback signatures reviewed. See analysis/us/main/wave52_callback_setter_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80035F94",
+      "address": "0x80035F94",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036000",
+      "address": "0x80036000",
+      "kind": "internal",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json.",
+      "parent": "func_80035F94",
+      "offset": 108
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036800",
+      "address": "0x80036800",
+      "kind": "internal",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json.",
+      "parent": "func_80036738",
+      "offset": 200
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036064",
+      "address": "0x80036064",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800360EC",
+      "address": "0x800360EC",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036118",
+      "address": "0x80036118",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036144",
+      "address": "0x80036144",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036204",
+      "address": "0x80036204",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036518",
+      "address": "0x80036518",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80036738",
+      "address": "0x80036738",
+      "kind": "func",
+      "evidence": "598 unchanged primary words establish eight complete text/path/formatter frames, explicit returns and independent calls; sector labels36000/36800 are internal continuations. See analysis/us/main/wave56_text_helpers_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800327B0",
+      "address": "0x800327B0",
+      "kind": "func",
+      "evidence": "48 unchanged primary words establish one192-byte variadic text frame with a shared epilogue;32800 uses live saved registers and has no independent caller evidence. See analysis/us/main/wave57_formatter_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80032800",
+      "address": "0x80032800",
+      "kind": "internal",
+      "evidence": "48 unchanged primary words establish one192-byte variadic text frame with a shared epilogue;32800 uses live saved registers and has no independent caller evidence. See analysis/us/main/wave57_formatter_frame_parent_contract_audit.json.",
+      "parent": "func_800327B0",
+      "offset": 80
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034790",
+      "address": "0x80034790",
+      "kind": "func",
+      "evidence": "60 unchanged primary words establish one240-byte VFS frame; continuation labels share saved registers and0x40frame. See analysis/us/main/wave62_vfs_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034800",
+      "address": "0x80034800",
+      "kind": "internal",
+      "evidence": "60 unchanged primary words establish one240-byte VFS frame; continuation labels share saved registers and0x40frame. See analysis/us/main/wave62_vfs_frame_parent_contract_audit.json.",
+      "parent": "func_80034790",
+      "offset": 112
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034820",
+      "address": "0x80034820",
+      "kind": "internal",
+      "evidence": "60 unchanged primary words establish one240-byte VFS frame; continuation labels share saved registers and0x40frame. See analysis/us/main/wave62_vfs_frame_parent_contract_audit.json.",
+      "parent": "func_80034790",
+      "offset": 144
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80034834",
+      "address": "0x80034834",
+      "kind": "internal",
+      "evidence": "60 unchanged primary words establish one240-byte VFS frame; continuation labels share saved registers and0x40frame. See analysis/us/main/wave62_vfs_frame_parent_contract_audit.json.",
+      "parent": "func_80034790",
+      "offset": 164
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80032F28",
+      "address": "0x80032f28",
+      "kind": "func",
+      "evidence": "104 unchanged primary words including32FFCNOP establish one416-byte handwritten GTErenderer frame.33000useslivev0/s0/s1/s2 andshared330B0epilogue. Two stagecallersenter32F28. See analysis/us/main/wave69_renderer_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80033000",
+      "address": "0x80033000",
+      "kind": "internal",
+      "evidence": "104 unchanged primary words including32FFCNOP establish one416-byte handwritten GTErenderer frame.33000useslivev0/s0/s1/s2 andshared330B0epilogue. Two stagecallersenter32F28. See analysis/us/main/wave69_renderer_frame_parent_contract_audit.json.",
+      "parent": "func_80032F28",
+      "offset": 216
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003B6AC",
+      "address": "0x8003b6ac",
+      "kind": "func",
+      "evidence": "771 unchanged primary words establish one3084B inflate_blocks frame with0x78 stack and saved s0-s7/fp/ra. Both sector continuations consume live registers and share epilogue. Ten switch targets are existing global jlabels. See analysis/us/main/wave74_zlib_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003B800",
+      "address": "0x8003b800",
+      "kind": "internal",
+      "evidence": "771 unchanged primary words establish one3084B inflate_blocks frame with0x78 stack and saved s0-s7/fp/ra. Both sector continuations consume live registers and share epilogue. Ten switch targets are existing global jlabels. See analysis/us/main/wave74_zlib_frame_parent_contract_audit.json.",
+      "parent": "func_8003B6AC",
+      "offset": 340
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003C000",
+      "address": "0x8003c000",
+      "kind": "internal",
+      "evidence": "771 unchanged primary words establish one3084B inflate_blocks frame with0x78 stack and saved s0-s7/fp/ra. Both sector continuations consume live registers and share epilogue. Ten switch targets are existing global jlabels. See analysis/us/main/wave74_zlib_frame_parent_contract_audit.json.",
+      "parent": "func_8003B6AC",
+      "offset": 2388
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003C4C4",
+      "address": "0x8003c4c4",
+      "kind": "func",
+      "evidence": "528 unchangedprimarywords establish one2112B inflate_codes frame:0x40stack,s0-s7/ra shared. Fourcontinuationsconsume live state, CB14 startsinbranchdelayslot. Ten tabletargets existingglobaljlabels. See analysis/us/main/wave76_codes_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003C800",
+      "address": "0x8003c800",
+      "kind": "internal",
+      "evidence": "528 unchangedprimarywords establish one2112B inflate_codes frame:0x40stack,s0-s7/ra shared. Fourcontinuationsconsume live state, CB14 startsinbranchdelayslot. Ten tabletargets existingglobaljlabels. See analysis/us/main/wave76_codes_frame_parent_contract_audit.json.",
+      "parent": "func_8003C4C4",
+      "offset": 828
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003C9D0",
+      "address": "0x8003c9d0",
+      "kind": "internal",
+      "evidence": "528 unchangedprimarywords establish one2112B inflate_codes frame:0x40stack,s0-s7/ra shared. Fourcontinuationsconsume live state, CB14 startsinbranchdelayslot. Ten tabletargets existingglobaljlabels. See analysis/us/main/wave76_codes_frame_parent_contract_audit.json.",
+      "parent": "func_8003C4C4",
+      "offset": 1292
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003CB14",
+      "address": "0x8003cb14",
+      "kind": "internal",
+      "evidence": "528 unchangedprimarywords establish one2112B inflate_codes frame:0x40stack,s0-s7/ra shared. Fourcontinuationsconsume live state, CB14 startsinbranchdelayslot. Ten tabletargets existingglobaljlabels. See analysis/us/main/wave76_codes_frame_parent_contract_audit.json.",
+      "parent": "func_8003C4C4",
+      "offset": 1616
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003CC20",
+      "address": "0x8003cc20",
+      "kind": "internal",
+      "evidence": "528 unchangedprimarywords establish one2112B inflate_codes frame:0x40stack,s0-s7/ra shared. Fourcontinuationsconsume live state, CB14 startsinbranchdelayslot. Ten tabletargets existingglobaljlabels. See analysis/us/main/wave76_codes_frame_parent_contract_audit.json.",
+      "parent": "func_8003C4C4",
+      "offset": 1884
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003CDA8",
+      "address": "0x8003cda8",
+      "kind": "func",
+      "evidence": "787 unchangedprimarywords establish threegenuine zlibframes: CDA8..D2180x10stack; D218..D7F00x100stack; D7F0..D9F40x58stack. Independentrealcallers enterallthree. Two sectorlabelsconsume liveframes. See analysis/us/main/wave77_zlib_entries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003D000",
+      "address": "0x8003d000",
+      "kind": "internal",
+      "evidence": "787 unchangedprimarywords establish threegenuine zlibframes: CDA8..D2180x10stack; D218..D7F00x100stack; D7F0..D9F40x58stack. Independentrealcallers enterallthree. Two sectorlabelsconsume liveframes. See analysis/us/main/wave77_zlib_entries_parent_contract_audit.json.",
+      "parent": "func_8003CDA8",
+      "offset": 600
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003D218",
+      "address": "0x8003d218",
+      "kind": "func",
+      "evidence": "787 unchangedprimarywords establish threegenuine zlibframes: CDA8..D2180x10stack; D218..D7F00x100stack; D7F0..D9F40x58stack. Independentrealcallers enterallthree. Two sectorlabelsconsume liveframes. See analysis/us/main/wave77_zlib_entries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003D7F0",
+      "address": "0x8003d7f0",
+      "kind": "func",
+      "evidence": "787 unchangedprimarywords establish threegenuine zlibframes: CDA8..D2180x10stack; D218..D7F00x100stack; D7F0..D9F40x58stack. Independentrealcallers enterallthree. Two sectorlabelsconsume liveframes. See analysis/us/main/wave77_zlib_entries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003D800",
+      "address": "0x8003d800",
+      "kind": "internal",
+      "evidence": "787 unchangedprimarywords establish threegenuine zlibframes: CDA8..D2180x10stack; D218..D7F00x100stack; D7F0..D9F40x58stack. Independentrealcallers enterallthree. Two sectorlabelsconsume liveframes. See analysis/us/main/wave77_zlib_entries_parent_contract_audit.json.",
+      "parent": "func_8003D7F0",
+      "offset": 16
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001CDF4",
+      "address": "0x8001CDF4",
+      "kind": "func",
+      "evidence": "Independent76B nonreturningframe0x28 following CD84 epilogue. Real1C658 dispatcher tableordinal10 selects1C898 jalCDF4 with ownera0;19primarywords checked. See analysis/us/main/wave79_dialog_forever_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001D000",
+      "address": "0x8001D000",
+      "kind": "internal",
+      "parent": "func_8001CE40",
+      "offset": 448,
+      "evidence": "121unchangedprimarywords establish complete484B dialogrunnerframe. D000 epilogue consumes existing0x70stack/saved s0-s5/ra; noindependententry. Relativealias+1C0. See analysis/us/main/wave80_dialog_frame_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001D640",
+      "address": "0x8001D640",
+      "kind": "func",
+      "evidence": "Complete primary68-word selector and27-word randomrange frames; actual game715D8/71EF0 callD640 and71880 callD750. D668/D6F8 consume livet1/t0/a0 selector state. See analysis/us/main/wave84_selector_frames_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001D668",
+      "address": "0x8001D668",
+      "kind": "internal",
+      "evidence": "Complete primary68-word selector and27-word randomrange frames; actual game715D8/71EF0 callD640 and71880 callD750. D668/D6F8 consume livet1/t0/a0 selector state. See analysis/us/main/wave84_selector_frames_parent_contract_audit.json.",
+      "parent": "func_8001D640",
+      "offset": 40
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001D6F8",
+      "address": "0x8001D6F8",
+      "kind": "internal",
+      "evidence": "Complete primary68-word selector and27-word randomrange frames; actual game715D8/71EF0 callD640 and71880 callD750. D668/D6F8 consume livet1/t0/a0 selector state. See analysis/us/main/wave84_selector_frames_parent_contract_audit.json.",
+      "parent": "func_8001D640",
+      "offset": 184
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001D750",
+      "address": "0x8001D750",
+      "kind": "func",
+      "evidence": "Complete primary68-word selector and27-word randomrange frames; actual game715D8/71EF0 callD640 and71880 callD750. D668/D6F8 consume livet1/t0/a0 selector state. See analysis/us/main/wave84_selector_frames_parent_contract_audit.json."
+    },
+    {
+      "unit": "st09",
+      "symbol": "func_800D66B4",
+      "address": "0x800d66b4",
+      "kind": "func",
+      "size": 168,
+      "evidence": "Five direct/table-referenced complete entries; 69A0/69D8 remain unresolved opaque objects after zero raw pointers/J/JAL references across14 immutable files. 220 code words and160 data bytes unchanged. See analysis/us/st09/wave99_st09_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "st09",
+      "symbol": "func_800D675C",
+      "address": "0x800d675c",
+      "kind": "func",
+      "size": 84,
+      "evidence": "Five direct/table-referenced complete entries; 69A0/69D8 remain unresolved opaque objects after zero raw pointers/J/JAL references across14 immutable files. 220 code words and160 data bytes unchanged. See analysis/us/st09/wave99_st09_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "st09",
+      "symbol": "func_800D67B0",
+      "address": "0x800d67b0",
+      "kind": "func",
+      "size": 104,
+      "evidence": "Five direct/table-referenced complete entries; 69A0/69D8 remain unresolved opaque objects after zero raw pointers/J/JAL references across14 immutable files. 220 code words and160 data bytes unchanged. See analysis/us/st09/wave99_st09_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "st09",
+      "symbol": "func_800D6818",
+      "address": "0x800d6818",
+      "kind": "func",
+      "size": 392,
+      "evidence": "Five direct/table-referenced complete entries; 69A0/69D8 remain unresolved opaque objects after zero raw pointers/J/JAL references across14 immutable files. 220 code words and160 data bytes unchanged. See analysis/us/st09/wave99_st09_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "st09",
+      "symbol": "func_800D69A0",
+      "address": "0x800d69a0",
+      "kind": "data",
+      "size": 56,
+      "evidence": "Five direct/table-referenced complete entries; 69A0/69D8 remain unresolved opaque objects after zero raw pointers/J/JAL references across14 immutable files. 220 code words and160 data bytes unchanged. See analysis/us/st09/wave99_st09_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "st09",
+      "symbol": "func_800D69D8",
+      "address": "0x800d69d8",
+      "kind": "data",
+      "size": 44,
+      "evidence": "Five direct/table-referenced complete entries; 69A0/69D8 remain unresolved opaque objects after zero raw pointers/J/JAL references across14 immutable files. 220 code words and160 data bytes unchanged. See analysis/us/st09/wave99_st09_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "st09",
+      "symbol": "func_800D6A04",
+      "address": "0x800d6a04",
+      "kind": "func",
+      "size": 32,
+      "evidence": "Five direct/table-referenced complete entries; 69A0/69D8 remain unresolved opaque objects after zero raw pointers/J/JAL references across14 immutable files. 220 code words and160 data bytes unchanged. See analysis/us/st09/wave99_st09_boundaries_parent_contract_audit.json."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022560",
+      "address": "0x80022560",
+      "kind": "func",
+      "evidence": "Complete42 primary words, dispatch table10724 entries+4/+C, live saved-register frame and third-call delay slot. analysis/us/main/jp_nf3_boundary/review.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800225D4",
+      "address": "0x800225D4",
+      "kind": "internal",
+      "parent": "func_80022560",
+      "offset": 116,
+      "evidence": "Complete42 primary words, dispatch table10724 entries+4/+C, live saved-register frame and third-call delay slot. analysis/us/main/jp_nf3_boundary/review.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022778",
+      "address": "0x80022778",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022840",
+      "address": "0x80022840",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022908",
+      "address": "0x80022908",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800229D0",
+      "address": "0x800229d0",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022A78",
+      "address": "0x80022a78",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022B20",
+      "address": "0x80022b20",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022BC8",
+      "address": "0x80022bc8",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022C70",
+      "address": "0x80022c70",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022D38",
+      "address": "0x80022d38",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022E00",
+      "address": "0x80022e00",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022EC8",
+      "address": "0x80022ec8",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022F90",
+      "address": "0x80022f90",
+      "kind": "func",
+      "evidence": "Independent complete primary frame and dispatch/call references; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80022800",
+      "address": "0x80022800",
+      "kind": "internal",
+      "parent": "func_80022778",
+      "offset": 136,
+      "evidence": "Live continuation in complete primary parent; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_80023000",
+      "address": "0x80023000",
+      "kind": "internal",
+      "parent": "func_80022F90",
+      "offset": 112,
+      "evidence": "Live continuation in complete primary parent; analysis/us/main/jp_tmd_boundaries/frozen/frames.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001F4BC",
+      "address": "0x8001F4BC",
+      "kind": "func",
+      "evidence": "Complete75-word independent renderer leaf and13primaryJALcallers; analysis/us/main/jp_display_boundary/review.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8002150C",
+      "address": "0x8002150C",
+      "kind": "func",
+      "evidence": "Independent84-byte complete plane scalar leaf; primary214E0JAL; analysis/us/main/jp_plane_boundary/review.json"
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800349A8",
+      "address": "0x800349A8",
+      "kind": "func",
+      "evidence": "Complete100-byte frame through34A08, containing inherited349F4 call/epilogue continuation; three actual direct callers enter349A8."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_800349F4",
+      "address": "0x800349F4",
+      "kind": "internal",
+      "parent": "func_800349A8",
+      "evidence": "Falls through with livea0 and savedra/sp from349A8; common349FC epilogue reached by349A8 local branches. No direct JAL or literal function pointer found in all14 primary images.",
+      "offset": 76
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001EFB0",
+      "address": "0x8001EFB0",
+      "kind": "func",
+      "evidence": "analysis/us/main/jp_thread_destructor_boundary/frozen/AUDIT.md: unchanged112B frame across sector split; six calls to entry, none to delay-slot continuation."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8001F000",
+      "address": "0x8001F000",
+      "kind": "internal",
+      "parent": "func_8001EFB0",
+      "offset": 80,
+      "evidence": "analysis/us/main/jp_thread_destructor_boundary/frozen/AUDIT.md: unchanged112B frame across sector split; six calls to entry, none to delay-slot continuation."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003AFF8",
+      "address": "0x8003AFF8",
+      "kind": "func",
+      "evidence": "analysis/us/main/jp_inflate_sync_boundary/frozen/AUDIT.md: unchanged388B fullframe; original sp-=0x20 (32bytes), shared epilogue, continuation+8."
+    },
+    {
+      "unit": "main",
+      "symbol": "func_8003B000",
+      "address": "0x8003B000",
+      "kind": "internal",
+      "parent": "func_8003AFF8",
+      "offset": 8,
+      "evidence": "analysis/us/main/jp_inflate_sync_boundary/frozen/AUDIT.md: unchanged388B fullframe; original sp-=0x20 (32bytes), shared epilogue, continuation+8."
+    }
+  ]
+}

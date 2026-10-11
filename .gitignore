@@ -1,0 +1,20 @@
+# Original game content and generated disassembly stay local.
+asm/
+assets/
+bin/
+build/
+disks/
+expected/
+analysis/
+external/maspsx/
+external/m2c/
+external/decomp-permuter/
+.venv*/
+__pycache__/
+*.pyc
+*.iso
+*.bin
+*.cue
+*.chd
+local.mk
+objdiff.json

@@ -1,0 +1,6952 @@
+{
+  "library_archive_sha256": [
+    "e3df241adde663fba1f5bff1f0070e0d32d9518ebb11d60a914e5e016f704745"
+  ],
+  "symbols": [
+    {
+      "unit": "main",
+      "function": "func_8003DF1C",
+      "candidate_names": [
+        "bcmp",
+        "memcmp"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003DF1C",
+          "address": "0x8003df1c",
+          "names": [
+            "bcmp"
+          ],
+          "library": "LIBC.LIB",
+          "module": "BCMP",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        },
+        {
+          "unit": "main",
+          "function": "func_8003DF1C",
+          "address": "0x8003df1c",
+          "names": [
+            "memcmp"
+          ],
+          "library": "LIBC.LIB",
+          "module": "MEMCMP",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        },
+        {
+          "unit": "main",
+          "function": "func_8003DF1C",
+          "address": "0x8003df1c",
+          "names": [
+            "bcmp"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "BCMP",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        },
+        {
+          "unit": "main",
+          "function": "func_8003DF1C",
+          "address": "0x8003df1c",
+          "names": [
+            "memcmp"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "MEMCMP",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003DF5C",
+      "candidate_names": [
+        "memcpy"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003DF5C",
+          "address": "0x8003df5c",
+          "names": [
+            "memcpy"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "MEMCPY",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003DF9C",
+      "candidate_names": [
+        "memmove"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003DF9C",
+          "address": "0x8003df9c",
+          "names": [
+            "memmove"
+          ],
+          "library": "LIBC.LIB",
+          "module": "MEMMOVE",
+          "size": 112,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 1
+        },
+        {
+          "unit": "main",
+          "function": "func_8003DF9C",
+          "address": "0x8003df9c",
+          "names": [
+            "memmove"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "MEMMOVE",
+          "size": 112,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003E03C",
+      "candidate_names": [
+        "strcat"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003E03C",
+          "address": "0x8003e03c",
+          "names": [
+            "strcat"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "STRCAT",
+          "size": 176,
+          "verified_nonrelocated_words": 41,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003E0EC",
+      "candidate_names": [
+        "strcmp"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003E0EC",
+          "address": "0x8003e0ec",
+          "names": [
+            "strcmp"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "STRCMP",
+          "size": 112,
+          "verified_nonrelocated_words": 26,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003E15C",
+      "candidate_names": [
+        "strcpy"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003E15C",
+          "address": "0x8003e15c",
+          "names": [
+            "strcpy"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "STRCPY",
+          "size": 80,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003E1EC",
+      "candidate_names": [
+        "strncmp"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003E1EC",
+          "address": "0x8003e1ec",
+          "names": [
+            "strncmp"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "STRNCMP",
+          "size": 128,
+          "verified_nonrelocated_words": 30,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003E26C",
+      "candidate_names": [
+        "strncpy"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003E26C",
+          "address": "0x8003e26c",
+          "names": [
+            "strncpy"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "STRNCPY",
+          "size": 112,
+          "verified_nonrelocated_words": 26,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003E31C",
+      "candidate_names": [
+        "prnt"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003E31C",
+          "address": "0x8003e31c",
+          "names": [
+            "prnt"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "PRNT",
+          "size": 1696,
+          "verified_nonrelocated_words": 368,
+          "relocated_words": 56
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003E9BC",
+      "candidate_names": [
+        "memchr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003E9BC",
+          "address": "0x8003e9bc",
+          "names": [
+            "memchr"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "MEMCHR",
+          "size": 80,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003EA0C",
+      "candidate_names": [
+        "_putchar"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003EA0C",
+          "address": "0x8003ea0c",
+          "names": [
+            "_putchar"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "PUTCHAR",
+          "size": 252,
+          "verified_nonrelocated_words": 38,
+          "relocated_words": 25
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003EB44",
+      "candidate_names": [
+        "putchar"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003EB44",
+          "address": "0x8003eb44",
+          "names": [
+            "putchar"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "PUTCHAR",
+          "size": 296,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 34
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003EC6C",
+      "candidate_names": [
+        "sprintf"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003EC6C",
+          "address": "0x8003ec6c",
+          "names": [
+            "sprintf"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "SPRINTF",
+          "size": 2176,
+          "verified_nonrelocated_words": 510,
+          "relocated_words": 34
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003F8D8",
+      "candidate_names": [
+        "SetIntrMask"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003F8D8",
+          "address": "0x8003f8d8",
+          "names": [
+            "SetIntrMask"
+          ],
+          "library": "LIBETC.LIB",
+          "module": "INTR",
+          "size": 1348,
+          "verified_nonrelocated_words": 241,
+          "relocated_words": 96
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003FE58",
+      "candidate_names": [
+        "longjmp"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003FE58",
+          "address": "0x8003fe58",
+          "names": [
+            "longjmp"
+          ],
+          "library": "LIBC2.LIB",
+          "module": "SETJMP",
+          "size": 68,
+          "verified_nonrelocated_words": 17,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003FE9C",
+      "candidate_names": [
+        "startIntrVSync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003FE9C",
+          "address": "0x8003fe9c",
+          "names": [
+            "startIntrVSync"
+          ],
+          "library": "LIBETC.LIB",
+          "module": "INTR_VB",
+          "size": 288,
+          "verified_nonrelocated_words": 52,
+          "relocated_words": 20
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8003FFBC",
+      "candidate_names": [
+        "startIntrDMA"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8003FFBC",
+          "address": "0x8003ffbc",
+          "names": [
+            "startIntrDMA"
+          ],
+          "library": "LIBETC.LIB",
+          "module": "INTR_DMA",
+          "size": 672,
+          "verified_nonrelocated_words": 133,
+          "relocated_words": 35
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004075C",
+      "candidate_names": [
+        "StUnSetRing"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004075C",
+          "address": "0x8004075c",
+          "names": [
+            "StUnSetRing"
+          ],
+          "library": "Libcd.lib",
+          "module": "C_003",
+          "size": 128,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 13
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800407DC",
+      "candidate_names": [
+        "data_ready_callback"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800407DC",
+          "address": "0x800407dc",
+          "names": [
+            "data_ready_callback"
+          ],
+          "library": "Libcd.lib",
+          "module": "C_004",
+          "size": 140,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 16
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80040868",
+      "candidate_names": [
+        "StGetBackloc"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80040868",
+          "address": "0x80040868",
+          "names": [
+            "StGetBackloc"
+          ],
+          "library": "Libcd.lib",
+          "module": "C_004",
+          "size": 100,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800408CC",
+      "candidate_names": [
+        "CdPosToInt",
+        "DsPosToInt"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800408CC",
+          "address": "0x800408cc",
+          "names": [
+            "CdPosToInt"
+          ],
+          "library": "Libcd.lib",
+          "module": "SYS",
+          "size": 128,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 0
+        },
+        {
+          "unit": "main",
+          "function": "func_800408CC",
+          "address": "0x800408cc",
+          "names": [
+            "DsPosToInt"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D3_006",
+          "size": 128,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004094C",
+      "candidate_names": [
+        "StSetStream"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004094C",
+          "address": "0x8004094c",
+          "names": [
+            "StSetStream"
+          ],
+          "library": "Libcd.lib",
+          "module": "C_005",
+          "size": 144,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 17
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800409DC",
+      "candidate_names": [
+        "StFreeRing"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800409DC",
+          "address": "0x800409dc",
+          "names": [
+            "StFreeRing"
+          ],
+          "library": "Libcd.lib",
+          "module": "C_007",
+          "size": 176,
+          "verified_nonrelocated_words": 36,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80040ACC",
+      "candidate_names": [
+        "StGetNext"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80040ACC",
+          "address": "0x80040acc",
+          "names": [
+            "StGetNext"
+          ],
+          "library": "Libcd.lib",
+          "module": "C_009",
+          "size": 192,
+          "verified_nonrelocated_words": 30,
+          "relocated_words": 18
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80040BAC",
+      "candidate_names": [
+        "StCdInterrupt"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80040BAC",
+          "address": "0x80040bac",
+          "names": [
+            "StCdInterrupt"
+          ],
+          "library": "Libcd.lib",
+          "module": "C_011",
+          "size": 2800,
+          "verified_nonrelocated_words": 394,
+          "relocated_words": 306
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80041C00",
+      "candidate_names": [
+        "CD_sync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80041C00",
+          "address": "0x80041c00",
+          "names": [
+            "CD_sync"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 640,
+          "verified_nonrelocated_words": 108,
+          "relocated_words": 52
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80041E80",
+      "candidate_names": [
+        "CD_ready"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80041E80",
+          "address": "0x80041e80",
+          "names": [
+            "CD_ready"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 712,
+          "verified_nonrelocated_words": 123,
+          "relocated_words": 55
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80042148",
+      "candidate_names": [
+        "CD_cw"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80042148",
+          "address": "0x80042148",
+          "names": [
+            "CD_cw"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 1036,
+          "verified_nonrelocated_words": 170,
+          "relocated_words": 89
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80042554",
+      "candidate_names": [
+        "CD_vol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80042554",
+          "address": "0x80042554",
+          "names": [
+            "CD_vol"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 136,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 14
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800425DC",
+      "candidate_names": [
+        "CD_flush"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800425DC",
+          "address": "0x800425dc",
+          "names": [
+            "CD_flush"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 212,
+          "verified_nonrelocated_words": 33,
+          "relocated_words": 20
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800426B0",
+      "candidate_names": [
+        "CD_initvol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800426B0",
+          "address": "0x800426b0",
+          "names": [
+            "CD_initvol"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 240,
+          "verified_nonrelocated_words": 42,
+          "relocated_words": 18
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800427EC",
+      "candidate_names": [
+        "CD_init"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800427EC",
+          "address": "0x800427ec",
+          "names": [
+            "CD_init"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 480,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 52
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800429CC",
+      "candidate_names": [
+        "CD_datasync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800429CC",
+          "address": "0x800429cc",
+          "names": [
+            "CD_datasync"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 360,
+          "verified_nonrelocated_words": 54,
+          "relocated_words": 36
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80042B34",
+      "candidate_names": [
+        "CD_set_test_parmnum"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80042B34",
+          "address": "0x80042b34",
+          "names": [
+            "CD_set_test_parmnum"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_1",
+          "size": 232,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 18
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80042C1C",
+      "candidate_names": [
+        "CdIntToPos",
+        "DsIntToPos"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80042C1C",
+          "address": "0x80042c1c",
+          "names": [
+            "CdIntToPos"
+          ],
+          "library": "Libcd.lib",
+          "module": "S_002",
+          "size": 272,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 0
+        },
+        {
+          "unit": "main",
+          "function": "func_80042C1C",
+          "address": "0x80042c1c",
+          "names": [
+            "DsIntToPos"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D3_005",
+          "size": 272,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80042EB8",
+      "candidate_names": [
+        "DS_CQ_flush"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80042EB8",
+          "address": "0x80042eb8",
+          "names": [
+            "DS_CQ_flush"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 1528,
+          "verified_nonrelocated_words": 326,
+          "relocated_words": 56
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800434B0",
+      "candidate_names": [
+        "DsInit"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800434B0",
+          "address": "0x800434b0",
+          "names": [
+            "DsInit"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 324,
+          "verified_nonrelocated_words": 42,
+          "relocated_words": 39
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800435F4",
+      "candidate_names": [
+        "DsReset"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800435F4",
+          "address": "0x800435f4",
+          "names": [
+            "DsReset"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 268,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 27
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80043700",
+      "candidate_names": [
+        "DsCommand"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80043700",
+          "address": "0x80043700",
+          "names": [
+            "DsCommand"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 628,
+          "verified_nonrelocated_words": 109,
+          "relocated_words": 48
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800439A8",
+      "candidate_names": [
+        "_DsPacket2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800439A8",
+          "address": "0x800439a8",
+          "names": [
+            "_DsPacket2"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 928,
+          "verified_nonrelocated_words": 187,
+          "relocated_words": 45
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80043D48",
+      "candidate_names": [
+        "DsSync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80043D48",
+          "address": "0x80043d48",
+          "names": [
+            "DsSync"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 496,
+          "verified_nonrelocated_words": 89,
+          "relocated_words": 35
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80043F38",
+      "candidate_names": [
+        "DsReady"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80043F38",
+          "address": "0x80043f38",
+          "names": [
+            "DsReady"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 148,
+          "verified_nonrelocated_words": 26,
+          "relocated_words": 11
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80043FCC",
+      "candidate_names": [
+        "DsQueueLen"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80043FCC",
+          "address": "0x80043fcc",
+          "names": [
+            "DsQueueLen"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_2",
+          "size": 448,
+          "verified_nonrelocated_words": 91,
+          "relocated_words": 21
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004422C",
+      "candidate_names": [
+        "DS_reset_members"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004422C",
+          "address": "0x8004422c",
+          "names": [
+            "DS_reset_members"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_1",
+          "size": 224,
+          "verified_nonrelocated_words": 49,
+          "relocated_words": 7
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004434C",
+      "candidate_names": [
+        "DS_cw"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004434C",
+          "address": "0x8004434c",
+          "names": [
+            "DS_cw"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_1",
+          "size": 124,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004447C",
+      "candidate_names": [
+        "DS_cw_system"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004447C",
+          "address": "0x8004447c",
+          "names": [
+            "DS_cw_system"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_1",
+          "size": 3356,
+          "verified_nonrelocated_words": 656,
+          "relocated_words": 183
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80045198",
+      "candidate_names": [
+        "DS_stop"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80045198",
+          "address": "0x80045198",
+          "names": [
+            "DS_stop"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_1",
+          "size": 120,
+          "verified_nonrelocated_words": 25,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80045230",
+      "candidate_names": [
+        "parcpy"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80045230",
+          "address": "0x80045230",
+          "names": [
+            "parcpy"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_1",
+          "size": 72,
+          "verified_nonrelocated_words": 17,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80045278",
+      "candidate_names": [
+        "rescpy"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80045278",
+          "address": "0x80045278",
+          "names": [
+            "rescpy"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSSYS_1",
+          "size": 84,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800452EC",
+      "candidate_names": [
+        "DsRead"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800452EC",
+          "address": "0x800452ec",
+          "names": [
+            "DsRead"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREAD",
+          "size": 944,
+          "verified_nonrelocated_words": 196,
+          "relocated_words": 40
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004569C",
+      "candidate_names": [
+        "DsReadSync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004569C",
+          "address": "0x8004569c",
+          "names": [
+            "DsReadSync"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREAD",
+          "size": 112,
+          "verified_nonrelocated_words": 22,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80045720",
+      "candidate_names": [
+        "DsReadBreak"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80045720",
+          "address": "0x80045720",
+          "names": [
+            "DsReadBreak"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREAD",
+          "size": 188,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 15
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800457FC",
+      "candidate_names": [
+        "DsRead2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800457FC",
+          "address": "0x800457fc",
+          "names": [
+            "DsRead2"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREAD2",
+          "size": 256,
+          "verified_nonrelocated_words": 47,
+          "relocated_words": 17
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800458FC",
+      "candidate_names": [
+        "DsSearchFile"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800458FC",
+          "address": "0x800458fc",
+          "names": [
+            "DsSearchFile"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSFILE",
+          "size": 2400,
+          "verified_nonrelocated_words": 429,
+          "relocated_words": 171
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004625C",
+      "candidate_names": [
+        "DsStartReadySystem"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004625C",
+          "address": "0x8004625c",
+          "names": [
+            "DsStartReadySystem"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREADY",
+          "size": 132,
+          "verified_nonrelocated_words": 24,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800462E0",
+      "candidate_names": [
+        "DsEndReadySystem"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800462E0",
+          "address": "0x800462e0",
+          "names": [
+            "DsEndReadySystem"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREADY",
+          "size": 100,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046344",
+      "candidate_names": [
+        "DsReadySystemMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046344",
+          "address": "0x80046344",
+          "names": [
+            "DsReadySystemMode"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREADY",
+          "size": 1104,
+          "verified_nonrelocated_words": 216,
+          "relocated_words": 60
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800467A4",
+      "candidate_names": [
+        "ER_clear"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800467A4",
+          "address": "0x800467a4",
+          "names": [
+            "ER_clear"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "DSREADY",
+          "size": 88,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800468BC",
+      "candidate_names": [
+        "DsSystemStatus"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800468BC",
+          "address": "0x800468bc",
+          "names": [
+            "DsSystemStatus"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D2_006",
+          "size": 80,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004692C",
+      "candidate_names": [
+        "CD_getsector"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004692C",
+          "address": "0x8004692c",
+          "names": [
+            "CD_getsector"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_2",
+          "size": 256,
+          "verified_nonrelocated_words": 42,
+          "relocated_words": 22
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046A4C",
+      "candidate_names": [
+        "CD_getsector2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046A4C",
+          "address": "0x80046a4c",
+          "names": [
+            "CD_getsector2"
+          ],
+          "library": "Libcd.lib",
+          "module": "BIOS_3",
+          "size": 240,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 20
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046B3C",
+      "candidate_names": [
+        "CdIntToPos",
+        "DsIntToPos"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046B3C",
+          "address": "0x80046b3c",
+          "names": [
+            "CdIntToPos"
+          ],
+          "library": "Libcd.lib",
+          "module": "S_002",
+          "size": 272,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 0
+        },
+        {
+          "unit": "main",
+          "function": "func_80046B3C",
+          "address": "0x80046b3c",
+          "names": [
+            "DsIntToPos"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D3_005",
+          "size": 272,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046C4C",
+      "candidate_names": [
+        "CdPosToInt",
+        "DsPosToInt"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046C4C",
+          "address": "0x80046c4c",
+          "names": [
+            "CdPosToInt"
+          ],
+          "library": "Libcd.lib",
+          "module": "SYS",
+          "size": 128,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 0
+        },
+        {
+          "unit": "main",
+          "function": "func_80046C4C",
+          "address": "0x80046c4c",
+          "names": [
+            "DsPosToInt"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D3_006",
+          "size": 128,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046CCC",
+      "candidate_names": [
+        "DsLastPos"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046CCC",
+          "address": "0x80046ccc",
+          "names": [
+            "DsLastPos"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D3_008",
+          "size": 96,
+          "verified_nonrelocated_words": 21,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046D2C",
+      "candidate_names": [
+        "DsControl",
+        "DsControlB"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046D2C",
+          "address": "0x80046d2c",
+          "names": [
+            "DsControl"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D4_002",
+          "size": 112,
+          "verified_nonrelocated_words": 25,
+          "relocated_words": 3
+        },
+        {
+          "unit": "main",
+          "function": "func_80046D2C",
+          "address": "0x80046d2c",
+          "names": [
+            "DsControlB"
+          ],
+          "library": "LIBDS.LIB",
+          "module": "D4_003",
+          "size": 112,
+          "verified_nonrelocated_words": 25,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046E0C",
+      "candidate_names": [
+        "SpuSetMute"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046E0C",
+          "address": "0x80046e0c",
+          "names": [
+            "SpuSetMute"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SM",
+          "size": 96,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80046E6C",
+      "candidate_names": [
+        "_spu_init"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80046E6C",
+          "address": "0x80046e6c",
+          "names": [
+            "_spu_init"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 1088,
+          "verified_nonrelocated_words": 178,
+          "relocated_words": 94
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800472AC",
+      "candidate_names": [
+        "_spu_FiDMA"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800472AC",
+          "address": "0x800472ac",
+          "names": [
+            "_spu_FiDMA"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 188,
+          "verified_nonrelocated_words": 36,
+          "relocated_words": 11
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047368",
+      "candidate_names": [
+        "_spu_Fr_"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047368",
+          "address": "0x80047368",
+          "names": [
+            "_spu_Fr_"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 168,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 15
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047410",
+      "candidate_names": [
+        "_spu_t"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047410",
+          "address": "0x80047410",
+          "names": [
+            "_spu_t"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 640,
+          "verified_nonrelocated_words": 108,
+          "relocated_words": 52
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047690",
+      "candidate_names": [
+        "_spu_Fw"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047690",
+          "address": "0x80047690",
+          "names": [
+            "_spu_Fw"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 132,
+          "verified_nonrelocated_words": 22,
+          "relocated_words": 11
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047714",
+      "candidate_names": [
+        "_spu_Fr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047714",
+          "address": "0x80047714",
+          "names": [
+            "_spu_Fr"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 100,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 7
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800477BC",
+      "candidate_names": [
+        "_spu_FsetRXXa"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800477BC",
+          "address": "0x800477bc",
+          "names": [
+            "_spu_FsetRXXa"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 164,
+          "verified_nonrelocated_words": 29,
+          "relocated_words": 12
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004789C",
+      "candidate_names": [
+        "_spu_FsetPCR"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004789C",
+          "address": "0x8004789c",
+          "names": [
+            "_spu_FsetPCR"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 168,
+          "verified_nonrelocated_words": 31,
+          "relocated_words": 11
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047944",
+      "candidate_names": [
+        "_spu_Fw1ts"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047944",
+          "address": "0x80047944",
+          "names": [
+            "_spu_Fw1ts"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SPU",
+          "size": 104,
+          "verified_nonrelocated_words": 25,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047A0C",
+      "candidate_names": [
+        "_SpuInit"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047A0C",
+          "address": "0x80047a0c",
+          "names": [
+            "_SpuInit"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_INI",
+          "size": 232,
+          "verified_nonrelocated_words": 24,
+          "relocated_words": 34
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047AF4",
+      "candidate_names": [
+        "SpuStart"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047AF4",
+          "address": "0x80047af4",
+          "names": [
+            "SpuStart"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_INI",
+          "size": 120,
+          "verified_nonrelocated_words": 17,
+          "relocated_words": 13
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047BBC",
+      "candidate_names": [
+        "_SpuIsInAllocateArea"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047BBC",
+          "address": "0x80047bbc",
+          "names": [
+            "_SpuIsInAllocateArea"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_M_UTIL",
+          "size": 128,
+          "verified_nonrelocated_words": 28,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047C3C",
+      "candidate_names": [
+        "_SpuIsInAllocateArea_"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047C3C",
+          "address": "0x80047c3c",
+          "names": [
+            "_SpuIsInAllocateArea_"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_M_UTIL",
+          "size": 144,
+          "verified_nonrelocated_words": 30,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047D0C",
+      "candidate_names": [
+        "SpuSetKey"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047D0C",
+          "address": "0x80047d0c",
+          "names": [
+            "SpuSetKey"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SK",
+          "size": 448,
+          "verified_nonrelocated_words": 75,
+          "relocated_words": 37
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047ECC",
+      "candidate_names": [
+        "SpuRGetAllKeysStatus"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047ECC",
+          "address": "0x80047ecc",
+          "names": [
+            "SpuRGetAllKeysStatus"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SR_GAKS",
+          "size": 212,
+          "verified_nonrelocated_words": 45,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80047FA0",
+      "candidate_names": [
+        "SpuGetAllKeysStatus"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80047FA0",
+          "address": "0x80047fa0",
+          "names": [
+            "SpuGetAllKeysStatus"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "SR_GAKS",
+          "size": 140,
+          "verified_nonrelocated_words": 28,
+          "relocated_words": 7
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800486FC",
+      "candidate_names": [
+        "_spu_pitch2note"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800486FC",
+          "address": "0x800486fc",
+          "names": [
+            "_spu_pitch2note"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_N2P",
+          "size": 304,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004884C",
+      "candidate_names": [
+        "SpuSetCommonAttr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004884C",
+          "address": "0x8004884c",
+          "names": [
+            "SpuSetCommonAttr"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SCA",
+          "size": 896,
+          "verified_nonrelocated_words": 174,
+          "relocated_words": 50
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80048BCC",
+      "candidate_names": [
+        "SpuGetVoiceAttr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80048BCC",
+          "address": "0x80048bcc",
+          "names": [
+            "SpuGetVoiceAttr"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_GVA",
+          "size": 1008,
+          "verified_nonrelocated_words": 213,
+          "relocated_words": 39
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004918C",
+      "candidate_names": [
+        "_SsInit"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004918C",
+          "address": "0x8004918c",
+          "names": [
+            "_SsInit"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSINIT",
+          "size": 160,
+          "verified_nonrelocated_words": 29,
+          "relocated_words": 11
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004928C",
+      "candidate_names": [
+        "SpuClearReverbWorkArea"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004928C",
+          "address": "0x8004928c",
+          "names": [
+            "SpuClearReverbWorkArea"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_CRWA",
+          "size": 416,
+          "verified_nonrelocated_words": 73,
+          "relocated_words": 31
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004947C",
+      "candidate_names": [
+        "SsSepOpen"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004947C",
+          "address": "0x8004947c",
+          "names": [
+            "SsSepOpen"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSOPENP",
+          "size": 768,
+          "verified_nonrelocated_words": 104,
+          "relocated_words": 88
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004977C",
+      "candidate_names": [
+        "_SsContBankChange"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004977C",
+          "address": "0x8004977c",
+          "names": [
+            "_SsContBankChange"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_0",
+          "size": 128,
+          "verified_nonrelocated_words": 29,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800497FC",
+      "candidate_names": [
+        "_SsContDataEntry"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800497FC",
+          "address": "0x800497fc",
+          "names": [
+            "_SsContDataEntry"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_6",
+          "size": 896,
+          "verified_nonrelocated_words": 205,
+          "relocated_words": 19
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80049B7C",
+      "candidate_names": [
+        "_SsContMainVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80049B7C",
+          "address": "0x80049b7c",
+          "names": [
+            "_SsContMainVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_7",
+          "size": 208,
+          "verified_nonrelocated_words": 48,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80049C4C",
+      "candidate_names": [
+        "_SsContPanpot"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80049C4C",
+          "address": "0x80049c4c",
+          "names": [
+            "_SsContPanpot"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_10",
+          "size": 208,
+          "verified_nonrelocated_words": 48,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80049D1C",
+      "candidate_names": [
+        "_SsContExpression"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80049D1C",
+          "address": "0x80049d1c",
+          "names": [
+            "_SsContExpression"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_11",
+          "size": 240,
+          "verified_nonrelocated_words": 55,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80049E0C",
+      "candidate_names": [
+        "_SsContDamper"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80049E0C",
+          "address": "0x80049e0c",
+          "names": [
+            "_SsContDamper"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_64",
+          "size": 176,
+          "verified_nonrelocated_words": 38,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80049EBC",
+      "candidate_names": [
+        "_SsContExternal"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80049EBC",
+          "address": "0x80049ebc",
+          "names": [
+            "_SsContExternal"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_91",
+          "size": 144,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80049F4C",
+      "candidate_names": [
+        "_SsContNrpn1"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80049F4C",
+          "address": "0x80049f4c",
+          "names": [
+            "_SsContNrpn1"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_98",
+          "size": 256,
+          "verified_nonrelocated_words": 59,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A04C",
+      "candidate_names": [
+        "_SsContNrpn2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A04C",
+          "address": "0x8004a04c",
+          "names": [
+            "_SsContNrpn2"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_99",
+          "size": 320,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 12
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A18C",
+      "candidate_names": [
+        "_SsContRpn1"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A18C",
+          "address": "0x8004a18c",
+          "names": [
+            "_SsContRpn1"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_100",
+          "size": 112,
+          "verified_nonrelocated_words": 25,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A1FC",
+      "candidate_names": [
+        "_SsContRpn2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A1FC",
+          "address": "0x8004a1fc",
+          "names": [
+            "_SsContRpn2"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_101",
+          "size": 112,
+          "verified_nonrelocated_words": 25,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A26C",
+      "candidate_names": [
+        "_SsContResetAll"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A26C",
+          "address": "0x8004a26c",
+          "names": [
+            "_SsContResetAll"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CC_121",
+          "size": 192,
+          "verified_nonrelocated_words": 43,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A32C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr0"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A32C",
+          "address": "0x8004a32c",
+          "names": [
+            "_SsSetNrpnVabAttr0"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_0",
+          "size": 144,
+          "verified_nonrelocated_words": 34,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A47C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A47C",
+          "address": "0x8004a47c",
+          "names": [
+            "_SsSetNrpnVabAttr2"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_2",
+          "size": 144,
+          "verified_nonrelocated_words": 34,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A50C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr3"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A50C",
+          "address": "0x8004a50c",
+          "names": [
+            "_SsSetNrpnVabAttr3"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_3",
+          "size": 144,
+          "verified_nonrelocated_words": 34,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A59C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr4"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A59C",
+          "address": "0x8004a59c",
+          "names": [
+            "_SsSetNrpnVabAttr4"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_4",
+          "size": 176,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A64C",
+      "candidate_names": [
+        "_SsUtResolveADSR"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A64C",
+          "address": "0x8004a64c",
+          "names": [
+            "_SsUtResolveADSR"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CCADSR",
+          "size": 92,
+          "verified_nonrelocated_words": 23,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A6A8",
+      "candidate_names": [
+        "_SsUtBuildADSR"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A6A8",
+          "address": "0x8004a6a8",
+          "names": [
+            "_SsUtBuildADSR"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CCADSR",
+          "size": 164,
+          "verified_nonrelocated_words": 41,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A74C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr5"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A74C",
+          "address": "0x8004a74c",
+          "names": [
+            "_SsSetNrpnVabAttr5"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_5",
+          "size": 192,
+          "verified_nonrelocated_words": 44,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A80C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr6"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A80C",
+          "address": "0x8004a80c",
+          "names": [
+            "_SsSetNrpnVabAttr6"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_6",
+          "size": 176,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A8BC",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr7"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A8BC",
+          "address": "0x8004a8bc",
+          "names": [
+            "_SsSetNrpnVabAttr7"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_7",
+          "size": 176,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004A96C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr8"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004A96C",
+          "address": "0x8004a96c",
+          "names": [
+            "_SsSetNrpnVabAttr8"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_8",
+          "size": 176,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004AA1C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr9"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004AA1C",
+          "address": "0x8004aa1c",
+          "names": [
+            "_SsSetNrpnVabAttr9"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_9",
+          "size": 192,
+          "verified_nonrelocated_words": 44,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004AADC",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr10"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004AADC",
+          "address": "0x8004aadc",
+          "names": [
+            "_SsSetNrpnVabAttr10"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_10",
+          "size": 176,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004AB8C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr11"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004AB8C",
+          "address": "0x8004ab8c",
+          "names": [
+            "_SsSetNrpnVabAttr11"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_11",
+          "size": 176,
+          "verified_nonrelocated_words": 41,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004AC3C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr12"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004AC3C",
+          "address": "0x8004ac3c",
+          "names": [
+            "_SsSetNrpnVabAttr12"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_12",
+          "size": 224,
+          "verified_nonrelocated_words": 52,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004AD1C",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr13"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004AD1C",
+          "address": "0x8004ad1c",
+          "names": [
+            "_SsSetNrpnVabAttr13"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_13",
+          "size": 160,
+          "verified_nonrelocated_words": 37,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004ADBC",
+      "candidate_names": [
+        "_SsSetNrpnVabAttr14"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004ADBC",
+          "address": "0x8004adbc",
+          "names": [
+            "_SsSetNrpnVabAttr14"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "DE_14",
+          "size": 160,
+          "verified_nonrelocated_words": 37,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004AF4C",
+      "candidate_names": [
+        "_SsSetPitchBend"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004AF4C",
+          "address": "0x8004af4c",
+          "names": [
+            "_SsSetPitchBend"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDIBEND",
+          "size": 176,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004AFFC",
+      "candidate_names": [
+        "_SsSetControlChange"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004AFFC",
+          "address": "0x8004affc",
+          "names": [
+            "_SsSetControlChange"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDICC",
+          "size": 560,
+          "verified_nonrelocated_words": 99,
+          "relocated_words": 41
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004B22C",
+      "candidate_names": [
+        "_SsGetMetaEvent"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004B22C",
+          "address": "0x8004b22c",
+          "names": [
+            "_SsGetMetaEvent"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDIMETA",
+          "size": 464,
+          "verified_nonrelocated_words": 110,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004B3FC",
+      "candidate_names": [
+        "_SsNoteOn"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004B3FC",
+          "address": "0x8004b3fc",
+          "names": [
+            "_SsNoteOn"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDINOTE",
+          "size": 224,
+          "verified_nonrelocated_words": 51,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004B4DC",
+      "candidate_names": [
+        "_SsSetProgramChange"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004B4DC",
+          "address": "0x8004b4dc",
+          "names": [
+            "_SsSetProgramChange"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDIPROG",
+          "size": 112,
+          "verified_nonrelocated_words": 25,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004B54C",
+      "candidate_names": [
+        "_SsReadDeltaValue"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004B54C",
+          "address": "0x8004b54c",
+          "names": [
+            "_SsReadDeltaValue"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDITIME",
+          "size": 176,
+          "verified_nonrelocated_words": 42,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004B5FC",
+      "candidate_names": [
+        "_SsInitSoundSep"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004B5FC",
+          "address": "0x8004b5fc",
+          "names": [
+            "_SsInitSoundSep"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SEPINIT",
+          "size": 992,
+          "verified_nonrelocated_words": 236,
+          "relocated_words": 12
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004BA1C",
+      "candidate_names": [
+        "Snd_SetPlayMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004BA1C",
+          "address": "0x8004ba1c",
+          "names": [
+            "Snd_SetPlayMode"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "PLAYMODE",
+          "size": 288,
+          "verified_nonrelocated_words": 68,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004BB3C",
+      "candidate_names": [
+        "SsSetSerialAttr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004BB3C",
+          "address": "0x8004bb3c",
+          "names": [
+            "SsSetSerialAttr"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSSATTR",
+          "size": 192,
+          "verified_nonrelocated_words": 47,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004BBFC",
+      "candidate_names": [
+        "SsSetMVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004BBFC",
+          "address": "0x8004bbfc",
+          "names": [
+            "SsSetMVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSSMV",
+          "size": 80,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004BE9C",
+      "candidate_names": [
+        "SsStart2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004BE9C",
+          "address": "0x8004be9c",
+          "names": [
+            "SsStart2"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSSTART",
+          "size": 192,
+          "verified_nonrelocated_words": 36,
+          "relocated_words": 12
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004BF5C",
+      "candidate_names": [
+        "SetRCnt"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004BF5C",
+          "address": "0x8004bf5c",
+          "names": [
+            "SetRCnt"
+          ],
+          "library": "LIBAPI.LIB",
+          "module": "COUNTER",
+          "size": 156,
+          "verified_nonrelocated_words": 33,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004C0CC",
+      "candidate_names": [
+        "SsSeqCalledTbyT"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004C0CC",
+          "address": "0x8004c0cc",
+          "names": [
+            "SsSeqCalledTbyT"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSCALL",
+          "size": 624,
+          "verified_nonrelocated_words": 129,
+          "relocated_words": 27
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004C33C",
+      "candidate_names": [
+        "_SsSndCrescendo"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004C33C",
+          "address": "0x8004c33c",
+          "names": [
+            "_SsSndCrescendo"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "CRES",
+          "size": 528,
+          "verified_nonrelocated_words": 124,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004C54C",
+      "candidate_names": [
+        "_SsSndPause"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004C54C",
+          "address": "0x8004c54c",
+          "names": [
+            "_SsSndPause"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "PAUSE",
+          "size": 160,
+          "verified_nonrelocated_words": 37,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004C61C",
+      "candidate_names": [
+        "_SsSeqPlay"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004C61C",
+          "address": "0x8004c61c",
+          "names": [
+            "_SsSeqPlay"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDIREAD",
+          "size": 252,
+          "verified_nonrelocated_words": 57,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004C718",
+      "candidate_names": [
+        "_SsSeqGetEof"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004C718",
+          "address": "0x8004c718",
+          "names": [
+            "_SsSeqGetEof"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDIREAD",
+          "size": 580,
+          "verified_nonrelocated_words": 135,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004C95C",
+      "candidate_names": [
+        "_SsGetSeqData"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004C95C",
+          "address": "0x8004c95c",
+          "names": [
+            "_SsGetSeqData"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "MIDIREAD",
+          "size": 944,
+          "verified_nonrelocated_words": 199,
+          "relocated_words": 37
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004CD0C",
+      "candidate_names": [
+        "_SsSndNextSep"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004CD0C",
+          "address": "0x8004cd0c",
+          "names": [
+            "_SsSndNextSep"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "NEXT",
+          "size": 256,
+          "verified_nonrelocated_words": 62,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004CE0C",
+      "candidate_names": [
+        "_SsSndReplay"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004CE0C",
+          "address": "0x8004ce0c",
+          "names": [
+            "_SsSndReplay"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "REPLAY",
+          "size": 96,
+          "verified_nonrelocated_words": 22,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004CE6C",
+      "candidate_names": [
+        "_SsSndStop"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004CE6C",
+          "address": "0x8004ce6c",
+          "names": [
+            "_SsSndStop"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSSTOP",
+          "size": 384,
+          "verified_nonrelocated_words": 92,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D04C",
+      "candidate_names": [
+        "SsSetSerialVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D04C",
+          "address": "0x8004d04c",
+          "names": [
+            "SsSetSerialVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSSV",
+          "size": 272,
+          "verified_nonrelocated_words": 67,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D15C",
+      "candidate_names": [
+        "SsSetTableSize"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D15C",
+          "address": "0x8004d15c",
+          "names": [
+            "SsSetTableSize"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSTABLE",
+          "size": 544,
+          "verified_nonrelocated_words": 116,
+          "relocated_words": 20
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D37C",
+      "candidate_names": [
+        "SsSetTickMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D37C",
+          "address": "0x8004d37c",
+          "names": [
+            "SsSetTickMode"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSTICK",
+          "size": 336,
+          "verified_nonrelocated_words": 49,
+          "relocated_words": 35
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D4CC",
+      "candidate_names": [
+        "SsVoKeyOn"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D4CC",
+          "address": "0x8004d4cc",
+          "names": [
+            "SsVoKeyOn"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSVKON",
+          "size": 80,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 1
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D51C",
+      "candidate_names": [
+        "_SsSndSetVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D51C",
+          "address": "0x8004d51c",
+          "names": [
+            "_SsSndSetVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSVOL",
+          "size": 144,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D5AC",
+      "candidate_names": [
+        "SsSeqSetVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D5AC",
+          "address": "0x8004d5ac",
+          "names": [
+            "SsSeqSetVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSVOL",
+          "size": 104,
+          "verified_nonrelocated_words": 22,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D614",
+      "candidate_names": [
+        "SsSepSetVol",
+        "_SsSndSetVol"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D614",
+          "address": "0x8004d614",
+          "names": [
+            "_SsSndSetVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSVOL",
+          "size": 144,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 4
+        },
+        {
+          "unit": "main",
+          "function": "func_8004D614",
+          "address": "0x8004d614",
+          "names": [
+            "SsSepSetVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "SSVOL",
+          "size": 152,
+          "verified_nonrelocated_words": 34,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D6AC",
+      "candidate_names": [
+        "_SsSndTempo"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D6AC",
+          "address": "0x8004d6ac",
+          "names": [
+            "_SsSndTempo"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "TEMPO",
+          "size": 544,
+          "verified_nonrelocated_words": 127,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D8CC",
+      "candidate_names": [
+        "SsUtGetProgAtr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D8CC",
+          "address": "0x8004d8cc",
+          "names": [
+            "SsUtGetProgAtr"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_GPA",
+          "size": 272,
+          "verified_nonrelocated_words": 52,
+          "relocated_words": 16
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004D9DC",
+      "candidate_names": [
+        "SsUtGetVagAtr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004D9DC",
+          "address": "0x8004d9dc",
+          "names": [
+            "SsUtGetVagAtr"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_GVA",
+          "size": 576,
+          "verified_nonrelocated_words": 108,
+          "relocated_words": 36
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004DC1C",
+      "candidate_names": [
+        "SsUtKeyOn"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004DC1C",
+          "address": "0x8004dc1c",
+          "names": [
+            "SsUtKeyOn"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_KEY",
+          "size": 876,
+          "verified_nonrelocated_words": 168,
+          "relocated_words": 51
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004DF88",
+      "candidate_names": [
+        "SsUtKeyOff"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004DF88",
+          "address": "0x8004df88",
+          "names": [
+            "SsUtKeyOff"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_KEY",
+          "size": 324,
+          "verified_nonrelocated_words": 53,
+          "relocated_words": 28
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004E0CC",
+      "candidate_names": [
+        "SsUtKeyOnV"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004E0CC",
+          "address": "0x8004e0cc",
+          "names": [
+            "SsUtKeyOnV"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_KEYV",
+          "size": 876,
+          "verified_nonrelocated_words": 171,
+          "relocated_words": 48
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004E438",
+      "candidate_names": [
+        "SsUtKeyOffV"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004E438",
+          "address": "0x8004e438",
+          "names": [
+            "SsUtKeyOffV"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_KEYV",
+          "size": 116,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 13
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004E4EC",
+      "candidate_names": [
+        "SpuSetReverbModeParam"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004E4EC",
+          "address": "0x8004e4ec",
+          "names": [
+            "SpuSetReverbModeParam"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SRMP",
+          "size": 1248,
+          "verified_nonrelocated_words": 249,
+          "relocated_words": 63
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004E9CC",
+      "candidate_names": [
+        "_spu_setReverbAttr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004E9CC",
+          "address": "0x8004e9cc",
+          "names": [
+            "_spu_setReverbAttr"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SRA",
+          "size": 1232,
+          "verified_nonrelocated_words": 244,
+          "relocated_words": 64
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004EE9C",
+      "candidate_names": [
+        "SsUtSetReverbDepth"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004EE9C",
+          "address": "0x8004ee9c",
+          "names": [
+            "SsUtSetReverbDepth"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_RDEP",
+          "size": 144,
+          "verified_nonrelocated_words": 33,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004EF2C",
+      "candidate_names": [
+        "SsUtSetReverbType"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004EF2C",
+          "address": "0x8004ef2c",
+          "names": [
+            "SsUtSetReverbType"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_REV",
+          "size": 160,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004EFCC",
+      "candidate_names": [
+        "SpuSetReverb"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004EFCC",
+          "address": "0x8004efcc",
+          "names": [
+            "SpuSetReverb"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SR",
+          "size": 240,
+          "verified_nonrelocated_words": 36,
+          "relocated_words": 24
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004F13C",
+      "candidate_names": [
+        "SsUtSetVagAtr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004F13C",
+          "address": "0x8004f13c",
+          "names": [
+            "SsUtSetVagAtr"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_SVA",
+          "size": 464,
+          "verified_nonrelocated_words": 80,
+          "relocated_words": 36
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004F30C",
+      "candidate_names": [
+        "SsUtSetVVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004F30C",
+          "address": "0x8004f30c",
+          "names": [
+            "SsUtSetVVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "UT_VVOL4",
+          "size": 144,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004F39C",
+      "candidate_names": [
+        "_SsVmAlloc"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004F39C",
+          "address": "0x8004f39c",
+          "names": [
+            "_SsVmAlloc"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_ALOC1",
+          "size": 624,
+          "verified_nonrelocated_words": 107,
+          "relocated_words": 49
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004F60C",
+      "candidate_names": [
+        "_SsVmDoAllocate"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004F60C",
+          "address": "0x8004f60c",
+          "names": [
+            "_SsVmDoAllocate"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_ALOC2",
+          "size": 464,
+          "verified_nonrelocated_words": 83,
+          "relocated_words": 33
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004F7FC",
+      "candidate_names": [
+        "_SsVmFlush"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004F7FC",
+          "address": "0x8004f7fc",
+          "names": [
+            "_SsVmFlush"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_F",
+          "size": 1232,
+          "verified_nonrelocated_words": 217,
+          "relocated_words": 91
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8004FCFC",
+      "candidate_names": [
+        "_SpuSetAnyVoice"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8004FCFC",
+          "address": "0x8004fcfc",
+          "names": [
+            "_SpuSetAnyVoice"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SAV",
+          "size": 704,
+          "verified_nonrelocated_words": 133,
+          "relocated_words": 43
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005007C",
+      "candidate_names": [
+        "_SsVmInit"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005007C",
+          "address": "0x8005007c",
+          "names": [
+            "_SsVmInit"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_INIT",
+          "size": 848,
+          "verified_nonrelocated_words": 114,
+          "relocated_words": 98
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005046C",
+      "candidate_names": [
+        "_SsVmKeyOn"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005046C",
+          "address": "0x8005046c",
+          "names": [
+            "_SsVmKeyOn"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_KEY",
+          "size": 1308,
+          "verified_nonrelocated_words": 271,
+          "relocated_words": 56
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80050DEC",
+      "candidate_names": [
+        "vmNoiseOn"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80050DEC",
+          "address": "0x80050dec",
+          "names": [
+            "vmNoiseOn"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_NO1",
+          "size": 1392,
+          "verified_nonrelocated_words": 267,
+          "relocated_words": 81
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005135C",
+      "candidate_names": [
+        "SpuSetNoiseClock"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005135C",
+          "address": "0x8005135c",
+          "names": [
+            "SpuSetNoiseClock"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_SNC",
+          "size": 80,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800513EC",
+      "candidate_names": [
+        "_SsVmKeyOffNow"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800513EC",
+          "address": "0x800513ec",
+          "names": [
+            "_SsVmKeyOffNow"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_NOWOF",
+          "size": 192,
+          "verified_nonrelocated_words": 23,
+          "relocated_words": 25
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800514AC",
+      "candidate_names": [
+        "_SsVmKeyOnNow"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800514AC",
+          "address": "0x800514ac",
+          "names": [
+            "_SsVmKeyOnNow"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_NOWON",
+          "size": 1232,
+          "verified_nonrelocated_words": 234,
+          "relocated_words": 74
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005197C",
+      "candidate_names": [
+        "_SsVmPBVoice"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005197C",
+          "address": "0x8005197c",
+          "names": [
+            "_SsVmPBVoice"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_PB",
+          "size": 492,
+          "verified_nonrelocated_words": 94,
+          "relocated_words": 29
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80051B68",
+      "candidate_names": [
+        "_SsVmPitchBend"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80051B68",
+          "address": "0x80051b68",
+          "names": [
+            "_SsVmPitchBend"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_PB",
+          "size": 228,
+          "verified_nonrelocated_words": 49,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80051C4C",
+      "candidate_names": [
+        "_SsVmSetProgVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80051C4C",
+          "address": "0x80051c4c",
+          "names": [
+            "_SsVmSetProgVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_PROG2",
+          "size": 112,
+          "verified_nonrelocated_words": 23,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80051CBC",
+      "candidate_names": [
+        "_SsVmSetSeqVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80051CBC",
+          "address": "0x80051cbc",
+          "names": [
+            "_SsVmSetSeqVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_SEQ",
+          "size": 1388,
+          "verified_nonrelocated_words": 296,
+          "relocated_words": 51
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005240C",
+      "candidate_names": [
+        "_SsVmSetVol"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005240C",
+          "address": "0x8005240c",
+          "names": [
+            "_SsVmSetVol"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VM_VOL",
+          "size": 1440,
+          "verified_nonrelocated_words": 315,
+          "relocated_words": 45
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80052F8C",
+      "candidate_names": [
+        "SpuMalloc"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80052F8C",
+          "address": "0x80052f8c",
+          "names": [
+            "SpuMalloc"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_M_M",
+          "size": 720,
+          "verified_nonrelocated_words": 139,
+          "relocated_words": 41
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800532CC",
+      "candidate_names": [
+        "_SsVabOpenHeadWithMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800532CC",
+          "address": "0x800532cc",
+          "names": [
+            "_SsVabOpenHeadWithMode"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VS_VH",
+          "size": 1008,
+          "verified_nonrelocated_words": 199,
+          "relocated_words": 53
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800536BC",
+      "candidate_names": [
+        "SsVabTransBody"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800536BC",
+          "address": "0x800536bc",
+          "names": [
+            "SsVabTransBody"
+          ],
+          "library": "LIBSND.LIB",
+          "module": "VS_VTB",
+          "size": 192,
+          "verified_nonrelocated_words": 35,
+          "relocated_words": 13
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005377C",
+      "candidate_names": [
+        "SpuRead",
+        "SpuWrite"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005377C",
+          "address": "0x8005377c",
+          "names": [
+            "SpuRead"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_R",
+          "size": 96,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 5
+        },
+        {
+          "unit": "main",
+          "function": "func_8005377C",
+          "address": "0x8005377c",
+          "names": [
+            "SpuWrite"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_W",
+          "size": 96,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800537DC",
+      "candidate_names": [
+        "SpuSetTransferStartAddr"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800537DC",
+          "address": "0x800537dc",
+          "names": [
+            "SpuSetTransferStartAddr"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_STSA",
+          "size": 96,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005389C",
+      "candidate_names": [
+        "SpuIsTransferCompleted"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005389C",
+          "address": "0x8005389c",
+          "names": [
+            "SpuIsTransferCompleted"
+          ],
+          "library": "LIBSPU.LIB",
+          "module": "S_ITC",
+          "size": 176,
+          "verified_nonrelocated_words": 30,
+          "relocated_words": 14
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053964",
+      "candidate_names": [
+        "InitGeom"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053964",
+          "address": "0x80053964",
+          "names": [
+            "InitGeom"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "MSC00",
+          "size": 136,
+          "verified_nonrelocated_words": 29,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800539EC",
+      "candidate_names": [
+        "SquareRoot0"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800539EC",
+          "address": "0x800539ec",
+          "names": [
+            "SquareRoot0"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "MSC01",
+          "size": 144,
+          "verified_nonrelocated_words": 34,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053A7C",
+      "candidate_names": [
+        "InvSquareRoot"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053A7C",
+          "address": "0x80053a7c",
+          "names": [
+            "InvSquareRoot"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "MSC02",
+          "size": 140,
+          "verified_nonrelocated_words": 33,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053B4C",
+      "candidate_names": [
+        "VectorNormalSS"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053B4C",
+          "address": "0x80053b4c",
+          "names": [
+            "VectorNormalSS"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "MSC02",
+          "size": 240,
+          "verified_nonrelocated_words": 57,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053C3C",
+      "candidate_names": [
+        "MatrixNormal"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053C3C",
+          "address": "0x80053c3c",
+          "names": [
+            "MatrixNormal"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "MSC02",
+          "size": 240,
+          "verified_nonrelocated_words": 57,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053D2C",
+      "candidate_names": [
+        "SquareRoot12"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053D2C",
+          "address": "0x80053d2c",
+          "names": [
+            "SquareRoot12"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "MSC09",
+          "size": 160,
+          "verified_nonrelocated_words": 38,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053DCC",
+      "candidate_names": [
+        "ApplyMatrix"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053DCC",
+          "address": "0x80053dcc",
+          "names": [
+            "ApplyMatrix"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "MTX_05",
+          "size": 80,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053EBC",
+      "candidate_names": [
+        "TransposeMatrix"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053EBC",
+          "address": "0x80053ebc",
+          "names": [
+            "TransposeMatrix"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "FGO_00",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80053EFC",
+      "candidate_names": [
+        "ratan2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80053EFC",
+          "address": "0x80053efc",
+          "names": [
+            "ratan2"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "RATAN",
+          "size": 384,
+          "verified_nonrelocated_words": 89,
+          "relocated_words": 7
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005407C",
+      "candidate_names": [
+        "_patch_gte"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005407C",
+          "address": "0x8005407c",
+          "names": [
+            "_patch_gte"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "PATCHGTE",
+          "size": 224,
+          "verified_nonrelocated_words": 41,
+          "relocated_words": 15
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005415C",
+      "candidate_names": [
+        "GsTMDfastF3L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005415C",
+          "address": "0x8005415c",
+          "names": [
+            "GsTMDfastF3L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "F3_3",
+          "size": 336,
+          "verified_nonrelocated_words": 82,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800542AC",
+      "candidate_names": [
+        "GsTMDfastF4L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800542AC",
+          "address": "0x800542ac",
+          "names": [
+            "GsTMDfastF4L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "F4_3",
+          "size": 384,
+          "verified_nonrelocated_words": 94,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005442C",
+      "candidate_names": [
+        "GsTMDfastG3L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005442C",
+          "address": "0x8005442c",
+          "names": [
+            "GsTMDfastG3L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "G3_3",
+          "size": 400,
+          "verified_nonrelocated_words": 98,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800545BC",
+      "candidate_names": [
+        "GsTMDfastG4L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800545BC",
+          "address": "0x800545bc",
+          "names": [
+            "GsTMDfastG4L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "G4_3",
+          "size": 480,
+          "verified_nonrelocated_words": 118,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005479C",
+      "candidate_names": [
+        "GsTMDfastTNF3"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005479C",
+          "address": "0x8005479c",
+          "names": [
+            "GsTMDfastTNF3"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "FT3_1",
+          "size": 368,
+          "verified_nonrelocated_words": 90,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005490C",
+      "candidate_names": [
+        "GsTMDfastTF3L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005490C",
+          "address": "0x8005490c",
+          "names": [
+            "GsTMDfastTF3L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "FT3_3",
+          "size": 368,
+          "verified_nonrelocated_words": 90,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80054A7C",
+      "candidate_names": [
+        "GsTMDfastTNF4"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80054A7C",
+          "address": "0x80054a7c",
+          "names": [
+            "GsTMDfastTNF4"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "FT4_1",
+          "size": 416,
+          "verified_nonrelocated_words": 102,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80054C1C",
+      "candidate_names": [
+        "GsTMDfastTF4L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80054C1C",
+          "address": "0x80054c1c",
+          "names": [
+            "GsTMDfastTF4L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "FT4_3",
+          "size": 432,
+          "verified_nonrelocated_words": 106,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80054DCC",
+      "candidate_names": [
+        "GsTMDfastTNG3"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80054DCC",
+          "address": "0x80054dcc",
+          "names": [
+            "GsTMDfastTNG3"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "GT3_1",
+          "size": 384,
+          "verified_nonrelocated_words": 94,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80054F4C",
+      "candidate_names": [
+        "GsTMDfastTG3L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80054F4C",
+          "address": "0x80054f4c",
+          "names": [
+            "GsTMDfastTG3L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "GT3_3",
+          "size": 448,
+          "verified_nonrelocated_words": 110,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005510C",
+      "candidate_names": [
+        "GsTMDfastTNG4"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005510C",
+          "address": "0x8005510c",
+          "names": [
+            "GsTMDfastTNG4"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "GT4_1",
+          "size": 448,
+          "verified_nonrelocated_words": 110,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800552CC",
+      "candidate_names": [
+        "GsTMDfastTG4L"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800552CC",
+          "address": "0x800552cc",
+          "names": [
+            "GsTMDfastTG4L"
+          ],
+          "library": "LIBGTE.LIB",
+          "module": "GT4_3",
+          "size": 528,
+          "verified_nonrelocated_words": 130,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800554DC",
+      "candidate_names": [
+        "ResetGraph"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800554DC",
+          "address": "0x800554dc",
+          "names": [
+            "ResetGraph"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 372,
+          "verified_nonrelocated_words": 61,
+          "relocated_words": 32
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055650",
+      "candidate_names": [
+        "SetGraphDebug"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055650",
+          "address": "0x80055650",
+          "names": [
+            "SetGraphDebug"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 92,
+          "verified_nonrelocated_words": 17,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800556AC",
+      "candidate_names": [
+        "SetGraphQueue"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800556AC",
+          "address": "0x800556ac",
+          "names": [
+            "SetGraphQueue"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 164,
+          "verified_nonrelocated_words": 32,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055760",
+      "candidate_names": [
+        "DrawSyncCallback"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055760",
+          "address": "0x80055760",
+          "names": [
+            "DrawSyncCallback"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 96,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800557C0",
+      "candidate_names": [
+        "SetDispMask"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800557C0",
+          "address": "0x800557c0",
+          "names": [
+            "SetDispMask"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 152,
+          "verified_nonrelocated_words": 29,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055858",
+      "candidate_names": [
+        "DrawSync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055858",
+          "address": "0x80055858",
+          "names": [
+            "DrawSync"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 388,
+          "verified_nonrelocated_words": 75,
+          "relocated_words": 22
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800559DC",
+      "candidate_names": [
+        "ClearImage"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800559DC",
+          "address": "0x800559dc",
+          "names": [
+            "ClearImage"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 144,
+          "verified_nonrelocated_words": 31,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055A6C",
+      "candidate_names": [
+        "ClearImage2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055A6C",
+          "address": "0x80055a6c",
+          "names": [
+            "ClearImage2"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 152,
+          "verified_nonrelocated_words": 33,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055B04",
+      "candidate_names": [
+        "LoadImage"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055B04",
+          "address": "0x80055b04",
+          "names": [
+            "LoadImage"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 96,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055B64",
+      "candidate_names": [
+        "StoreImage"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055B64",
+          "address": "0x80055b64",
+          "names": [
+            "StoreImage"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 96,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055BC4",
+      "candidate_names": [
+        "MoveImage"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055BC4",
+          "address": "0x80055bc4",
+          "names": [
+            "MoveImage"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 184,
+          "verified_nonrelocated_words": 38,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055C7C",
+      "candidate_names": [
+        "ClearOTag"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055C7C",
+          "address": "0x80055c7c",
+          "names": [
+            "ClearOTag"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 200,
+          "verified_nonrelocated_words": 40,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055D44",
+      "candidate_names": [
+        "ClearOTagR"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055D44",
+          "address": "0x80055d44",
+          "names": [
+            "ClearOTagR"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 172,
+          "verified_nonrelocated_words": 31,
+          "relocated_words": 12
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055DF0",
+      "candidate_names": [
+        "DrawPrim"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055DF0",
+          "address": "0x80055df0",
+          "names": [
+            "DrawPrim"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 92,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055E4C",
+      "candidate_names": [
+        "DrawOTag"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055E4C",
+          "address": "0x80055e4c",
+          "names": [
+            "DrawOTag"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 112,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 8
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055EBC",
+      "candidate_names": [
+        "PutDrawEnv"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055EBC",
+          "address": "0x80055ebc",
+          "names": [
+            "PutDrawEnv"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 192,
+          "verified_nonrelocated_words": 38,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80055F7C",
+      "candidate_names": [
+        "DrawOTagEnv"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80055F7C",
+          "address": "0x80055f7c",
+          "names": [
+            "DrawOTagEnv"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 216,
+          "verified_nonrelocated_words": 44,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80056088",
+      "candidate_names": [
+        "PutDispEnv"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80056088",
+          "address": "0x80056088",
+          "names": [
+            "PutDispEnv"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 1272,
+          "verified_nonrelocated_words": 279,
+          "relocated_words": 39
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800565E4",
+      "candidate_names": [
+        "SetDrawArea"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800565E4",
+          "address": "0x800565e4",
+          "names": [
+            "SetDrawArea"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 128,
+          "verified_nonrelocated_words": 30,
+          "relocated_words": 2
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800566A4",
+      "candidate_names": [
+        "SetDrawEnv"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800566A4",
+          "address": "0x800566a4",
+          "names": [
+            "SetDrawEnv"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 6352,
+          "verified_nonrelocated_words": 1162,
+          "relocated_words": 426
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80057F74",
+      "candidate_names": [
+        "LoadImage2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80057F74",
+          "address": "0x80057f74",
+          "names": [
+            "LoadImage2"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 236,
+          "verified_nonrelocated_words": 38,
+          "relocated_words": 21
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80058060",
+      "candidate_names": [
+        "StoreImage2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80058060",
+          "address": "0x80058060",
+          "names": [
+            "StoreImage2"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 236,
+          "verified_nonrelocated_words": 38,
+          "relocated_words": 21
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005814C",
+      "candidate_names": [
+        "MoveImage2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005814C",
+          "address": "0x8005814c",
+          "names": [
+            "MoveImage2"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 324,
+          "verified_nonrelocated_words": 57,
+          "relocated_words": 24
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80058290",
+      "candidate_names": [
+        "DrawOTag2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80058290",
+          "address": "0x80058290",
+          "names": [
+            "DrawOTag2"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 252,
+          "verified_nonrelocated_words": 39,
+          "relocated_words": 24
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005838C",
+      "candidate_names": [
+        "_GPU_ResetCallback"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005838C",
+          "address": "0x8005838c",
+          "names": [
+            "_GPU_ResetCallback"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "SYS",
+          "size": 80,
+          "verified_nonrelocated_words": 17,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800583EC",
+      "candidate_names": [
+        "SetDefDispEnv"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800583EC",
+          "address": "0x800583ec",
+          "names": [
+            "SetDefDispEnv"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "E04",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005844C",
+      "candidate_names": [
+        "AddPrim"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005844C",
+          "address": "0x8005844c",
+          "names": [
+            "AddPrim"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "P06",
+          "size": 64,
+          "verified_nonrelocated_words": 16,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800584BC",
+      "candidate_names": [
+        "SetDrawMove"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800584BC",
+          "address": "0x800584bc",
+          "names": [
+            "SetDrawMove"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "P34",
+          "size": 96,
+          "verified_nonrelocated_words": 24,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005851C",
+      "candidate_names": [
+        "SetDrawLoad"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005851C",
+          "address": "0x8005851c",
+          "names": [
+            "SetDrawLoad"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "P35",
+          "size": 112,
+          "verified_nonrelocated_words": 28,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005859C",
+      "candidate_names": [
+        "ReadTIM"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005859C",
+          "address": "0x8005859c",
+          "names": [
+            "ReadTIM"
+          ],
+          "library": "LIBGPU.LIB",
+          "module": "T00",
+          "size": 384,
+          "verified_nonrelocated_words": 74,
+          "relocated_words": 22
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800587D8",
+      "candidate_names": [
+        "MemCardStart"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800587D8",
+          "address": "0x800587d8",
+          "names": [
+            "MemCardStart"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 112,
+          "verified_nonrelocated_words": 21,
+          "relocated_words": 7
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80058888",
+      "candidate_names": [
+        "MemCardExist"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80058888",
+          "address": "0x80058888",
+          "names": [
+            "MemCardExist"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 900,
+          "verified_nonrelocated_words": 151,
+          "relocated_words": 74
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80058C0C",
+      "candidate_names": [
+        "MemCardAccept"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80058C0C",
+          "address": "0x80058c0c",
+          "names": [
+            "MemCardAccept"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 784,
+          "verified_nonrelocated_words": 121,
+          "relocated_words": 75
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80058F1C",
+      "candidate_names": [
+        "MemCardOpen"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80058F1C",
+          "address": "0x80058f1c",
+          "names": [
+            "MemCardOpen"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 392,
+          "verified_nonrelocated_words": 69,
+          "relocated_words": 29
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800597D4",
+      "candidate_names": [
+        "MemCardWriteFile"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800597D4",
+          "address": "0x800597d4",
+          "names": [
+            "MemCardWriteFile"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 544,
+          "verified_nonrelocated_words": 96,
+          "relocated_words": 40
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_800599F4",
+      "candidate_names": [
+        "MemCardGetDirentry"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_800599F4",
+          "address": "0x800599f4",
+          "names": [
+            "MemCardGetDirentry"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 604,
+          "verified_nonrelocated_words": 121,
+          "relocated_words": 30
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80059C64",
+      "candidate_names": [
+        "MemCardSync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80059C64",
+          "address": "0x80059c64",
+          "names": [
+            "MemCardSync"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 284,
+          "verified_nonrelocated_words": 57,
+          "relocated_words": 14
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80059D80",
+      "candidate_names": [
+        "MemCardCreateFile"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80059D80",
+          "address": "0x80059d80",
+          "names": [
+            "MemCardCreateFile"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 252,
+          "verified_nonrelocated_words": 49,
+          "relocated_words": 14
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_80059E7C",
+      "candidate_names": [
+        "MemCardFormat"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_80059E7C",
+          "address": "0x80059e7c",
+          "names": [
+            "MemCardFormat"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LIBMCRD",
+          "size": 464,
+          "verified_nonrelocated_words": 94,
+          "relocated_words": 22
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005A35C",
+      "candidate_names": [
+        "UserFuncOpen"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005A35C",
+          "address": "0x8005a35c",
+          "names": [
+            "UserFuncOpen"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "USERFUNC",
+          "size": 124,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 12
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005A3D8",
+      "candidate_names": [
+        "UserFuncExecute"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005A3D8",
+          "address": "0x8005a3d8",
+          "names": [
+            "UserFuncExecute"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "USERFUNC",
+          "size": 108,
+          "verified_nonrelocated_words": 17,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005A52C",
+      "candidate_names": [
+        "_card_start"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005A52C",
+          "address": "0x8005a52c",
+          "names": [
+            "_card_start"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "BIOS",
+          "size": 476,
+          "verified_nonrelocated_words": 52,
+          "relocated_words": 67
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005A728",
+      "candidate_names": [
+        "_card_stop"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005A728",
+          "address": "0x8005a728",
+          "names": [
+            "_card_stop"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "BIOS",
+          "size": 180,
+          "verified_nonrelocated_words": 19,
+          "relocated_words": 26
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005A8E4",
+      "candidate_names": [
+        "_get_card_event",
+        "_get_card_event_x"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005A8E4",
+          "address": "0x8005a8e4",
+          "names": [
+            "_get_card_event"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "BIOS",
+          "size": 216,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 34
+        },
+        {
+          "unit": "main",
+          "function": "func_8005A8E4",
+          "address": "0x8005a8e4",
+          "names": [
+            "_get_card_event_x"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "BIOS",
+          "size": 216,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 34
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005A9BC",
+      "candidate_names": [
+        "_get_card_event",
+        "_get_card_event_x"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005A9BC",
+          "address": "0x8005a9bc",
+          "names": [
+            "_get_card_event"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "BIOS",
+          "size": 216,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 34
+        },
+        {
+          "unit": "main",
+          "function": "func_8005A9BC",
+          "address": "0x8005a9bc",
+          "names": [
+            "_get_card_event_x"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "BIOS",
+          "size": 216,
+          "verified_nonrelocated_words": 20,
+          "relocated_words": 34
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005AB1C",
+      "candidate_names": [
+        "_card_format2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005AB1C",
+          "address": "0x8005ab1c",
+          "names": [
+            "_card_format2"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LOW",
+          "size": 976,
+          "verified_nonrelocated_words": 194,
+          "relocated_words": 50
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005AEEC",
+      "candidate_names": [
+        "_card_create2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005AEEC",
+          "address": "0x8005aeec",
+          "names": [
+            "_card_create2"
+          ],
+          "library": "LIBMCRD.LIB",
+          "module": "LOW",
+          "size": 1728,
+          "verified_nonrelocated_words": 338,
+          "relocated_words": 94
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005B75C",
+      "candidate_names": [
+        "PadSetMainMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005B75C",
+          "address": "0x8005b75c",
+          "names": [
+            "PadSetMainMode"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDCMD3",
+          "size": 352,
+          "verified_nonrelocated_words": 73,
+          "relocated_words": 15
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005B8BC",
+      "candidate_names": [
+        "PadGetState"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005B8BC",
+          "address": "0x8005b8bc",
+          "names": [
+            "PadGetState"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDENT2",
+          "size": 208,
+          "verified_nonrelocated_words": 47,
+          "relocated_words": 5
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005B98C",
+      "candidate_names": [
+        "PadInfoMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005B98C",
+          "address": "0x8005b98c",
+          "names": [
+            "PadInfoMode"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDENT3",
+          "size": 256,
+          "verified_nonrelocated_words": 54,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005BA8C",
+      "candidate_names": [
+        "PadInfoAct"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005BA8C",
+          "address": "0x8005ba8c",
+          "names": [
+            "PadInfoAct"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDENT4",
+          "size": 224,
+          "verified_nonrelocated_words": 46,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005BB6C",
+      "candidate_names": [
+        "PadStartCom"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005BB6C",
+          "address": "0x8005bb6c",
+          "names": [
+            "PadStartCom"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDMAIINI",
+          "size": 204,
+          "verified_nonrelocated_words": 28,
+          "relocated_words": 23
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005BD4C",
+      "candidate_names": [
+        "_padInitDirPort"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005BD4C",
+          "address": "0x8005bd4c",
+          "names": [
+            "_padInitDirPort"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDDIRRES",
+          "size": 2352,
+          "verified_nonrelocated_words": 475,
+          "relocated_words": 113
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005C67C",
+      "candidate_names": [
+        "_dirFailAuto"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005C67C",
+          "address": "0x8005c67c",
+          "names": [
+            "_dirFailAuto"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDDIRRES",
+          "size": 272,
+          "verified_nonrelocated_words": 64,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005C78C",
+      "candidate_names": [
+        "_padIsVsync"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005C78C",
+          "address": "0x8005c78c",
+          "names": [
+            "_padIsVsync"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 104,
+          "verified_nonrelocated_words": 22,
+          "relocated_words": 4
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005C7F4",
+      "candidate_names": [
+        "_padIntPad"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005C7F4",
+          "address": "0x8005c7f4",
+          "names": [
+            "_padIntPad"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 400,
+          "verified_nonrelocated_words": 57,
+          "relocated_words": 43
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005C984",
+      "candidate_names": [
+        "_padInitSioMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005C984",
+          "address": "0x8005c984",
+          "names": [
+            "_padInitSioMode"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 1060,
+          "verified_nonrelocated_words": 186,
+          "relocated_words": 79
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005CDA8",
+      "candidate_names": [
+        "_padSioRW"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005CDA8",
+          "address": "0x8005cda8",
+          "names": [
+            "_padSioRW"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 548,
+          "verified_nonrelocated_words": 108,
+          "relocated_words": 29
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005CFCC",
+      "candidate_names": [
+        "_padSioRW2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005CFCC",
+          "address": "0x8005cfcc",
+          "names": [
+            "_padSioRW2"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 636,
+          "verified_nonrelocated_words": 133,
+          "relocated_words": 26
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005D248",
+      "candidate_names": [
+        "_padClrIntSio0"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005D248",
+          "address": "0x8005d248",
+          "names": [
+            "_padClrIntSio0"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 144,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005D310",
+      "candidate_names": [
+        "_padSendAtLoadInfo"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005D310",
+          "address": "0x8005d310",
+          "names": [
+            "_padSendAtLoadInfo"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 132,
+          "verified_nonrelocated_words": 26,
+          "relocated_words": 7
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005D394",
+      "candidate_names": [
+        "_padRecvAtLoadInfo"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005D394",
+          "address": "0x8005d394",
+          "names": [
+            "_padRecvAtLoadInfo"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 624,
+          "verified_nonrelocated_words": 143,
+          "relocated_words": 13
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005D63C",
+      "candidate_names": [
+        "_padLoadActInfo"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005D63C",
+          "address": "0x8005d63c",
+          "names": [
+            "_padLoadActInfo"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 1396,
+          "verified_nonrelocated_words": 314,
+          "relocated_words": 35
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005DBB0",
+      "candidate_names": [
+        "_padCmdParaMode"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005DBB0",
+          "address": "0x8005dbb0",
+          "names": [
+            "_padCmdParaMode"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 168,
+          "verified_nonrelocated_words": 42,
+          "relocated_words": 0
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005DC78",
+      "candidate_names": [
+        "_padChkRC2wait"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005DC78",
+          "address": "0x8005dc78",
+          "names": [
+            "_padChkRC2wait"
+          ],
+          "library": "LIBPAD.LIB",
+          "module": "PDRESRES",
+          "size": 2436,
+          "verified_nonrelocated_words": 450,
+          "relocated_words": 159
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005E68C",
+      "candidate_names": [
+        "InitCARD"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005E68C",
+          "address": "0x8005e68c",
+          "names": [
+            "InitCARD"
+          ],
+          "library": "LIBCARD.LIB",
+          "module": "INIT",
+          "size": 144,
+          "verified_nonrelocated_words": 26,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005E7A8",
+      "candidate_names": [
+        "InitPAD",
+        "PAD_init"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005E7A8",
+          "address": "0x8005e7a8",
+          "names": [
+            "PAD_init"
+          ],
+          "library": "LIBAPI.LIB",
+          "module": "PAD",
+          "size": 144,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 9
+        },
+        {
+          "unit": "main",
+          "function": "func_8005E7A8",
+          "address": "0x8005e7a8",
+          "names": [
+            "InitPAD"
+          ],
+          "library": "LIBAPI.LIB",
+          "module": "PAD",
+          "size": 144,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005E838",
+      "candidate_names": [
+        "InitPAD",
+        "PAD_init"
+      ],
+      "ambiguous_name": true,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005E838",
+          "address": "0x8005e838",
+          "names": [
+            "PAD_init"
+          ],
+          "library": "LIBAPI.LIB",
+          "module": "PAD",
+          "size": 144,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 9
+        },
+        {
+          "unit": "main",
+          "function": "func_8005E838",
+          "address": "0x8005e838",
+          "names": [
+            "InitPAD"
+          ],
+          "library": "LIBAPI.LIB",
+          "module": "PAD",
+          "size": 144,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 9
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005E8C8",
+      "candidate_names": [
+        "StartPAD"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005E8C8",
+          "address": "0x8005e8c8",
+          "names": [
+            "StartPAD"
+          ],
+          "library": "LIBAPI.LIB",
+          "module": "PAD",
+          "size": 340,
+          "verified_nonrelocated_words": 64,
+          "relocated_words": 21
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005EAEC",
+      "candidate_names": [
+        "_remove_ChgclrPAD"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005EAEC",
+          "address": "0x8005eaec",
+          "names": [
+            "_remove_ChgclrPAD"
+          ],
+          "library": "LIBAPI.LIB",
+          "module": "CHCLRPAD",
+          "size": 112,
+          "verified_nonrelocated_words": 21,
+          "relocated_words": 7
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005EC68",
+      "candidate_names": [
+        "_patch_card"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005EC68",
+          "address": "0x8005ec68",
+          "names": [
+            "_patch_card"
+          ],
+          "library": "LIBCARD.LIB",
+          "module": "PATCH",
+          "size": 148,
+          "verified_nonrelocated_words": 27,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005ECFC",
+      "candidate_names": [
+        "_patch_card2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005ECFC",
+          "address": "0x8005ecfc",
+          "names": [
+            "_patch_card2"
+          ],
+          "library": "LIBCARD.LIB",
+          "module": "PATCH",
+          "size": 112,
+          "verified_nonrelocated_words": 18,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "main",
+      "function": "func_8005EDAC",
+      "candidate_names": [
+        "_ExitCard"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "main",
+          "function": "func_8005EDAC",
+          "address": "0x8005edac",
+          "names": [
+            "_ExitCard"
+          ],
+          "library": "LIBCARD.LIB",
+          "module": "END",
+          "size": 128,
+          "verified_nonrelocated_words": 21,
+          "relocated_words": 11
+        }
+      ]
+    },
+    {
+      "unit": "movie",
+      "function": "func_800652A4",
+      "candidate_names": [
+        "DecDCTGetEnv"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "movie",
+          "function": "func_800652A4",
+          "address": "0x800652a4",
+          "names": [
+            "DecDCTGetEnv"
+          ],
+          "library": "LIBPRESS.LIB",
+          "module": "LIBPRESS",
+          "size": 140,
+          "verified_nonrelocated_words": 29,
+          "relocated_words": 6
+        }
+      ]
+    },
+    {
+      "unit": "movie",
+      "function": "func_80065330",
+      "candidate_names": [
+        "DecDCTPutEnv"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "movie",
+          "function": "func_80065330",
+          "address": "0x80065330",
+          "names": [
+            "DecDCTPutEnv"
+          ],
+          "library": "LIBPRESS.LIB",
+          "module": "LIBPRESS",
+          "size": 152,
+          "verified_nonrelocated_words": 28,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "movie",
+      "function": "func_800653C8",
+      "candidate_names": [
+        "DecDCTin"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "movie",
+          "function": "func_800653C8",
+          "address": "0x800653c8",
+          "names": [
+            "DecDCTin"
+          ],
+          "library": "LIBPRESS.LIB",
+          "module": "LIBPRESS",
+          "size": 124,
+          "verified_nonrelocated_words": 28,
+          "relocated_words": 3
+        }
+      ]
+    },
+    {
+      "unit": "movie",
+      "function": "func_8006550C",
+      "candidate_names": [
+        "DecDCToutCallback"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "movie",
+          "function": "func_8006550C",
+          "address": "0x8006550c",
+          "names": [
+            "DecDCToutCallback"
+          ],
+          "library": "LIBPRESS.LIB",
+          "module": "LIBPRESS",
+          "size": 1012,
+          "verified_nonrelocated_words": 169,
+          "relocated_words": 84
+        }
+      ]
+    },
+    {
+      "unit": "movie",
+      "function": "func_80065930",
+      "candidate_names": [
+        "DecDCTvlc2"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "movie",
+          "function": "func_80065930",
+          "address": "0x80065930",
+          "names": [
+            "DecDCTvlc2"
+          ],
+          "library": "LIBPRESS.LIB",
+          "module": "VLC_C",
+          "size": 848,
+          "verified_nonrelocated_words": 202,
+          "relocated_words": 10
+        }
+      ]
+    },
+    {
+      "unit": "movie",
+      "function": "func_80065C80",
+      "candidate_names": [
+        "DecDCTvlcBuild"
+      ],
+      "ambiguous_name": false,
+      "currently_classified_sdk": true,
+      "evidence": [
+        {
+          "unit": "movie",
+          "function": "func_80065C80",
+          "address": "0x80065c80",
+          "names": [
+            "DecDCTvlcBuild"
+          ],
+          "library": "LIBPRESS.LIB",
+          "module": "BUILD",
+          "size": 240,
+          "verified_nonrelocated_words": 56,
+          "relocated_words": 4
+        }
+      ]
+    }
+  ],
+  "parser_errors": [
+    {
+      "unit": "main",
+      "library": "Libsn.lib",
+      "error": "b''"
+    },
+    {
+      "unit": "movie",
+      "library": "Libsn.lib",
+      "error": "b''"
+    }
+  ],
+  "limitations": [
+    "Names identify exact non-relocated symbol windows, not original game source names.",
+    "Identical code may have several names; no aliases or exclusions are added automatically.",
+    "Window size may include private helper code after a public entry.",
+    "Relocated instruction and pointer values need separate review."
+  ]
+}

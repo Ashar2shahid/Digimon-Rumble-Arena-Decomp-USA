@@ -1,0 +1,272 @@
+{
+  "profiles": {
+    "main/20000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/main/wave17_graphics_profile_audit.json",
+        "analysis/us/wave9_gate_packet_allocators.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/19000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/main/wave29_choice_profile_audit.json",
+        "analysis/us/wave9_gate_wave29_choice.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "st06/C48.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "st06/1820.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "st06/1D5C.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "st06/1FA4.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "st06/186C.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "st06/CA4.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "st06/3F0.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "st06/22F4.c": {
+      "byte_verified_evidence": [],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "private_profile_comparison_evidence": [
+        "analysis/us/st06/wave44_profile_range_review.json"
+      ],
+      "comparison_limit": "Current source only, relocation-masked private probes. Does not certify original object boundaries or upgrade provenance."
+    },
+    "main/B800.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_sound_unpin.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/26800.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_strings.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/16800.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_vectors.json",
+        "analysis/us/wave9_gate_jp_components.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/17000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_vectors.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/14000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_math_core.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/15000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_math_core.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/27810.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_rng.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/12000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_camera.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/F000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_save.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/15800.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_quat.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/23000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_box.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/1B000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_console.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/13000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_tmd13000.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/2E000.c": {
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_inflate_flush/object_audit.json",
+        "analysis/us/wave9_gate_jp_inflate_flush.json",
+        "analysis/us/main/jp_zlib_sync_fixed/object_audit.json",
+        "analysis/us/wave9_gate_jp_zlib_sync_fixed.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/2D800.c": {
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_inflate_dynamic/object_audit.json",
+        "analysis/us/wave9_gate_jp_inflate_dynamic.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/2B034.c": {
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_inflate_init/object_audit.json",
+        "analysis/us/wave9_gate_jp_inflate_init.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    },
+    "main/2B800.c": {
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_zlib_sync_fixed/object_audit.json",
+        "analysis/us/wave9_gate_jp_zlib_sync_fixed.json"
+      ],
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      }
+    }
+  }
+}

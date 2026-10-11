@@ -1,0 +1,59 @@
+{
+  "library_archive_sha256": "e3df241adde663fba1f5bff1f0070e0d32d9518ebb11d60a914e5e016f704745",
+  "movie_input_sha1": "93fba61cdd820b4b889e747360b8888dd47b12f5",
+  "regions": [
+    {
+      "unit": "movie",
+      "library": "LIBPRESS.LIB",
+      "module": "LIBPRESS",
+      "section": ".rdata",
+      "start": "0x80064424",
+      "end": "0x80064474",
+      "size": 80,
+      "exact_full_byte_match": true,
+      "sha256": "1194cdb11156c41e44a8a2ec88dae43271f091faf251ee4f7a7914a71b4fd613",
+      "library_lnk_patches": 0
+    },
+    {
+      "unit": "movie",
+      "library": "LIBPRESS.LIB",
+      "module": "LIBPRESS",
+      "section": ".data",
+      "start": "0x80065d74",
+      "end": "0x80065ec4",
+      "size": 336,
+      "exact_full_byte_match": true,
+      "sha256": "b72d163b5070220b25cf133bab0d0d35d88ed606a97b6cfedee5038ee2226b48",
+      "library_lnk_patches": 0
+    },
+    {
+      "unit": "movie",
+      "library": "LIBPRESS.LIB",
+      "module": "VLC_C",
+      "section": ".data",
+      "start": "0x80065ec4",
+      "end": "0x80065ef4",
+      "size": 48,
+      "exact_full_byte_match": true,
+      "sha256": "ff854db8917cc0810650d7d6e56ba0bdd0175949fc3f142f82400f312a6040c0",
+      "library_lnk_patches": 0
+    },
+    {
+      "unit": "movie",
+      "library": "LIBPRESS.LIB",
+      "module": "BUILD",
+      "section": ".data",
+      "start": "0x80065ef4",
+      "end": "0x80066d04",
+      "size": 3600,
+      "exact_full_byte_match": true,
+      "sha256": "86bfa7f158814c9ab59bcd5138347853f1e238652d01eb6f684ed6ae0982b4e3",
+      "library_lnk_patches": 0
+    }
+  ],
+  "method": "complete library data-section bytes equal retail bytes, with no relocation masking",
+  "notes": [
+    "The movie manifest represents three SDK data sections as func_80065D74 (kind data).",
+    "Game state word 0x80065D70 is not part of these SDK sections."
+  ]
+}

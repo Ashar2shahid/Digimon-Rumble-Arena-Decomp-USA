@@ -1,0 +1,119 @@
+name: Game Overlay (A.VFS:bin/game.bin)
+sha1: 655cdf891af2caf44ae883eb952f8a60349947ec
+options:
+  basename: game
+  target_path: assets/us/bin/game.bin
+  base_path: ../..
+  platform: psx
+  compiler: PSYQ
+
+  asm_path: asm/us/game
+  src_path: src/battle
+  build_path: build/us
+  ld_script_path: config/us/linkers/game.ld
+  elf_path: build/us/game.elf
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  migrate_rodata_to_functions: True
+  pair_rodata_to_text: False
+
+  o_as_suffix: False
+  use_legacy_include_asm: False
+
+  asm_function_macro: glabel
+  asm_jtbl_label_macro: jlabel
+  asm_data_macro: dlabel
+  generate_asm_macros_files: False
+
+  dump_symbols: True
+  dump_symbols_references: True
+
+  section_order: [".rodata", ".text", ".data", ".bss"]
+
+  # Custom segment types (see tools/segtypes/): the `code` override emits the
+  # retail output sections for C switch tables that duplicate committed rodata
+  # (tools/segtypes/code.py).
+  extensions_path: tools/segtypes
+  allow_segment_overrides: True
+
+  symbol_addrs_path:
+    - config/us/sym.game.txt
+  reloc_addrs_path:
+    - config/us/rel.game.txt
+
+  undefined_funcs_auto_path: config/us/linkers/undefined_funcs_auto.game.txt
+  undefined_syms_auto_path: config/us/linkers/undefined_syms_auto.game.txt
+
+  subalign: 4
+
+  string_encoding: ASCII
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+
+  ld_bss_is_noload: False
+segments:
+  - name: game
+    type: code
+    start: 0x0
+    vram: 0x800643c0
+    align: 4
+    subalign: 4
+    subsegments:
+      # id number, name "game main process", pointer tables and rodata
+      - [0x0, rodata, 0]
+      # code and data from 0x9DF4 to 0xE324
+      - [0x9DF4, c, 9DF4]
+      # code and data from 0xE324 to 0x12398
+      - [0xE324, c, E324]
+      # code and data from 0x12398 to 0x16458
+      - [0x12398, c, 12398]
+      # code and data from 0x16458 to 0x18104
+      - [0x16458, c, 16458]
+      # code and data from 0x18104 to 0x1C120
+      - [0x18104, c, 18104]
+      # code and data from 0x1C120 to 0x202B4
+      - [0x1C120, c, 1C120]
+      # code and data from 0x202B4 to 0x243F0
+      - [0x202B4, c, 202B4]
+      # code and data from 0x243F0 to 0x28514
+      - [0x243F0, c, 243F0]
+      # code and data from 0x28514 to 0x2C7C4
+      - [0x28514, c, 28514]
+      # code and data from 0x2C7C4 to 0x309F0
+      - [0x2C7C4, c, 2C7C4]
+      # code and data from 0x309F0 to 0x34AFC
+      - [0x309F0, c, 309F0]
+      # code and data from 0x34AFC to 0x38D84
+      - [0x34AFC, c, 34AFC]
+      # code and data from 0x38D84 to 0x3CDF0
+      - [0x38D84, c, 38D84]
+      # code and data from 0x3CDF0 to 0x40E5C
+      - [0x3CDF0, c, 3CDF0]
+      # code and data from 0x40E5C to 0x44E78
+      - [0x40E5C, c, 40E5C]
+      # code and data from 0x44E78 to 0x48F48
+      - [0x44E78, c, 44E78]
+      # code and data from 0x48F48 to 0x4CF7C
+      - [0x48F48, c, 48F48]
+      # code and data from 0x4CF7C to 0x50FE4
+      - [0x4CF7C, c, 4CF7C]
+      # code and data from 0x50FE4 to 0x55164
+      - [0x50FE4, c, 50FE4]
+      # code and data from 0x55164 to 0x5922C
+      - [0x55164, c, 55164]
+      # code and data from 0x5922C to 0x5D3CC
+      - [0x5922C, c, 5922C]
+      # code and data from 0x5D3CC to 0x6155C
+      - [0x5D3CC, c, 5D3CC]
+      # code and data from 0x6155C to 0x6568C
+      - [0x6155C, c, 6155C]
+      # code and data from 0x6568C to 0x697BC
+      - [0x6568C, c, 6568C]
+      # code and data from 0x697BC to 0x6DB60
+      - [0x697BC, c, 697BC]
+      # code and data from 0x6DB60 to 0x6F73C
+      - [0x6DB60, c, 6DB60]
+
+  - [0x6f73c]

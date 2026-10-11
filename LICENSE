@@ -1,0 +1,14 @@
+Licensing of this source import
+
+Earlier user-provided decompilation source is under CC0 1.0 Universal; see
+docs/licenses/legacy-source-CC0.txt.
+
+Adapted ReGame Labs source retains MIT notices in
+docs/licenses/REGAME-DTBE-MIT.txt and REGAME-DTBE-20261010-MIT.txt.
+
+Altered zlib 1.1.3 sources retain their original zlib notice in
+docs/licenses/ZLIB-1.1.3.txt. The archive-format reference attribution is
+preserved in docs/THIRD_PARTY_NOTICES.md.
+
+These source licenses do not license the commercial game, SDK libraries or
+compiler binaries. No blanket replacement license is assigned by this import.

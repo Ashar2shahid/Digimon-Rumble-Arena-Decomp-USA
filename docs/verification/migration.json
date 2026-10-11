@@ -1,0 +1,188 @@
+{
+  "original_commit": "76773bf",
+  "all_fourteen_byte_placement_gates_passed": true,
+  "all_fourteen_allocated_and_game_sdk_public_metadata_equal_original": true,
+  "coverage_preserved": 58.9078,
+  "source_categories": {
+    "assembly": 1305,
+    "ordinary_c": 2095,
+    "empty_c": 50,
+    "assisted_c": 215,
+    "cxx_alias": 34
+  },
+  "tests_passed": 88,
+  "layout": "config/us; src/engine; src/battle/stages; build/us; disks/us; asm/us",
+  "units": [
+    {
+      "unit": "main",
+      "retail_sha1": "179a3f7ae84762f9f60dc1ba97994eb7e673582e",
+      "retail_size": 1101824,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [
+        {
+          "original": "_binary_C__Users_ashar_OneDrive_Documents_ChatGPT_Digimon_decompilation_assets_Ram_Reserved_bin_start",
+          "migrated": "_binary_C__Users_ashar_OneDrive_Documents_ChatGPT_dra_us_decomp_assets_Ram_Reserved_bin_start",
+          "metadata_equal": true
+        },
+        {
+          "original": "_binary_C__Users_ashar_OneDrive_Documents_ChatGPT_Digimon_decompilation_assets_Ram_Reserved_bin_end",
+          "migrated": "_binary_C__Users_ashar_OneDrive_Documents_ChatGPT_dra_us_decomp_assets_Ram_Reserved_bin_end",
+          "metadata_equal": true
+        },
+        {
+          "original": "_binary_C__Users_ashar_OneDrive_Documents_ChatGPT_Digimon_decompilation_assets_Ram_Reserved_bin_size",
+          "migrated": "_binary_C__Users_ashar_OneDrive_Documents_ChatGPT_dra_us_decomp_assets_Ram_Reserved_bin_size",
+          "metadata_equal": true
+        }
+      ],
+      "input_fingerprint": "9ec67a88f3055d1b909838856935919cf12f570548b291655d08deca850d5036",
+      "output_sha256": "7b1c27885ddac65a7f99105330705b4d6d9b9913c511f1f811ae2dd53d344891"
+    },
+    {
+      "unit": "game",
+      "retail_sha1": "655cdf891af2caf44ae883eb952f8a60349947ec",
+      "retail_size": 456508,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "5504ec50f540dca73046e55f798eff6391585015cfe40b76489a229341661d93",
+      "output_sha256": "3b2c029cae4fb5299dfe3a0afbe662418dd1e99b5675999206dc6024ac4a2753"
+    },
+    {
+      "unit": "title",
+      "retail_sha1": "bab9b6b1d1ef72c07f2f31c6228715b9d69d5e55",
+      "retail_size": 90752,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "2ce069b329ed8ac63667c979ede706b946ae381ea35dafad8b47aa3be11c57ea",
+      "output_sha256": "41d16051fcdf77cf620a3e730b820287fd3959dc2a621a50e17a892544491f0c"
+    },
+    {
+      "unit": "movie",
+      "retail_sha1": "93fba61cdd820b4b889e747360b8888dd47b12f5",
+      "retail_size": 10564,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "593abb4641b7ce38eada8ad37789ac4fd6a6acbc8627edc69766d4ab652457a5",
+      "output_sha256": "0f5dc7173d556e5921cce6a7579b3ff14e55d75c1ba88d312188335bfeefbb61"
+    },
+    {
+      "unit": "st00",
+      "retail_sha1": "07a7a0ff8cc3b4171f0357cc871426dd96dd5fd3",
+      "retail_size": 27388,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "30f6052178f61ccfeb1b62a80b8659d33c3917dd49f77740abf1c3e51b203322",
+      "output_sha256": "f5ccffa994161ba5907e43a76211971a81cf0e8962cc8f36b90e14b74ceb1f57"
+    },
+    {
+      "unit": "st01",
+      "retail_sha1": "33720c2cf84d69971f99554d22c271854979bb16",
+      "retail_size": 27064,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "d04a8f07fa90876fc1ea46a2ac40cb876e0fad14b8aa262cdbd52508c4259b0c",
+      "output_sha256": "50c7cf46eec8582fc0df36236387c85791f8595b8fe261b593967548d4cdec3e"
+    },
+    {
+      "unit": "st02",
+      "retail_sha1": "97f5717a4de3ee386423052956d4205f42a55664",
+      "retail_size": 19660,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "a668315ac77c789bad0514dc6c879a2e1bb0f13a3feffd0db2a9cb41b4f4b960",
+      "output_sha256": "f4bc766fb2fb618621ce3986d4511af3ed66c8fe17d4d477d573afff6f0df20b"
+    },
+    {
+      "unit": "st03",
+      "retail_sha1": "d0506eca9e452a281842a6959220e6fef1455cd3",
+      "retail_size": 22100,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "2feb39febeea1003be96a35079edf1d91d162c8efa0ff6eb9d38426e914f7c2c",
+      "output_sha256": "fc445f58f41fc83ee0ef0ec04a0d636a00c3a31c2c2835dd6cd54dd0fb96ae2c"
+    },
+    {
+      "unit": "st04",
+      "retail_sha1": "437e5a5953fe84ad34127644927c75c946654bbc",
+      "retail_size": 21152,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "6c7919b3ad0b6930cd1528065bb65a8ad2ae8f99d583371f2a66214060a1e729",
+      "output_sha256": "04d5ccbcf811598d88d200632c5a7352b08559c6cd94f86c6d8b09cbee02eb46"
+    },
+    {
+      "unit": "st05",
+      "retail_sha1": "e36a7afd2852f603a9c03450c760616218e8a3ee",
+      "retail_size": 13348,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "c588a3b41911695276a3255870ac774d316214a56d092ff6ca4a2535946e6e28",
+      "output_sha256": "f55e4029bbd9b91439a31ca0a43e9e2b53b3844eda799e73bbc6501bad27d7c0"
+    },
+    {
+      "unit": "st06",
+      "retail_sha1": "bf87b950879a63d3da33e61cdefe4118c7abe0f2",
+      "retail_size": 9036,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "6f6bf7019208fe3392745bf31614ac554afe5f88705ea371562cdf74ece3a75a",
+      "output_sha256": "bc26632f3166d2f4ce0ed9aed9d9210e22f7c53a70d284274be7ac370f13b89e"
+    },
+    {
+      "unit": "st07",
+      "retail_sha1": "d5a325ca58a1d909bec22170b57273261fc31e13",
+      "retail_size": 9860,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "3479c76dd882e212417158046cf1d928740a5e36d0683e60d2b245db8b4ceec8",
+      "output_sha256": "381982dd6ce936043ff4ab288762b45ed7349ba39aac02904a9c9cb77975dc20"
+    },
+    {
+      "unit": "st08",
+      "retail_sha1": "c385b48426a4e97a4418f9339cd2d0acc562157c",
+      "retail_size": 4080,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "5d3a826091e0ac6e2ffbc6ecb432045ba18dbd67e9d0c558dad61bdee44efdfc",
+      "output_sha256": "5e4e643d42814524dbb6842e3f0591f43a32f9a216bd10aad48d620cda25bebf"
+    },
+    {
+      "unit": "st09",
+      "retail_sha1": "277ce1ecc2974053249f89337a76271da4c59b92",
+      "retail_size": 12228,
+      "byte_identical": true,
+      "allocated_bytes_layout_equal_original": true,
+      "game_and_sdk_public_metadata_equal_original": true,
+      "only_public_name_changes": [],
+      "input_fingerprint": "e06384b5cf459f923e5f26dddb223479570286b3254028aaab928bedbe5e0984",
+      "output_sha256": "323b055e42a57b071faac5180f7f4dafc8c94d1786f32a77de10a57af4198272"
+    }
+  ],
+  "limits": "Three objcopy-generated Ram_Reserved symbols embed the local absolute path, so their names change while address/type/size remain equal. All other defined public entries are identical. Original-object compiler provenance and modified/runtime correctness remain unproved; ignored local inputs are needed, clean-disc split regeneration is not yet packaged"
+}

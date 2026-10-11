@@ -1,0 +1,20 @@
+# st08: symbols in the linked image: name, vram address, kind (func = decompilable, data = opaque blob)
+func_800D3BEC 800D3BEC func
+func_800D3C2C 800D3C2C func
+func_800D3D88 800D3D88 func
+func_800D3E04 800D3E04 func
+func_800D3E2C 800D3E2C func
+func_800D3EB8 800D3EB8 func
+func_800D3EEC 800D3EEC func
+func_800D3EFC 800D3EFC func
+func_800D4080 800D4080 func
+func_800D40D8 800D40D8 func
+func_800D4294 800D4294 func
+func_800D42F8 800D42F8 func
+func_800D439C 800D439C func
+func_800D43BC 800D43BC func
+func_800D4670 800D4670 func
+func_800D4870 800D4870 func
+func_800D4A84 800D4A84 func
+func_800D4AAC 800D4AAC func
+func_800D4AD0 800D4AD0 func

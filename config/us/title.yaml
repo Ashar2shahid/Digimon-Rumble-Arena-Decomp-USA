@@ -1,0 +1,76 @@
+name: Title Overlay (A.VFS:bin/title.bin)
+sha1: bab9b6b1d1ef72c07f2f31c6228715b9d69d5e55
+options:
+  basename: title
+  target_path: assets/us/bin/title.bin
+  base_path: ../..
+  platform: psx
+  compiler: PSYQ
+
+  asm_path: asm/us/title
+  src_path: src/title
+  build_path: build/us
+  ld_script_path: config/us/linkers/title.ld
+  elf_path: build/us/title.elf
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  migrate_rodata_to_functions: True
+  pair_rodata_to_text: False
+
+  o_as_suffix: False
+  use_legacy_include_asm: False
+
+  asm_function_macro: glabel
+  asm_jtbl_label_macro: jlabel
+  asm_data_macro: dlabel
+  generate_asm_macros_files: False
+
+  dump_symbols: True
+  dump_symbols_references: True
+
+  section_order: [".rodata", ".text", ".data", ".bss"]
+
+  symbol_addrs_path:
+    - config/us/sym.title.txt
+  reloc_addrs_path:
+    - config/us/rel.title.txt
+
+  undefined_funcs_auto_path: config/us/linkers/undefined_funcs_auto.title.txt
+  undefined_syms_auto_path: config/us/linkers/undefined_syms_auto.title.txt
+
+  subalign: 4
+
+  string_encoding: ASCII
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+
+  ld_bss_is_noload: False
+segments:
+  - name: title
+    type: code
+    start: 0x0
+    vram: 0x800643c0
+    align: 4
+    subalign: 4
+    subsegments:
+      # id number, name "Boot Logo", pointer tables and rodata
+      - [0x0, rodata, 0]
+      # code and data from 0x2570 to 0x65A4
+      - [0x2570, c, 2570]
+      # 0x3FC4..0x40C4 is func_80068384, which is shipped-ONLY (it regresses
+      # under psyq 4.6, which its neighbours need).
+      - [0x3FC4, c, 3FC4]
+      # 0x40C4..0x65A4 back to psyq 4.6.
+      - [0x40C4, c, 40C4]
+      # code and data from 0x65A4 to 0xA660
+      - [0x65A4, c, 65A4]
+      # code and data from 0xA660 to 0xE6AC
+      - [0xA660, c, A660]
+      # code and data from 0xE6AC to 0x12AF0
+      - [0xE6AC, c, E6AC]
+      # code and data from 0x12AF0 to 0x16280
+      - [0x12AF0, c, 12AF0]
+
+  - [0x16280]

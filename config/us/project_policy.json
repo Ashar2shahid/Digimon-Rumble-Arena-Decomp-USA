@@ -1,0 +1,30 @@
+{
+  "target": "Digimon Rumble Arena USA SLUS_014.04",
+  "completion_scope": "all game code units, source and data layouts, cross-overlay interfaces; PsyQ retained as symbolized assembly",
+  "sdk": {
+    "main_text_start": "0x8003DEEC",
+    "main_text_end": "0x8005EE1C",
+    "startup": "func_8003DD50",
+    "source_policy": "do not reconstruct or modify PsyQ source; preserve assembly and symbolize code/data references",
+    "denominator_exclusions": "psyq_funcs.txt"
+  },
+  "source_acceptance": {
+    "gate": "fresh complete binary equality and manifest symbol placement",
+    "no_new_instruction_rewrites": true,
+    "ordinary_and_assisted_source_separate": true
+  },
+  "agent_policy": {
+    "straightforward_decompilation": {
+      "model": "gpt-6-luna",
+      "effort": "max"
+    },
+    "complex_decompilation_and_build_work": {
+      "model": "gpt-6-sol",
+      "effort": "medium"
+    },
+    "audits": {
+      "model": "gpt-6-sol",
+      "effort": "medium"
+    }
+  }
+}

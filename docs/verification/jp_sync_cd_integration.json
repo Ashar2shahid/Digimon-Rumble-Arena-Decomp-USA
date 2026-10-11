@@ -1,0 +1,46 @@
+{
+  "baseline_natural": 2171,
+  "current_natural": 2178,
+  "denominator_before": 3698,
+  "denominator": 3699,
+  "percent": 58.8808,
+  "recovered_bodies": 7,
+  "inventory_net_change": 1,
+  "constraint_removals": 0,
+  "full14_gates": 10,
+  "checkpoint": "analysis/checkpoints/20261010T154401Z",
+  "recorded_inputs": 3500,
+  "tooling_tests_passed": 88,
+  "gates": [
+    "analysis/us/wave9_gate_tail_splitter_fix.json",
+    "analysis/us/wave9_gate_jp_thread_destructor.json",
+    "analysis/us/wave9_gate_jp_inflate_sync_boundary.json",
+    "analysis/us/wave9_gate_jp_zlib_sync_fixed.json",
+    "analysis/us/wave9_gate_jp_cd_tail.json",
+    "analysis/us/wave9_gate_jp_zlib_error.json",
+    "analysis/us/wave9_gate_jp_cd_tail_ready.json",
+    "analysis/us/wave9_gate_jp_sync_boundary_eof.json",
+    "analysis/us/wave9_gate_jp_zlib_alloc_api.json",
+    "analysis/us/wave9_gate_jp_cd_whole_ready.json"
+  ],
+  "recovered": [
+    "thread destructor1EFB0(112B)",
+    "inflateSync3AFF8(388B)",
+    "fixed trees3DB04(52B)",
+    "CD tailfinish34C94(60B)",
+    "zError3DCE8(36B)",
+    "CD tailready34BE0(180B)",
+    "CD whole ready34B38(168B)"
+  ],
+  "cumulative_jp_recovered": 108,
+  "cumulative_retained_asm_correction": 1,
+  "cumulative_constraint_removals": 5,
+  "cumulative_full14_gates": 75,
+  "original_object_certification": false,
+  "runtime_certification": false,
+  "held": [
+    "AA78 private1408B match: actual wrapped-domain and56Bjump table/publicmetadata gate still pending; rawnowrap unconditionalcheckread uninitialized",
+    "CD finish34DD4 realpointerreturn memcpy scheduling negatives",
+    "original-object profile provenance and remaining source/ABI/rawdata/modified-runtime audits"
+  ]
+}

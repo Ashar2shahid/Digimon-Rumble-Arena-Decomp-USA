@@ -1,0 +1,480 @@
+name: Main Executable (SLUS_014.04)
+sha1: 179a3f7ae84762f9f60dc1ba97994eb7e673582e
+options:
+  basename: main
+  target_path: disks/us/SLUS_014.04
+  base_path: ../..
+  platform: psx
+  compiler: PSYQ
+
+  asm_path: asm/us/main
+  src_path: src/engine
+  build_path: build/us
+  ld_script_path: config/us/linkers/main.ld
+  elf_path: build/us/main.elf
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  migrate_rodata_to_functions: True
+  pair_rodata_to_text: False
+
+  o_as_suffix: False
+  use_legacy_include_asm: False
+
+  asm_function_macro: glabel
+  asm_jtbl_label_macro: jlabel
+  asm_data_macro: dlabel
+  generate_asm_macros_files: False
+
+  dump_symbols: True
+  dump_symbols_references: True
+
+  section_order: [".rodata", ".text", ".data", ".bss"]
+
+  symbol_addrs_path:
+    - config/us/sym.main.txt
+  reloc_addrs_path:
+    - config/us/rel.main.txt
+
+  undefined_funcs_auto_path: config/us/linkers/undefined_funcs_auto.main.txt
+  undefined_syms_auto_path: config/us/linkers/undefined_syms_auto.main.txt
+
+  subalign: 4
+
+  string_encoding: ASCII
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+
+  ld_bss_is_noload: False
+
+  # Custom segment types (see tools/segtypes/): `padseg` models a padded
+  # function tail as a split-owned entry emitted into the .s file of the
+  # function that follows the pad.
+  extensions_path: tools/segtypes
+
+segments:
+  - name: header
+    type: header
+    start: 0x0
+
+  - name: main
+    type: code
+    start: 0x800
+    vram: 0x80010000
+    align: 4
+    subalign: 4
+    subsegments:
+      # .rodata: strings, pointer tables, PsyQ rcsids, and the leading
+      # partial content slot.
+      - [0x800, rodata, 800]
+      # .text: the committed slot grid re-anchored to the logical
+      # 2048-byte image (one unit per sector's user area).
+      # 0xB618..0xB800
+      - [0xB618, c, B618]
+      # 0xB800..0xC000
+      - [0xB800, c, B800]
+      # 0xC000..0xC800
+      - [0xC000, c, C000]
+      # 0xC800..0xD000
+      - [0xC800, c, C800]
+      # 0xD000..0xD800
+      - [0xD000, c, D000]
+      # 0xD800..0xE000
+      - [0xD824, c, D800]
+      # 0xE000..0xE800
+      - [0xE000, c, E000]
+      # 0xE800..0xF000
+      - [0xE800, c, E800]
+      # 0xF000..0xF800
+      - [0xF000, c, F000]
+      # 0xF800..0x10004; includes the final return delay slot
+      - [0xF800, c, F800]
+      # 0x10004..0x10800; actual function entry
+      - [0x10004, c, 10004]
+      # 0x10800..0x11000
+      - [0x10800, c, 10800]
+      # 0x11000..0x11800
+      - [0x11000, c, 11000]
+      # 0x11800..0x12000
+      - [0x11800, c, 11800]
+      # 0x12000..0x12800
+      - [0x12000, c, 12000]
+      # 0x12800..0x13000
+      - [0x12800, c, 12800]
+      # 0x13000..0x13800
+      - [0x13000, c, 13000]
+      # 0x13800..0x14000
+      - [0x13800, c, 13800]
+      # 0x14000..0x14800
+      - [0x14000, c, 14000]
+      # 0x14800..0x15000
+      - [0x14800, c, 14800]
+      # 0x15000..0x15800
+      - [0x15000, c, 15000]
+      # 0x15800..0x16000
+      - [0x15800, c, 15800]
+      # 0x16000..0x16800
+      - [0x16000, c, 16000]
+      # 0x16800..0x17000
+      - [0x16800, c, 16800]
+      # 0x17000..0x17804
+      - [0x17000, c, 17000]
+      # 0x17804..0x18058
+      - [0x17804, c, 17804]
+      # 0x18058..0x18804
+      - [0x18058, c, 18058]
+      # 0x18804..0x18E84
+      - [0x18804, c, 18804]
+      # Keep the later global-pointer helpers in their proven -G0 range.
+      - [0x18E84, c, 18E84]
+      # Complete 2879C delay slot precedes real28804: 0x19004..0x1981C
+      - [0x19004, c, 19000]
+      # Complete28F98 epilogue precedes2901C: 0x1981C..0x1A000
+      - [0x1981C, c, 19800]
+      # Complete29FCC includes epilogue: 0x1A000..0x1A810
+      - [0x1A000, c, 1A000]
+      # Complete2A010 through2A7B8: 0x1A810..0x1B010
+      - [0x1A810, c, 1A800]
+      # Next complete2A810: 0x1B010..0x1B800
+      - [0x1B010, c, 1B000]
+      # 0x1B800..0x1C000
+      - [0x1B800, c, 1B800]
+      # 0x1C000..0x1C800
+      - [0x1C000, c, 1C000]
+      # 0x1C800..0x1D000
+      - [0x1C800, c, 1C800]
+      # Reviewed CFB0 tail: 0x1D000..0x1D8A0
+      - [0x1D000, c, 1D000]
+      # Reviewed D6FC tail: 0x1D8A0..0x1E030
+      - [0x1D8A0, c, 1D800]
+      # Complete real D830..DDEC entries: 0x1E030..0x1E824
+      - [0x1E030, c, 1E000]
+      # Starts at real E024: 0x1E824..0x1F060; complete E700 frame
+      - [0x1E824, c, 1E800]
+      # 0x1F060..0x1F838; complete EFDC frame
+      - [0x1F060, c, 1F000]
+      # 0x1F838..0x20000
+      - [0x1F838, c, 1F800]
+      # 0x20000..0x20800
+      - [0x200A4, c, 20000]
+      # 0x20800..0x21000
+      - [0x208B0, c, 20800]
+      # complete frame through 0x21854
+      - [0x2104C, c, 21000]
+      # 0x21854..0x22000
+      - [0x21854, c, 21800]
+      # 0x22000..0x22800
+      - [0x2234C, c, 22000]
+      # 0x22838..0x23070; complete327B0 frame
+      - [0x22838, c, 22800]
+      # 0x23070..0x23800
+      - [0x23070, c, 23000]
+      # 0x23800..0x24000
+      - [0x238C8, c, 23800]
+      # 0x24000..0x24800
+      - [0x24000, c, 24000]
+      # 0x24800..0x25000
+      - [0x24810, c, 24800]
+      # 0x25000..0x25800
+      - [0x25080, c, 25000]
+      # 0x25800..0x26000
+      - [0x25800, c, 25800]
+      # 0x26078..0x26864; complete35F94 text conversion
+      - [0x26078, c, 26000]
+      # 0x26864..0x270EC; complete text-helper frames
+      - [0x26864, c, 26800]
+      # 0x27000..0x27810
+      - [0x270EC, c, 27000]
+      # 0x27810..0x28000
+      - [0x27810, c, 27810]
+      # 0x28000..0x28800
+      - [0x28000, c, 28000]
+      # 0x28800..0x29000
+      - [0x28800, c, 28800]
+      # 0x29000..0x29800
+      - [0x29048, c, 29000]
+      # 0x29800..0x2A074
+      - [0x29800, c, 29800]
+      # 0x2A074..0x2A814
+      - [0x2A074, c, 2A074]
+      # 0x2A814..0x2B034
+      - [0x2A814, c, 2A814]
+      # 0x2B034..0x2B800
+      - [0x2B034, c, 2B034]
+      # 0x2B800..0x2C000
+      - [0x2B800, c, 2B800]
+      # 0x2C000..0x2C800
+      # Empty former sector slot2C000 retained only as a linker-compatible object.
+      # 0x2C800..0x2D000
+      - [0x2CAB8, c, 2C800]
+      # 0x2D000..0x2D800
+      - [0x2D504, c, 2D000]
+      # 0x2D800..0x2E000
+      - [0x2DA18, c, 2D800]
+      # 0x2E000..0x2E758
+      - [0x2E1F4, c, 2E000]
+      - {start: 0x2E758, type: pad, name: func_8003DF5C}
+      - {start: 0x2E75C, type: c, name: 2E000, linker_section: .text.tail_func_8003DF5C}
+      - {start: 0x2E790, type: pad, name: pad_8003DF90}
+      # 0x2E79C..0x2E808 (memmove sub-unit)
+      - [0x2E79C, c, 2E79C]
+      - [0x2E800, c, 2E79C]
+      - {start: 0x2E80C, type: c, name: 2E79C, linker_entry: False}
+      - {start: 0x2E83C, type: c, name: 2E79C, linker_entry: False}
+      - {start: 0x2E9A0, type: padseg, name: func_8003E1AC, dir: nonmatchings/2E79C, linker_entry: False}
+      - {start: 0x2E9EC, type: c, name: 2E79C, linker_entry: False}
+      # 0x2F000..0x2F800
+      - [0x2F000, c, 2F000]
+      # 0x2F800..0x30000
+      - [0x2F800, c, 2F800]
+      # 0x30000..0x30800
+      - [0x30000, c, 30000]
+      # 0x30800..0x31000
+      - [0x307BC, c, 307BC]
+      - [0x30800, c, 30800]
+      - {start: 0x30A80, type: padseg, name: func_8004028C, dir: nonmatchings/30800, linker_entry: False}
+      - {start: 0x30B4C, type: c, name: 30800, linker_entry: False}
+      # 0x31000..0x312CC
+      - [0x31000, c, 30800]
+      # 0x312CC..0x31800
+      - [0x312CC, c, 312CC]
+      - {start: 0x313A8, type: padseg, name: func_80040BAC, dir: nonmatchings/312CC, linker_entry: False}
+      # 0x31800..0x32000
+      - [0x31800, c, 31800]
+      # 0x32000..0x32800
+      - [0x32000, c, 32000]
+      # 0x32800..0x32948
+      - [0x32680, c, 32680]
+      - [0x32800, c, 32800]
+      # 0x32948..0x33000
+      - [0x32948, c, 32948]
+      # 0x33000..0x3354C (2.7.2 cc1)
+      - [0x32FEC, c, 32FEC]
+      - [0x33000, c, 32FEC]
+      # 0x3354C..0x3356C (shipped cc1): func_80042D4C only
+      - [0x3354C, c, 3354C]
+      - {start: 0x33560, type: pad, name: pad_80042D60}
+      # 0x3356C..0x33800 (2.7.2 cc1)
+      - [0x3356C, c, 3356C]
+      - {start: 0x33590, type: padseg, name: func_80042D9C, dir: nonmatchings/3356C, linker_entry: False}
+      - {start: 0x335CC, type: c, name: 3356C, linker_entry: False}
+      # 0x33800..0x34000
+      - [0x336B8, c, 336B8]
+      - [0x33800, c, 336B8]
+      # 0x34000..0x34800
+      - [0x33F00, c, 33F00]
+      - [0x34000, c, 34000]
+      # 0x34800..0x34BF8
+      - [0x347CC, c, 347CC]
+      - [0x34800, c, 347CC]
+      # 0x34BF8..0x34C10
+      - [0x34BF8, c, 34BF8]
+      # 0x34C10..0x35000
+      - [0x34C10, c, 34C10]
+      # 0x35000..0x35800
+      - [0x35000, c, 35000]
+      # 0x35800..0x35FDC
+      - [0x35800, c, 35800]
+      # 0x35FDC..0x36000
+      - [0x35FDC, c, 35FDC]
+      - {start: 0x35FF8, type: pad, name: pad_800457F8}
+      # 0x35FFC..0x36800 (DsRead2 sub-unit)
+      - [0x35FFC, c, 35FFC]
+      - [0x36000, c, 35FFC]
+      # 0x36800..0x36B44
+      - [0x360FC, c, 360FC]
+      - [0x36800, c, 360FC]
+      # 0x36B44..0x37000
+      - [0x36B44, c, 36B44]
+      # 0x37000..0x37050
+      - [0x37000, c, 37000]
+      - {start: 0x37050, type: pad, name: func_8004685C}
+      - {start: 0x3705C, type: c, name: 37000, linker_section: .text.tail_func_8004685C}
+      - {start: 0x370B4, type: padseg, name: func_800468BC, dir: nonmatchings/37000, linker_entry: False, linker_section: .text.tail_func_8004685C}
+      - {start: 0x3710C, type: c, name: 37000, linker_entry: False, linker_section: .text.tail_func_8004685C}
+      - {start: 0x375B0, type: pad, name: func_80046DBC}
+      - {start: 0x375BC, type: c, name: 37000, linker_section: .text.tail_func_80046DBC}
+      - {start: 0x375D0, type: pad, name: func_80046DDC}
+      - {start: 0x375DC, type: c, name: 37000, linker_section: .text.tail_func_80046DDC}
+      - {start: 0x37600, type: padseg, name: func_80046E0C, dir: nonmatchings/37000, linker_entry: False, linker_section: .text.tail_func_80046DDC}
+      - {start: 0x3766C, type: c, name: 37000, linker_entry: False, linker_section: .text.tail_func_80046DDC}
+      # 0x37800..0x38000
+      - [0x37800, c, 37800]
+      # 0x38000..0x38800
+      - [0x38000, c, 37800]
+      # 0x38800..0x39000
+      - [0x387A0, c, 387A0]
+      - [0x38800, c, 387A0]
+      # 0x38EFC..0x39800 (_spu_pitch2note sub-unit)
+      - [0x38EFC, c, 38EFC]
+      - [0x39000, c, 38EFC]
+      - {start: 0x39048, type: padseg, name: func_8004884C, dir: nonmatchings/38EFC, linker_entry: False}
+      - {start: 0x393CC, type: c, name: 38EFC, linker_entry: False}
+      # 0x39800..0x39980
+      - [0x39800, c, 39800]
+      - {start: 0x39980, type: padseg, name: func_8004918C, dir: nonmatchings/39800, linker_entry: False}
+      - {start: 0x39A2C, type: c, name: 39800, linker_entry: False}
+      # 0x3A000..0x3A800
+      - [0x39FFC, c, 39FFC]
+      - [0x3A000, c, 3A000]
+      # 0x3A800..0x3B000
+      - [0x3A800, c, 3A000]
+      # 0x3B000..0x3B800
+      - [0x3B000, c, 3A000]
+      # 0x3B800..0x3C000
+      - [0x3B7FC, c, 3B7FC]
+      - [0x3B800, c, 3B7FC]
+      # 0x3C000..0x3C218
+      - [0x3BDFC, c, 3BDFC]
+      - [0x3C000, c, 3C000]
+      - {start: 0x3C218, type: padseg, name: func_8004BA1C, dir: nonmatchings/3C000, linker_entry: False}
+      - {start: 0x3C33C, type: c, name: 3C000, linker_entry: False}
+      # 0x3C800..0x3CE18
+      - [0x3C800, c, 3C800]
+      - {start: 0x3CE18, type: padseg, name: func_8004C61C, dir: nonmatchings/3C800, linker_entry: False}
+      - {start: 0x3CF18, type: c, name: 3C800, linker_entry: False}
+      # 0x3D000..0x3D800
+      - [0x3D000, c, 3D000]
+      # 0x3D800..0x3D840
+      - [0x3D800, c, 3D800]
+      - {start: 0x3D840, type: padseg, name: func_8004D04C, dir: nonmatchings/3D800, linker_entry: False}
+      - {start: 0x3D95C, type: c, name: 3D800, linker_entry: False}
+      # 0x3E000..0x3E800
+      - [0x3DEAC, c, 3DEAC]
+      - [0x3E000, c, 3DEAC]
+      # 0x3E800..0x3F000
+      - [0x3E800, c, 3DEAC]
+      # 0x3F000..0x3F800
+      - [0x3ECEC, c, 3ECEC]
+      - [0x3F000, c, 3F000]
+      # 0x3F800..0x40000
+      - [0x3F7CC, c, 3F7CC]
+      - [0x3F800, c, 3F7CC]
+      # 0x40000..0x404F0
+      - [0x3FFFC, c, 3FFFC]
+      - [0x40000, c, 40000]
+      - {start: 0x404F0, type: padseg, name: func_8004FCFC, dir: nonmatchings/40000, linker_entry: False}
+      - {start: 0x407BC, type: c, name: 40000, linker_entry: False}
+      - {start: 0x407E0, type: padseg, name: func_8004FFEC, dir: nonmatchings/40000, linker_entry: False}
+      # 0x40800..0x40840
+      - [0x40800, c, 40800]
+      - {start: 0x40840, type: pad, name: func_8005004C}
+      - {start: 0x4084C, type: c, name: 40800, linker_section: .text.tail_func_8005004C}
+      - {start: 0x40870, type: padseg, name: func_8005007C, dir: nonmatchings/40800, linker_entry: False, linker_section: .text.tail_func_8005004C}
+      - {start: 0x4091C, type: c, name: 40800, linker_entry: False, linker_section: .text.tail_func_8005004C}
+      # 0x41000..0x41800
+      - [0x40C6C, c, 40C6C]
+      - [0x41000, c, 41000]
+      # 0x41800..0x42000
+      - [0x415EC, c, 415EC]
+      - [0x41800, c, 415EC]
+      # 0x42000..0x42800
+      - [0x42000, c, 42000]
+      # 0x42800..0x43000
+      - [0x42800, c, 42800]
+      # 0x43000..0x43800
+      - [0x42C0C, c, 42C0C]
+      - [0x43000, c, 42C0C]
+      # 0x43800..0x44000
+      - [0x4378C, c, 4378C]
+      - [0x43800, c, 4378C]
+      - {start: 0x43FD8, type: pad, name: pad_800537D8}
+      # 0x43FDC..0x44308 (SpuSetTransferStartAddr sub-unit)
+      - [0x43FDC, c, 43FDC]
+      - [0x44000, c, 43FDC]
+      - {start: 0x44094, type: padseg, name: func_80053894, dir: nonmatchings/43FDC, linker_entry: False}
+      - {start: 0x4409C, type: c, name: 43FDC, linker_entry: False}
+      - {start: 0x44140, type: padseg, name: func_80053940, dir: nonmatchings/43FDC, linker_entry: False}
+      - {start: 0x4414C, type: c, name: 43FDC, linker_entry: False}
+      # 0x44164..0x44308
+      - [0x44164, c, 44164]
+      # 0x44308..0x44674
+      - [0x44308, c, 44308]
+      - {start: 0x44674, type: pad, name: func_80053E7C}
+      - {start: 0x4467C, type: c, name: 44308, linker_section: .text.tail_func_80053E7C}
+      - {start: 0x44688, type: padseg, name: func_80053E8C, dir: nonmatchings/44308, linker_entry: False, linker_section: .text.tail_func_80053E7C}
+      - {start: 0x446BC, type: c, name: 44308, linker_entry: False, linker_section: .text.tail_func_80053E7C}
+      # 0x44800..0x4495C
+      - [0x44800, c, 44308]
+      # 0x4495C..0x45000
+      - [0x4495C, c, 4495C]
+      # 0x45000..0x4510C
+      - [0x45000, c, 4495C]
+      # 0x4510C..0x45800
+      - [0x4510C, c, 4510C]
+      # 0x45800..0x4590C
+      - [0x45800, c, 4510C]
+      # 0x4590C..0x45F60
+      - [0x4590C, c, 4590C]
+      # 0x45F60..0x46000
+      - [0x45F60, c, 45F60]
+      # 0x46000..0x46800
+      - [0x45FC0, c, 45FC0]
+      - [0x46000, c, 45FC0]
+      # 0x46800..0x47000
+      - [0x46800, c, 45FC0]
+      # 0x47000..0x47800
+      - [0x46EA4, c, 46EA4]
+      - [0x47000, c, 47000]
+      # 0x47800..0x48000
+      - [0x47800, c, 47800]
+      # 0x48000..0x48800
+      - [0x48000, c, 48000]
+      # 0x48800..0x48860
+      - [0x48800, c, 48000]
+      # 0x48860..0x48C28
+      - [0x48860, c, 48860]
+      - {start: 0x48C28, type: pad, name: func_8005842C}
+      - {start: 0x48C2C, type: c, name: 48860, linker_section: .text.tail_func_8005842C}
+      - {start: 0x48C44, type: pad, name: func_8005844C}
+      - {start: 0x48C4C, type: c, name: 48860, linker_section: .text.tail_func_8005844C}
+      - {start: 0x48C88, type: padseg, name: func_8005848C, dir: nonmatchings/48860, linker_entry: False, linker_section: .text.tail_func_8005844C}
+      - {start: 0x48CBC, type: c, name: 48860, linker_entry: False, linker_section: .text.tail_func_8005844C}
+      - {start: 0x48D88, type: pad, name: func_8005858C}
+      - {start: 0x48D8C, type: c, name: 48860, linker_section: .text.tail_func_8005858C}
+      # 0x49000..0x49800
+      - [0x48FD8, c, 48FD8]
+      - [0x49000, c, 48FD8]
+      # 0x49800..0x4A000
+      - [0x4971C, c, 4971C]
+      - [0x49800, c, 4971C]
+      # 0x4A000..0x4A800
+      - [0x49FD4, c, 49FD4]
+      - [0x4A000, c, 49FD4]
+      # 0x4A800..0x4AC54
+      - [0x4A67C, c, 4A67C]
+      - [0x4A800, c, 4A67C]
+      - {start: 0x4AC54, type: pad, name: func_8005A45C}
+      - {start: 0x4AC5C, type: c, name: 4A67C, linker_section: .text.tail_func_8005A45C}
+      # 0x4B000..0x4B800
+      - [0x4AFDC, c, 4AFDC]
+      - [0x4B000, c, 4AFDC]
+      # 0x4B800..0x4C000
+      - [0x4B6EC, c, 4B6EC]
+      - [0x4B800, c, 4B800]
+      # 0x4C000..0x4C800
+      - [0x4BF5C, c, 4BF5C]
+      - [0x4C000, c, 4BF5C]
+      # 0x4C800..0x4D000
+      - [0x4C800, c, 4C800]
+      # 0x4D000..0x4D800
+      - [0x4CFF4, c, 4CFF4]
+      - [0x4D000, c, 4CFF4]
+      # 0x4D800..0x4E000
+      - [0x4D7CC, c, 4D7CC]
+      - [0x4D800, c, 4D800]
+      # 0x4E000..0x4E800
+      - [0x4DE3C, c, 4DE3C]
+      - [0x4E000, c, 4DE3C]
+      # 0x4E800..0x4F000
+      - [0x4E478, c, 4E478]
+      - [0x4E800, c, 4E478]
+      # 0x4F000..0x4F61C
+      - [0x4EFA8, c, 4EFA8]
+      - [0x4F000, c, 4EFA8]
+      - [0x4F61C, data, 4F61C]
+      # Reserved RAM: content is all zeros from here on.
+      - {start: 0x54BBC, type: bin, name: Ram_Reserved, linker_section_order: .bss}
+
+  - [0x10D000]

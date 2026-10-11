@@ -1,0 +1,62 @@
+name: St03 Overlay (A.VFS:bin/st03.bin)
+sha1: d0506eca9e452a281842a6959220e6fef1455cd3
+options:
+  basename: st03
+  target_path: assets/us/bin/st03.bin
+  base_path: ../..
+  platform: psx
+  compiler: PSYQ
+
+  asm_path: asm/us/st03
+  src_path: src/battle/stages/st03
+  build_path: build/us
+  ld_script_path: config/us/linkers/st03.ld
+  elf_path: build/us/st03.elf
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  migrate_rodata_to_functions: True
+  pair_rodata_to_text: False
+
+  o_as_suffix: False
+  use_legacy_include_asm: False
+
+  asm_function_macro: glabel
+  asm_jtbl_label_macro: jlabel
+  asm_data_macro: dlabel
+  generate_asm_macros_files: False
+
+  dump_symbols: True
+  dump_symbols_references: True
+
+  section_order: [".rodata", ".text", ".data", ".bss"]
+
+  symbol_addrs_path:
+    - config/us/sym.st03.txt
+  reloc_addrs_path:
+    - config/us/rel.st03.txt
+
+  undefined_funcs_auto_path: config/us/linkers/undefined_funcs_auto.st03.txt
+  undefined_syms_auto_path: config/us/linkers/undefined_syms_auto.st03.txt
+
+  subalign: 4
+
+  string_encoding: ASCII
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+
+  ld_bss_is_noload: False
+segments:
+  - name: st03
+    type: code
+    start: 0x0
+    vram: 0x800d3b00
+    align: 4
+    subalign: 4
+    subsegments:
+      # id number, pointer tables and rodata
+      - [0x0, rodata, 0]
+      # code and data from the first function prologue
+      - [0x5F8, c, 5F8]
+  - [0x5654]

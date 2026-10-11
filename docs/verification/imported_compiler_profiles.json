@@ -1,0 +1,7647 @@
+{
+  "schema_version": 1,
+  "scope": "non-SDK manifest func rows mapped to current source slots",
+  "provenance_rule": "byte matches do not establish original object/compiler settings",
+  "original_tu_boundary": "unreviewed by default; source slots may be sector-derived",
+  "byte_verification_rule": "references are explicit annotations only; this command does not build or verify",
+  "source_slots": [
+    {
+      "unit": "main",
+      "source_slot": "src/engine/10004.c",
+      "profile_key": "main/10004.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 16,
+      "unconstrained_count": 13,
+      "categories": {
+        "ordinary_c": 10,
+        "cxx_alias": 3,
+        "assembly": 3
+      },
+      "min_manifest_address": "0x8001f804",
+      "max_manifest_address": "0x8001fef8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/10800.c",
+      "profile_key": "main/10800.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 16,
+      "unconstrained_count": 9,
+      "categories": {
+        "assembly": 7,
+        "ordinary_c": 9
+      },
+      "min_manifest_address": "0x80020108",
+      "max_manifest_address": "0x800207c0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/11000.c",
+      "profile_key": "main/11000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 25,
+      "unconstrained_count": 18,
+      "categories": {
+        "ordinary_c": 15,
+        "cxx_alias": 3,
+        "assembly": 7
+      },
+      "min_manifest_address": "0x80020808",
+      "max_manifest_address": "0x80020f7c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/11800.c",
+      "profile_key": "main/11800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 8,
+      "unconstrained_count": 4,
+      "categories": {
+        "ordinary_c": 4,
+        "assembly": 4
+      },
+      "min_manifest_address": "0x80021074",
+      "max_manifest_address": "0x80021694",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/12000.c",
+      "profile_key": "main/12000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 12,
+      "unconstrained_count": 8,
+      "categories": {
+        "assembly": 4,
+        "ordinary_c": 8
+      },
+      "min_manifest_address": "0x8002184c",
+      "max_manifest_address": "0x80021e38",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_camera.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/12800.c",
+      "profile_key": "main/12800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 19,
+      "unconstrained_count": 17,
+      "categories": {
+        "ordinary_c": 17,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x80022008",
+      "max_manifest_address": "0x80022778",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/13000.c",
+      "profile_key": "main/13000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 11,
+      "categories": {
+        "ordinary_c": 11
+      },
+      "min_manifest_address": "0x80022840",
+      "max_manifest_address": "0x80022f90",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_tmd13000.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/13800.c",
+      "profile_key": "main/13800.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 13,
+      "unconstrained_count": 4,
+      "categories": {
+        "ordinary_c": 4,
+        "assembly": 9
+      },
+      "min_manifest_address": "0x80023034",
+      "max_manifest_address": "0x800237a0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/14000.c",
+      "profile_key": "main/14000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 6,
+      "unconstrained_count": 3,
+      "categories": {
+        "ordinary_c": 3,
+        "assembly": 3
+      },
+      "min_manifest_address": "0x8002384c",
+      "max_manifest_address": "0x80023adc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_math_core.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/15000.c",
+      "profile_key": "main/15000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 4,
+      "unconstrained_count": 3,
+      "categories": {
+        "ordinary_c": 3,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x800249e8",
+      "max_manifest_address": "0x80024ca8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_math_core.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/15800.c",
+      "profile_key": "main/15800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 10,
+      "unconstrained_count": 4,
+      "categories": {
+        "assembly": 6,
+        "ordinary_c": 4
+      },
+      "min_manifest_address": "0x800251c4",
+      "max_manifest_address": "0x80025750",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_quat.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/16000.c",
+      "profile_key": "main/16000.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 2,
+      "unconstrained_count": 1,
+      "categories": {
+        "assembly": 1,
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800259bc",
+      "max_manifest_address": "0x80025d00",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/16800.c",
+      "profile_key": "main/16800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 38,
+      "unconstrained_count": 36,
+      "categories": {
+        "assembly": 2,
+        "ordinary_c": 36
+      },
+      "min_manifest_address": "0x8002606c",
+      "max_manifest_address": "0x800267d0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_vectors.json",
+        "analysis/us/wave9_gate_jp_components.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/17000.c",
+      "profile_key": "main/17000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 43,
+      "unconstrained_count": 42,
+      "categories": {
+        "ordinary_c": 42,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x80026800",
+      "max_manifest_address": "0x80026fe4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_vectors.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/17804.c",
+      "profile_key": "main/17804.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 15,
+      "unconstrained_count": 13,
+      "categories": {
+        "ordinary_c": 13,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x80027004",
+      "max_manifest_address": "0x800275fc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/18058.c",
+      "profile_key": "main/18058.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 18,
+      "unconstrained_count": 17,
+      "categories": {
+        "ordinary_c": 17,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x80027858",
+      "max_manifest_address": "0x80027fb0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/18804.c",
+      "profile_key": "main/18804.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 23,
+      "unconstrained_count": 23,
+      "categories": {
+        "ordinary_c": 23
+      },
+      "min_manifest_address": "0x80028004",
+      "max_manifest_address": "0x800285fc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/18E84.c",
+      "profile_key": "main/18E84.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 3,
+      "unconstrained_count": 3,
+      "categories": {
+        "ordinary_c": 3
+      },
+      "min_manifest_address": "0x80028684",
+      "max_manifest_address": "0x8002879c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/19000.c",
+      "profile_key": "main/19000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 14,
+      "unconstrained_count": 7,
+      "categories": {
+        "ordinary_c": 7,
+        "assembly": 7
+      },
+      "min_manifest_address": "0x80028804",
+      "max_manifest_address": "0x80028f98",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/main/wave29_choice_profile_audit.json",
+        "analysis/us/wave9_gate_wave29_choice.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/19800.c",
+      "profile_key": "main/19800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 16,
+      "unconstrained_count": 11,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 11
+      },
+      "min_manifest_address": "0x8002901c",
+      "max_manifest_address": "0x8002959c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1A000.c",
+      "profile_key": "main/1A000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 4,
+      "unconstrained_count": 3,
+      "categories": {
+        "ordinary_c": 3,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x80029bec",
+      "max_manifest_address": "0x80029fcc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1A800.c",
+      "profile_key": "main/1A800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 14,
+      "unconstrained_count": 8,
+      "categories": {
+        "assembly": 5,
+        "assisted_c": 1,
+        "ordinary_c": 8
+      },
+      "min_manifest_address": "0x8002a010",
+      "max_manifest_address": "0x8002a7b8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1B000.c",
+      "profile_key": "main/1B000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 14,
+      "unconstrained_count": 9,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 9
+      },
+      "min_manifest_address": "0x8002a810",
+      "max_manifest_address": "0x8002af18",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_console.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1B800.c",
+      "profile_key": "main/1B800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 22,
+      "unconstrained_count": 15,
+      "categories": {
+        "assembly": 7,
+        "ordinary_c": 15
+      },
+      "min_manifest_address": "0x8002b000",
+      "max_manifest_address": "0x8002b770",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1C000.c",
+      "profile_key": "main/1C000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 37,
+      "unconstrained_count": 34,
+      "categories": {
+        "ordinary_c": 31,
+        "assembly": 3,
+        "empty_c": 1,
+        "cxx_alias": 2
+      },
+      "min_manifest_address": "0x8002b824",
+      "max_manifest_address": "0x8002bf6c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1C800.c",
+      "profile_key": "main/1C800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 23,
+      "unconstrained_count": 21,
+      "categories": {
+        "assembly": 2,
+        "ordinary_c": 19,
+        "empty_c": 2
+      },
+      "min_manifest_address": "0x8002c010",
+      "max_manifest_address": "0x8002c554",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1D000.c",
+      "profile_key": "main/1D000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 12,
+      "unconstrained_count": 6,
+      "categories": {
+        "ordinary_c": 6,
+        "assembly": 6
+      },
+      "min_manifest_address": "0x8002c810",
+      "max_manifest_address": "0x8002cfb0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1D800.c",
+      "profile_key": "main/1D800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 39,
+      "unconstrained_count": 36,
+      "categories": {
+        "ordinary_c": 28,
+        "assembly": 3,
+        "empty_c": 6,
+        "cxx_alias": 2
+      },
+      "min_manifest_address": "0x8002d0a0",
+      "max_manifest_address": "0x8002d6fc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1E000.c",
+      "profile_key": "main/1E000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 15,
+      "unconstrained_count": 9,
+      "categories": {
+        "ordinary_c": 9,
+        "assembly": 6
+      },
+      "min_manifest_address": "0x8002d830",
+      "max_manifest_address": "0x8002ddec",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1E800.c",
+      "profile_key": "main/1E800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 15,
+      "unconstrained_count": 10,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 10
+      },
+      "min_manifest_address": "0x8002e024",
+      "max_manifest_address": "0x8002e700",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1F000.c",
+      "profile_key": "main/1F000.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 7,
+      "unconstrained_count": 3,
+      "categories": {
+        "assembly": 2,
+        "ordinary_c": 3,
+        "assisted_c": 2
+      },
+      "min_manifest_address": "0x8002ed70",
+      "max_manifest_address": "0x8002efdc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/1F800.c",
+      "profile_key": "main/1F800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 2,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x8002f5b4",
+      "max_manifest_address": "0x8002f6d0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/20000.c",
+      "profile_key": "main/20000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 7,
+      "unconstrained_count": 5,
+      "categories": {
+        "ordinary_c": 5,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x8002f8a4",
+      "max_manifest_address": "0x8002ff80",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/main/wave17_graphics_profile_audit.json",
+        "analysis/us/wave9_gate_packet_allocators.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/20800.c",
+      "profile_key": "main/20800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 18,
+      "unconstrained_count": 14,
+      "categories": {
+        "assembly": 4,
+        "ordinary_c": 14
+      },
+      "min_manifest_address": "0x80030228",
+      "max_manifest_address": "0x80030760",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/21000.c",
+      "profile_key": "main/21000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 15,
+      "unconstrained_count": 11,
+      "categories": {
+        "ordinary_c": 11,
+        "assembly": 4
+      },
+      "min_manifest_address": "0x8003084c",
+      "max_manifest_address": "0x80030f84",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/21800.c",
+      "profile_key": "main/21800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 18,
+      "unconstrained_count": 9,
+      "categories": {
+        "assembly": 9,
+        "ordinary_c": 9
+      },
+      "min_manifest_address": "0x80031054",
+      "max_manifest_address": "0x80031b40",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/22000.c",
+      "profile_key": "main/22000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 23,
+      "unconstrained_count": 18,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 18
+      },
+      "min_manifest_address": "0x80031b4c",
+      "max_manifest_address": "0x80031fd8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/22800.c",
+      "profile_key": "main/22800.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 17,
+      "unconstrained_count": 10,
+      "categories": {
+        "assembly": 7,
+        "ordinary_c": 10
+      },
+      "min_manifest_address": "0x80032038",
+      "max_manifest_address": "0x800327b0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/23000.c",
+      "profile_key": "main/23000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 17,
+      "unconstrained_count": 12,
+      "categories": {
+        "empty_c": 2,
+        "ordinary_c": 10,
+        "assembly": 5
+      },
+      "min_manifest_address": "0x80032870",
+      "max_manifest_address": "0x80032f28",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_box.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/23800.c",
+      "profile_key": "main/23800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 5,
+      "categories": {
+        "ordinary_c": 3,
+        "empty_c": 2,
+        "assembly": 6
+      },
+      "min_manifest_address": "0x800331f8",
+      "max_manifest_address": "0x80033788",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/24000.c",
+      "profile_key": "main/24000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 7,
+      "unconstrained_count": 2,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 2
+      },
+      "min_manifest_address": "0x800338f4",
+      "max_manifest_address": "0x80033f2c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/24800.c",
+      "profile_key": "main/24800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 5,
+      "categories": {
+        "assembly": 6,
+        "ordinary_c": 5
+      },
+      "min_manifest_address": "0x80034158",
+      "max_manifest_address": "0x80034790",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/25000.c",
+      "profile_key": "main/25000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 17,
+      "unconstrained_count": 12,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 11,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x80034880",
+      "max_manifest_address": "0x80034fe8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/25800.c",
+      "profile_key": "main/25800.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 4,
+      "categories": {
+        "ordinary_c": 4,
+        "assembly": 7
+      },
+      "min_manifest_address": "0x80035050",
+      "max_manifest_address": "0x800357dc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/26000.c",
+      "profile_key": "main/26000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 21,
+      "unconstrained_count": 15,
+      "categories": {
+        "ordinary_c": 14,
+        "assembly": 6,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x80035878",
+      "max_manifest_address": "0x80035f94",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/26800.c",
+      "profile_key": "main/26800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 7,
+      "unconstrained_count": 4,
+      "categories": {
+        "ordinary_c": 4,
+        "assembly": 3
+      },
+      "min_manifest_address": "0x80036064",
+      "max_manifest_address": "0x80036738",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_strings.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/27000.c",
+      "profile_key": "main/27000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 16,
+      "unconstrained_count": 14,
+      "categories": {
+        "ordinary_c": 14,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x800368ec",
+      "max_manifest_address": "0x80036fe0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/27810.c",
+      "profile_key": "main/27810.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 4,
+      "unconstrained_count": 4,
+      "categories": {
+        "ordinary_c": 4
+      },
+      "min_manifest_address": "0x80037010",
+      "max_manifest_address": "0x80037250",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_rng.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/28800.c",
+      "profile_key": "main/28800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 12,
+      "unconstrained_count": 12,
+      "categories": {
+        "ordinary_c": 12
+      },
+      "min_manifest_address": "0x800383b4",
+      "max_manifest_address": "0x800387e0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/29000.c",
+      "profile_key": "main/29000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 10,
+      "unconstrained_count": 8,
+      "categories": {
+        "ordinary_c": 8,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x800388a8",
+      "max_manifest_address": "0x80038d44",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/29800.c",
+      "profile_key": "main/29800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 7,
+      "categories": {
+        "ordinary_c": 7,
+        "assembly": 4
+      },
+      "min_manifest_address": "0x80039020",
+      "max_manifest_address": "0x80039750",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2A074.c",
+      "profile_key": "main/2A074.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 13,
+      "unconstrained_count": 9,
+      "categories": {
+        "ordinary_c": 9,
+        "assembly": 4
+      },
+      "min_manifest_address": "0x80039874",
+      "max_manifest_address": "0x80039fb0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2A814.c",
+      "profile_key": "main/2A814.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 19,
+      "unconstrained_count": 17,
+      "categories": {
+        "ordinary_c": 17,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x8003a014",
+      "max_manifest_address": "0x8003a764",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2B034.c",
+      "profile_key": "main/2B034.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 2,
+      "unconstrained_count": 2,
+      "categories": {
+        "ordinary_c": 2
+      },
+      "min_manifest_address": "0x8003a834",
+      "max_manifest_address": "0x8003aa78",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_inflate_init/object_audit.json",
+        "analysis/us/wave9_gate_jp_inflate_init.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2B800.c",
+      "profile_key": "main/2B800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 9,
+      "unconstrained_count": 8,
+      "categories": {
+        "ordinary_c": 8,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x8003aff8",
+      "max_manifest_address": "0x8003b6ac",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_zlib_sync_fixed/object_audit.json",
+        "analysis/us/wave9_gate_jp_zlib_sync_fixed.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2C800.c",
+      "profile_key": "main/2C800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet",
+          "-O3"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 5,
+      "unconstrained_count": 3,
+      "categories": {
+        "ordinary_c": 3,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x8003c2b8",
+      "max_manifest_address": "0x8003c4c4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2D000.c",
+      "profile_key": "main/2D000.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 3,
+      "unconstrained_count": 2,
+      "categories": {
+        "ordinary_c": 2,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x8003cd04",
+      "max_manifest_address": "0x8003cda8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2D800.c",
+      "profile_key": "main/2D800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 2,
+      "unconstrained_count": 1,
+      "categories": {
+        "assembly": 1,
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x8003d218",
+      "max_manifest_address": "0x8003d7f0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_inflate_dynamic/object_audit.json",
+        "analysis/us/wave9_gate_jp_inflate_dynamic.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/2E000.c",
+      "profile_key": "main/2E000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 6,
+      "categories": {
+        "ordinary_c": 5,
+        "assembly": 5,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x8003d9f4",
+      "max_manifest_address": "0x8003dee4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/main/jp_inflate_flush/object_audit.json",
+        "analysis/us/wave9_gate_jp_inflate_flush.json",
+        "analysis/us/main/jp_zlib_sync_fixed/object_audit.json",
+        "analysis/us/wave9_gate_jp_zlib_sync_fixed.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/B618.c",
+      "profile_key": "main/B618.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 3,
+      "unconstrained_count": 2,
+      "categories": {
+        "assembly": 1,
+        "ordinary_c": 2
+      },
+      "min_manifest_address": "0x8001ae18",
+      "max_manifest_address": "0x8001af34",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/B800.c",
+      "profile_key": "main/B800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 18,
+      "unconstrained_count": 12,
+      "categories": {
+        "ordinary_c": 11,
+        "assembly": 6,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x8001b104",
+      "max_manifest_address": "0x8001b778",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_sound_unpin.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/C000.c",
+      "profile_key": "main/C000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 22,
+      "unconstrained_count": 21,
+      "categories": {
+        "ordinary_c": 21,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x8001b838",
+      "max_manifest_address": "0x8001bf20",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/C800.c",
+      "profile_key": "main/C800.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 30,
+      "unconstrained_count": 27,
+      "categories": {
+        "assembly": 3,
+        "ordinary_c": 27
+      },
+      "min_manifest_address": "0x8001c008",
+      "max_manifest_address": "0x8001c638",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/D000.c",
+      "profile_key": "main/D000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 6,
+      "unconstrained_count": 3,
+      "categories": {
+        "assembly": 3,
+        "ordinary_c": 3
+      },
+      "min_manifest_address": "0x8001c8a8",
+      "max_manifest_address": "0x8001ce40",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/D800.c",
+      "profile_key": "main/D800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 17,
+      "unconstrained_count": 11,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 11,
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x8001d024",
+      "max_manifest_address": "0x8001d750",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/E000.c",
+      "profile_key": "main/E000.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 3,
+      "unconstrained_count": 3,
+      "categories": {
+        "ordinary_c": 3
+      },
+      "min_manifest_address": "0x8001d874",
+      "max_manifest_address": "0x8001da64",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/E800.c",
+      "profile_key": "main/E800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 15,
+      "unconstrained_count": 10,
+      "categories": {
+        "assembly": 5,
+        "ordinary_c": 10
+      },
+      "min_manifest_address": "0x8001e0b4",
+      "max_manifest_address": "0x8001e7a4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/F000.c",
+      "profile_key": "main/F000.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 19,
+      "unconstrained_count": 14,
+      "categories": {
+        "ordinary_c": 14,
+        "assembly": 5
+      },
+      "min_manifest_address": "0x8001e900",
+      "max_manifest_address": "0x8001efb0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [
+        "analysis/us/wave9_gate_jp_save.json"
+      ],
+      "review_flags": []
+    },
+    {
+      "unit": "main",
+      "source_slot": "src/engine/F800.c",
+      "profile_key": "main/F800.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G8",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G8",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 22,
+      "unconstrained_count": 19,
+      "categories": {
+        "ordinary_c": 19,
+        "assembly": 3
+      },
+      "min_manifest_address": "0x8001f020",
+      "max_manifest_address": "0x8001f79c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/12398.c",
+      "profile_key": "game/12398.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 132,
+      "unconstrained_count": 96,
+      "categories": {
+        "assembly": 26,
+        "ordinary_c": 95,
+        "assisted_c": 10,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x80076758",
+      "max_manifest_address": "0x8007a724",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/16458.c",
+      "profile_key": "game/16458.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 74,
+      "unconstrained_count": 69,
+      "categories": {
+        "ordinary_c": 67,
+        "assisted_c": 1,
+        "assembly": 4,
+        "empty_c": 2
+      },
+      "min_manifest_address": "0x8007a818",
+      "max_manifest_address": "0x8007c454",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/18104.c",
+      "profile_key": "game/18104.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 65,
+      "unconstrained_count": 42,
+      "categories": {
+        "assembly": 6,
+        "assisted_c": 17,
+        "ordinary_c": 42
+      },
+      "min_manifest_address": "0x8007c4c4",
+      "max_manifest_address": "0x8008049c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/1C120.c",
+      "profile_key": "game/1C120.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 116,
+      "unconstrained_count": 80,
+      "categories": {
+        "ordinary_c": 74,
+        "assisted_c": 11,
+        "assembly": 25,
+        "empty_c": 6
+      },
+      "min_manifest_address": "0x800804e0",
+      "max_manifest_address": "0x800844d8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/202B4.c",
+      "profile_key": "game/202B4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 59,
+      "unconstrained_count": 22,
+      "categories": {
+        "assembly": 28,
+        "ordinary_c": 21,
+        "assisted_c": 9,
+        "cxx_alias": 1
+      },
+      "min_manifest_address": "0x80084674",
+      "max_manifest_address": "0x80088630",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/243F0.c",
+      "profile_key": "game/243F0.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 44,
+      "unconstrained_count": 22,
+      "categories": {
+        "ordinary_c": 18,
+        "assembly": 19,
+        "cxx_alias": 4,
+        "assisted_c": 3
+      },
+      "min_manifest_address": "0x800887b0",
+      "max_manifest_address": "0x8008c6f4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/28514.c",
+      "profile_key": "game/28514.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 53,
+      "unconstrained_count": 23,
+      "categories": {
+        "assisted_c": 5,
+        "ordinary_c": 18,
+        "cxx_alias": 5,
+        "assembly": 25
+      },
+      "min_manifest_address": "0x8008c8d4",
+      "max_manifest_address": "0x800907fc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/2C7C4.c",
+      "profile_key": "game/2C7C4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 62,
+      "unconstrained_count": 35,
+      "categories": {
+        "assembly": 23,
+        "assisted_c": 4,
+        "ordinary_c": 35
+      },
+      "min_manifest_address": "0x80090b84",
+      "max_manifest_address": "0x80094b38",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/309F0.c",
+      "profile_key": "game/309F0.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 60,
+      "unconstrained_count": 36,
+      "categories": {
+        "ordinary_c": 36,
+        "assisted_c": 4,
+        "assembly": 20
+      },
+      "min_manifest_address": "0x80095080",
+      "max_manifest_address": "0x80098d30",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/34AFC.c",
+      "profile_key": "game/34AFC.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 55,
+      "unconstrained_count": 36,
+      "categories": {
+        "assembly": 19,
+        "ordinary_c": 36
+      },
+      "min_manifest_address": "0x80098ebc",
+      "max_manifest_address": "0x8009cbcc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/38D84.c",
+      "profile_key": "game/38D84.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 56,
+      "unconstrained_count": 25,
+      "categories": {
+        "ordinary_c": 25,
+        "assembly": 23,
+        "assisted_c": 8
+      },
+      "min_manifest_address": "0x8009d144",
+      "max_manifest_address": "0x800a1110",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/3CDF0.c",
+      "profile_key": "game/3CDF0.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 53,
+      "unconstrained_count": 24,
+      "categories": {
+        "cxx_alias": 4,
+        "ordinary_c": 19,
+        "empty_c": 1,
+        "assembly": 28,
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x800a11b0",
+      "max_manifest_address": "0x800a50d4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/40E5C.c",
+      "profile_key": "game/40E5C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 60,
+      "unconstrained_count": 24,
+      "categories": {
+        "assembly": 36,
+        "ordinary_c": 22,
+        "cxx_alias": 2
+      },
+      "min_manifest_address": "0x800a521c",
+      "max_manifest_address": "0x800a8edc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/44E78.c",
+      "profile_key": "game/44E78.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 58,
+      "unconstrained_count": 28,
+      "categories": {
+        "assembly": 24,
+        "ordinary_c": 28,
+        "assisted_c": 6
+      },
+      "min_manifest_address": "0x800a9238",
+      "max_manifest_address": "0x800ad0d4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/48F48.c",
+      "profile_key": "game/48F48.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 60,
+      "unconstrained_count": 11,
+      "categories": {
+        "assembly": 33,
+        "ordinary_c": 11,
+        "assisted_c": 16
+      },
+      "min_manifest_address": "0x800ad308",
+      "max_manifest_address": "0x800b1200",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/4CF7C.c",
+      "profile_key": "game/4CF7C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 57,
+      "unconstrained_count": 22,
+      "categories": {
+        "assembly": 29,
+        "assisted_c": 6,
+        "ordinary_c": 22
+      },
+      "min_manifest_address": "0x800b133c",
+      "max_manifest_address": "0x800b5318",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/50FE4.c",
+      "profile_key": "game/50FE4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 57,
+      "unconstrained_count": 32,
+      "categories": {
+        "assembly": 21,
+        "ordinary_c": 32,
+        "assisted_c": 4
+      },
+      "min_manifest_address": "0x800b53a4",
+      "max_manifest_address": "0x800b939c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/55164.c",
+      "profile_key": "game/55164.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 66,
+      "unconstrained_count": 31,
+      "categories": {
+        "assembly": 33,
+        "ordinary_c": 31,
+        "assisted_c": 2
+      },
+      "min_manifest_address": "0x800b9524",
+      "max_manifest_address": "0x800bd50c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/5922C.c",
+      "profile_key": "game/5922C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 61,
+      "unconstrained_count": 37,
+      "categories": {
+        "assembly": 23,
+        "ordinary_c": 37,
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x800bd5ec",
+      "max_manifest_address": "0x800c1540",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/5D3CC.c",
+      "profile_key": "game/5D3CC.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 66,
+      "unconstrained_count": 33,
+      "categories": {
+        "assembly": 29,
+        "ordinary_c": 33,
+        "assisted_c": 4
+      },
+      "min_manifest_address": "0x800c178c",
+      "max_manifest_address": "0x800c571c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/6155C.c",
+      "profile_key": "game/6155C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 94,
+      "unconstrained_count": 50,
+      "categories": {
+        "assembly": 35,
+        "ordinary_c": 49,
+        "assisted_c": 9,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x800c591c",
+      "max_manifest_address": "0x800c9780",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/6568C.c",
+      "profile_key": "game/6568C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 80,
+      "unconstrained_count": 54,
+      "categories": {
+        "ordinary_c": 54,
+        "assembly": 25,
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x800c9a4c",
+      "max_manifest_address": "0x800cda08",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/697BC.c",
+      "profile_key": "game/697BC.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 52,
+      "unconstrained_count": 17,
+      "categories": {
+        "assembly": 31,
+        "ordinary_c": 15,
+        "assisted_c": 4,
+        "cxx_alias": 2
+      },
+      "min_manifest_address": "0x800cdb7c",
+      "max_manifest_address": "0x800d1b50",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/6DB60.c",
+      "profile_key": "game/6DB60.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 25,
+      "unconstrained_count": 17,
+      "categories": {
+        "ordinary_c": 10,
+        "cxx_alias": 6,
+        "assembly": 8,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x800d1f20",
+      "max_manifest_address": "0x800d357c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/9DF4.c",
+      "profile_key": "game/9DF4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 82,
+      "unconstrained_count": 48,
+      "categories": {
+        "ordinary_c": 47,
+        "assembly": 29,
+        "assisted_c": 5,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x8006e1b4",
+      "max_manifest_address": "0x800720ec",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "game",
+      "source_slot": "src/battle/E324.c",
+      "profile_key": "game/E324.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 108,
+      "unconstrained_count": 68,
+      "categories": {
+        "assembly": 33,
+        "ordinary_c": 66,
+        "assisted_c": 7,
+        "empty_c": 2
+      },
+      "min_manifest_address": "0x800726e4",
+      "max_manifest_address": "0x80076694",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "title",
+      "source_slot": "src/title/12AF0.c",
+      "profile_key": "title/12AF0.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 44,
+      "unconstrained_count": 18,
+      "categories": {
+        "assembly": 25,
+        "ordinary_c": 18,
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x80076eb0",
+      "max_manifest_address": "0x8007a52c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "title",
+      "source_slot": "src/title/2570.c",
+      "profile_key": "title/2570.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 27,
+      "unconstrained_count": 15,
+      "categories": {
+        "assembly": 10,
+        "assisted_c": 2,
+        "ordinary_c": 15
+      },
+      "min_manifest_address": "0x80066930",
+      "max_manifest_address": "0x800682f0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "title",
+      "source_slot": "src/title/3FC4.c",
+      "profile_key": "title/3FC4.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x80068384",
+      "max_manifest_address": "0x80068384",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "title",
+      "source_slot": "src/title/40C4.c",
+      "profile_key": "title/40C4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 44,
+      "unconstrained_count": 25,
+      "categories": {
+        "ordinary_c": 24,
+        "assembly": 18,
+        "empty_c": 1,
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x80068484",
+      "max_manifest_address": "0x8006a874",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "title",
+      "source_slot": "src/title/65A4.c",
+      "profile_key": "title/65A4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 97,
+      "unconstrained_count": 59,
+      "categories": {
+        "assembly": 32,
+        "assisted_c": 6,
+        "ordinary_c": 59
+      },
+      "min_manifest_address": "0x8006a964",
+      "max_manifest_address": "0x8006e8c0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "title",
+      "source_slot": "src/title/A660.c",
+      "profile_key": "title/A660.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 82,
+      "unconstrained_count": 63,
+      "categories": {
+        "ordinary_c": 58,
+        "assembly": 17,
+        "assisted_c": 2,
+        "empty_c": 5
+      },
+      "min_manifest_address": "0x8006ea20",
+      "max_manifest_address": "0x80072860",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "title",
+      "source_slot": "src/title/E6AC.c",
+      "profile_key": "title/E6AC.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 55,
+      "unconstrained_count": 25,
+      "categories": {
+        "assembly": 29,
+        "ordinary_c": 21,
+        "empty_c": 4,
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x80072a6c",
+      "max_manifest_address": "0x80076e1c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "movie",
+      "source_slot": "src/movie/B4.c",
+      "profile_key": "movie/B4.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 26,
+      "unconstrained_count": 11,
+      "categories": {
+        "assembly": 15,
+        "ordinary_c": 9,
+        "empty_c": 2
+      },
+      "min_manifest_address": "0x80064474",
+      "max_manifest_address": "0x80065268",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st00",
+      "source_slot": "src/battle/stages/st00/354.c",
+      "profile_key": "st00/354.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 36,
+      "unconstrained_count": 9,
+      "categories": {
+        "assembly": 24,
+        "ordinary_c": 8,
+        "assisted_c": 3,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x800d3e54",
+      "max_manifest_address": "0x800d8214",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st00",
+      "source_slot": "src/battle/stages/st00/4768.c",
+      "profile_key": "st00/4768.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 0,
+      "categories": {
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x800d8268",
+      "max_manifest_address": "0x800d8268",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st00",
+      "source_slot": "src/battle/stages/st00/47BC.c",
+      "profile_key": "st00/47BC.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 2,
+      "categories": {
+        "assembly": 5,
+        "assisted_c": 4,
+        "ordinary_c": 2
+      },
+      "min_manifest_address": "0x800d847c",
+      "max_manifest_address": "0x800d8f80",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st00",
+      "source_slot": "src/battle/stages/st00/54D4.c",
+      "profile_key": "st00/54D4.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 0,
+      "categories": {
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x800d8fd4",
+      "max_manifest_address": "0x800d8fd4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st00",
+      "source_slot": "src/battle/stages/st00/5528.c",
+      "profile_key": "st00/5528.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 11,
+      "unconstrained_count": 2,
+      "categories": {
+        "assembly": 9,
+        "ordinary_c": 2
+      },
+      "min_manifest_address": "0x800d9028",
+      "max_manifest_address": "0x800d9a5c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st00",
+      "source_slot": "src/battle/stages/st00/6150.c",
+      "profile_key": "st00/6150.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 0,
+      "categories": {
+        "assisted_c": 1
+      },
+      "min_manifest_address": "0x800d9c50",
+      "max_manifest_address": "0x800d9c50",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st00",
+      "source_slot": "src/battle/stages/st00/618C.c",
+      "profile_key": "st00/618C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 12,
+      "unconstrained_count": 5,
+      "categories": {
+        "assisted_c": 1,
+        "assembly": 6,
+        "ordinary_c": 5
+      },
+      "min_manifest_address": "0x800d9c8c",
+      "max_manifest_address": "0x800da47c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st01",
+      "source_slot": "src/battle/stages/st01/185C.c",
+      "profile_key": "st01/185C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800d535c",
+      "max_manifest_address": "0x800d535c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": [
+        "needs_object_boundary_review"
+      ]
+    },
+    {
+      "unit": "st01",
+      "source_slot": "src/battle/stages/st01/1928.c",
+      "profile_key": "st01/1928.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 70,
+      "unconstrained_count": 7,
+      "categories": {
+        "assembly": 48,
+        "ordinary_c": 6,
+        "assisted_c": 15,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x800d5428",
+      "max_manifest_address": "0x800da2f8",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st01",
+      "source_slot": "src/battle/stages/st01/59C.c",
+      "profile_key": "st01/59C.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 18,
+      "unconstrained_count": 6,
+      "categories": {
+        "assembly": 9,
+        "assisted_c": 3,
+        "ordinary_c": 6
+      },
+      "min_manifest_address": "0x800d409c",
+      "max_manifest_address": "0x800d521c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st02",
+      "source_slot": "src/battle/stages/st02/944.c",
+      "profile_key": "st02/944.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 75,
+      "unconstrained_count": 47,
+      "categories": {
+        "ordinary_c": 47,
+        "assembly": 26,
+        "assisted_c": 2
+      },
+      "min_manifest_address": "0x800d4444",
+      "max_manifest_address": "0x800d8760",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st03",
+      "source_slot": "src/battle/stages/st03/5F8.c",
+      "profile_key": "st03/5F8.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 88,
+      "unconstrained_count": 51,
+      "categories": {
+        "assembly": 25,
+        "ordinary_c": 51,
+        "assisted_c": 12
+      },
+      "min_manifest_address": "0x800d40f8",
+      "max_manifest_address": "0x800d90d4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st04",
+      "source_slot": "src/battle/stages/st04/2A4.c",
+      "profile_key": "st04/2A4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet",
+          "-fno-strength-reduce"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 24,
+      "unconstrained_count": 9,
+      "categories": {
+        "ordinary_c": 9,
+        "assembly": 15
+      },
+      "min_manifest_address": "0x800d3da4",
+      "max_manifest_address": "0x800d56fc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st04",
+      "source_slot": "src/battle/stages/st04/5864.c",
+      "profile_key": "st04/5864.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet",
+          "-fno-strength-reduce"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 0,
+      "categories": {
+        "assembly": 1
+      },
+      "min_manifest_address": "0x800d5864",
+      "max_manifest_address": "0x800d5864",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st04",
+      "source_slot": "src/battle/stages/st04/59B0.c",
+      "profile_key": "st04/59B0.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet",
+          "-fno-strength-reduce"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 7,
+      "unconstrained_count": 1,
+      "categories": {
+        "assembly": 6,
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800d59b0",
+      "max_manifest_address": "0x800d6408",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st04",
+      "source_slot": "src/battle/stages/st04/67EC.c",
+      "profile_key": "st04/67EC.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/CC1PLPSX.EXE",
+        "compiler_family": "psyq46_cxx_2.95.2",
+        "language": "cxx",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet",
+          "-fno-strength-reduce"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 0,
+      "categories": {
+        "assembly": 1
+      },
+      "min_manifest_address": "0x800d67ec",
+      "max_manifest_address": "0x800d67ec",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": [
+        "needs_object_boundary_review"
+      ]
+    },
+    {
+      "unit": "st04",
+      "source_slot": "src/battle/stages/st04/6948.c",
+      "profile_key": "st04/6948.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet",
+          "-fno-strength-reduce"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 27,
+      "unconstrained_count": 9,
+      "categories": {
+        "ordinary_c": 9,
+        "assembly": 13,
+        "assisted_c": 5
+      },
+      "min_manifest_address": "0x800d6948",
+      "max_manifest_address": "0x800d8c38",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st05",
+      "source_slot": "src/battle/stages/st05/2A5C.c",
+      "profile_key": "st05/2A5C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 4,
+      "unconstrained_count": 3,
+      "categories": {
+        "ordinary_c": 3,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x800d655c",
+      "max_manifest_address": "0x800d67dc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st05",
+      "source_slot": "src/battle/stages/st05/2D64.c",
+      "profile_key": "st05/2D64.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 14,
+      "unconstrained_count": 7,
+      "categories": {
+        "assisted_c": 4,
+        "assembly": 3,
+        "ordinary_c": 7
+      },
+      "min_manifest_address": "0x800d6864",
+      "max_manifest_address": "0x800d6ebc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st05",
+      "source_slot": "src/battle/stages/st05/4CC.c",
+      "profile_key": "st05/4CC.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 30,
+      "unconstrained_count": 8,
+      "categories": {
+        "assembly": 18,
+        "ordinary_c": 7,
+        "assisted_c": 4,
+        "empty_c": 1
+      },
+      "min_manifest_address": "0x800d3fcc",
+      "max_manifest_address": "0x800d64fc",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/1820.c",
+      "profile_key": "st06/1820.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800d5320",
+      "max_manifest_address": "0x800d5320",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": [
+        "needs_object_boundary_review"
+      ]
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/186C.c",
+      "profile_key": "st06/186C.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 5,
+      "unconstrained_count": 1,
+      "categories": {
+        "assisted_c": 2,
+        "empty_c": 1,
+        "assembly": 2
+      },
+      "min_manifest_address": "0x800d536c",
+      "max_manifest_address": "0x800d5534",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/1D5C.c",
+      "profile_key": "st06/1D5C.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800d585c",
+      "max_manifest_address": "0x800d585c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": [
+        "needs_object_boundary_review"
+      ]
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/1DB4.c",
+      "profile_key": "st06/1DB4.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 2,
+      "unconstrained_count": 0,
+      "categories": {
+        "assembly": 2
+      },
+      "min_manifest_address": "0x800d58b4",
+      "max_manifest_address": "0x800d5970",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/1FA4.c",
+      "profile_key": "st06/1FA4.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 16,
+      "unconstrained_count": 16,
+      "categories": {
+        "ordinary_c": 14,
+        "empty_c": 2
+      },
+      "min_manifest_address": "0x800d5aa4",
+      "max_manifest_address": "0x800d5dac",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/22F4.c",
+      "profile_key": "st06/22F4.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800d5df4",
+      "max_manifest_address": "0x800d5df4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/3F0.c",
+      "profile_key": "st06/3F0.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 9,
+      "unconstrained_count": 2,
+      "categories": {
+        "assembly": 7,
+        "ordinary_c": 2
+      },
+      "min_manifest_address": "0x800d3ef0",
+      "max_manifest_address": "0x800d4714",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/C48.c",
+      "profile_key": "st06/C48.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800d4748",
+      "max_manifest_address": "0x800d4748",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": [
+        "needs_object_boundary_review"
+      ]
+    },
+    {
+      "unit": "st06",
+      "source_slot": "src/battle/stages/st06/CA4.c",
+      "profile_key": "st06/CA4.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 12,
+      "unconstrained_count": 5,
+      "categories": {
+        "assisted_c": 2,
+        "ordinary_c": 5,
+        "assembly": 5
+      },
+      "min_manifest_address": "0x800d47a4",
+      "max_manifest_address": "0x800d527c",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st07",
+      "source_slot": "src/battle/stages/st07/194.c",
+      "profile_key": "st07/194.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 3,
+      "unconstrained_count": 2,
+      "categories": {
+        "ordinary_c": 2,
+        "assembly": 1
+      },
+      "min_manifest_address": "0x800d3c94",
+      "max_manifest_address": "0x800d3df4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st07",
+      "source_slot": "src/battle/stages/st07/368.c",
+      "profile_key": "st07/368.c",
+      "current_profile": {
+        "compiler": "bin/windows/gcc-psx/CC1PSX.EXE",
+        "compiler_family": "shipped_gcc_2.8.1",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 1,
+      "unconstrained_count": 1,
+      "categories": {
+        "ordinary_c": 1
+      },
+      "min_manifest_address": "0x800d3e68",
+      "max_manifest_address": "0x800d3e68",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st07",
+      "source_slot": "src/battle/stages/st07/390.c",
+      "profile_key": "st07/390.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 34,
+      "unconstrained_count": 12,
+      "categories": {
+        "assembly": 22,
+        "ordinary_c": 12
+      },
+      "min_manifest_address": "0x800d3e90",
+      "max_manifest_address": "0x800d60e4",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st08",
+      "source_slot": "src/battle/stages/st08/EC.c",
+      "profile_key": "st08/EC.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+        "compiler_family": "psyq46",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler",
+          "--expand-div-zero-only"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 19,
+      "unconstrained_count": 14,
+      "categories": {
+        "ordinary_c": 14,
+        "assembly": 5
+      },
+      "min_manifest_address": "0x800d3bec",
+      "max_manifest_address": "0x800d4ad0",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    },
+    {
+      "unit": "st09",
+      "source_slot": "src/battle/stages/st09/244.c",
+      "profile_key": "st09/244.c",
+      "current_profile": {
+        "compiler": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+        "compiler_family": "esa_psyq45",
+        "language": "c",
+        "cc1_flags": [
+          "-O2",
+          "-mips1",
+          "-mcpu=3000",
+          "-w",
+          "-funsigned-char",
+          "-fpeephole",
+          "-ffunction-cse",
+          "-fpcc-struct-return",
+          "-fcommon",
+          "-msoft-float",
+          "-mgas",
+          "-fgnu-linker",
+          "-gcoff",
+          "-G0",
+          "-quiet"
+        ],
+        "maspsx_flags": [
+          "--aspsx-version=2.77",
+          "--run-assembler"
+        ],
+        "as_flags": [
+          "-EL",
+          "-march=mips2",
+          "-mtune=mips2",
+          "-no-pad-sections",
+          "-G0",
+          "-I",
+          "include"
+        ]
+      },
+      "function_count": 42,
+      "unconstrained_count": 13,
+      "categories": {
+        "ordinary_c": 13,
+        "assembly": 29
+      },
+      "min_manifest_address": "0x800d3d44",
+      "max_manifest_address": "0x800d6a04",
+      "original_object_provenance": {
+        "status": "unreviewed",
+        "evidence": []
+      },
+      "byte_verified_evidence": [],
+      "review_flags": []
+    }
+  ],
+  "summary": {
+    "slot_count": 137,
+    "function_count": 3699,
+    "unconstrained_count": 2179,
+    "categories": {
+      "ordinary_c": 2095,
+      "cxx_alias": 34,
+      "assembly": 1305,
+      "assisted_c": 215,
+      "empty_c": 50
+    },
+    "unassigned_function_count": 0,
+    "single_function_compiler_isolations": 5,
+    "reviewed_original_object_profiles": 0
+  },
+  "unassigned_manifest_functions": []
+}

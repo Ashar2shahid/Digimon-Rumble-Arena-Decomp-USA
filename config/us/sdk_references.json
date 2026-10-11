@@ -1,0 +1,16 @@
+{
+  "sdk_manifest_entries": 655,
+  "assembly_files_inspected": 655,
+  "reference_counts": {
+    "symbolic_hi_lo_operands": 4826,
+    "symbolic_direct_transfers": 1617
+  },
+  "review": [],
+  "entries_without_individual_assembly": [],
+  "limitations": [
+    "literal RAM values can be intentional constants; inspect before changing",
+    "entries may share fragments; missing individual files are not proof of missing code",
+    "opaque data, external fixed-address symbols and linker layout also need relocation review",
+    "this static audit does not establish that the complete game is shiftable"
+  ]
+}

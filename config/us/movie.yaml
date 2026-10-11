@@ -1,0 +1,62 @@
+name: Movie Overlay (A.VFS:bin/movie.bin)
+sha1: 93fba61cdd820b4b889e747360b8888dd47b12f5
+options:
+  basename: movie
+  target_path: assets/us/bin/movie.bin
+  base_path: ../..
+  platform: psx
+  compiler: PSYQ
+
+  asm_path: asm/us/movie
+  src_path: src/movie
+  build_path: build/us
+  ld_script_path: config/us/linkers/movie.ld
+  elf_path: build/us/movie.elf
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  migrate_rodata_to_functions: True
+  pair_rodata_to_text: False
+
+  o_as_suffix: False
+  use_legacy_include_asm: False
+
+  asm_function_macro: glabel
+  asm_jtbl_label_macro: jlabel
+  asm_data_macro: dlabel
+  generate_asm_macros_files: False
+
+  dump_symbols: True
+  dump_symbols_references: True
+
+  section_order: [".rodata", ".text", ".data", ".bss"]
+
+  symbol_addrs_path:
+    - config/us/sym.movie.txt
+  reloc_addrs_path:
+    - config/us/rel.movie.txt
+
+  undefined_funcs_auto_path: config/us/linkers/undefined_funcs_auto.movie.txt
+  undefined_syms_auto_path: config/us/linkers/undefined_syms_auto.movie.txt
+
+  subalign: 4
+
+  string_encoding: ASCII
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+
+  ld_bss_is_noload: False
+segments:
+  - name: movie
+    type: code
+    start: 0x0
+    vram: 0x800643c0
+    align: 4
+    subalign: 4
+    subsegments:
+      # id number, name "no name", pointer tables and rodata
+      - [0x0, rodata, 0]
+      # code and data from the first function prologue
+      - [0xB4, c, B4]
+  - [0x2944]
