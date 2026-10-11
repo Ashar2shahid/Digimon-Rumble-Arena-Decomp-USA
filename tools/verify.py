@@ -38,6 +38,12 @@ def input_manifest(unit):
         path = ROOT / "config/us" / name
         if path.exists():
             paths.add(path)
+    # Generation metadata is part of the reproducible split's build identity.
+    for relative in ("tools/generate_game.py", "docs/toolchain_manifest.json",
+                     f"config/us/split/{unit}.json"):
+        path = ROOT / relative
+        if path.is_file():
+            paths.add(path)
     required_manifest = ROOT / "config/us/functions" / f"{unit}.txt"
     if not required_manifest.is_file() or not manifest(unit):
         raise ValueError(f"Missing or empty function manifest: {unit}")

@@ -1,0 +1,278 @@
+--- a/README.md
++++ b/README.md
+@@ -32,6 +32,20 @@
+ 
+ ### `--expand-div`
+ If you need `maspsx` to expand `div/divu` and `rem/remu` ops, pass `--expand-div` to `maspsx`. There is already handling for partial div expansion (i.e. where `-0` was passed to `ASPSX.EXE`).
++
++### `--expand-div-zero-only`
++Expand `div`/`rem` (and `divu`/`remu`) with the **divide-by-zero guard only**, omitting the signed-overflow check that `--expand-div` adds. The `div`/`divu` is followed immediately by its `mfhi`/`mflo`, the zero check, and the `break 0x0,0x7` guard:
++
++```
++div	$zero,$v0,$s0
++mfhi	$s1
++bnez	$s0,.L_NOT_DIV_BY_ZERO_<n>
++nop
++break	0x0,0x7
++.L_NOT_DIV_BY_ZERO_<n>:
++```
++
++This matches retail PSY-Q output where the compiler emitted only the zero-division guard (e.g. Digimon Rumble Arena `st05` `func_800D4D54`). If both `--expand-div` and `--expand-div-zero-only` are passed, the narrower `--expand-div-zero-only` wins.
+ 
+ ### `--macro-inc`
+ Get `maspsx` to add an `include "macro.inc"` statement to the output.
+--- a/maspsx.py
++++ b/maspsx.py
+@@ -16,6 +16,7 @@
+     parser.add_argument("--gnu-as-path", default="mipsel-linux-gnu-as")
+     parser.add_argument("--dont-force-G0", action="store_true")
+     parser.add_argument("--expand-div", action="store_true")
++    parser.add_argument("--expand-div-zero-only", action="store_true")
+     parser.add_argument("--macro-inc", action="store_true")
+     parser.add_argument("--dont-expand-li", action="store_true")
+     parser.add_argument("--force-stdin", action="store_true")
+@@ -124,6 +125,7 @@
+         in_lines,
+         sdata_limit=sdata_limit,
+         expand_div=args.expand_div,
++        expand_div_zero_only=args.expand_div_zero_only,
+         expand_li=expand_li,
+         nop_at_expansion=nop_at_expansion,
+         nop_mflo_mfhi=nop_mflo_mfhi,
+--- a/maspsx/__init__.py
++++ b/maspsx/__init__.py
+@@ -14,6 +14,18 @@
+ jump_mnemonics = {
+     "j",
+     "jal",
++}
++branch_target_mnemonics = branch_mnemonics | jump_mnemonics | {
++    "beqz",
++    "bnez",
++    "b",
++    "bal",
++    "bgezal",
++    "bltzal",
++    "bgt",
++    "bge",
++    "blt",
++    "ble",
+ }
+ load_mnemonics = {
+     "lb",
+@@ -411,6 +423,7 @@
+         lines: List[str],
+         sdata_limit=0,
+         expand_div=False,
++        expand_div_zero_only=False,
+         expand_li=False,
+         nop_at_expansion=False,
+         nop_mflo_mfhi=True,
+@@ -432,6 +445,7 @@
+         self.sdata_limit = sdata_limit
+ 
+         self.expand_div = expand_div
++        self.expand_div_zero_only = expand_div_zero_only
+         self.expand_li = expand_li
+ 
+         self.nop_at_expansion = nop_at_expansion
+@@ -562,6 +576,7 @@
+     def process_lines(self):
+         self.is_reorder = True
+         self.skip_instructions = 0
++        self.skip_instruction_indices: set[int] = set()
+         self.file_num = 1
+ 
+         self.bss_entries = {}
+@@ -587,7 +602,10 @@
+                     in_include_asm_hack = False
+                 continue
+ 
+-            if is_instruction(line) and self.skip_instructions > 0:
++            if i in self.skip_instruction_indices:
++                self.skip_instruction_indices.remove(i)
++                res += [f"# {line}  # DEBUG: skipped"]
++            elif is_instruction(line) and self.skip_instructions > 0:
+                 self.skip_instructions -= 1
+                 res += [f"# {line}  # DEBUG: skipped"]
+             else:
+@@ -717,6 +735,86 @@
+             )
+ 
+         return res
++
++    def _expand_at_store_delay_slot(
++        self, op: str, operand: str, r_dest: str
++    ):
++        """aspsx expands a bare symbolic store through `$at`
++        (`lui $at,%hi(sym)` / `<store> $r,%lo(sym)($at)`) and, when the store is
++        immediately followed by an unconditional return jump (`j $31`/`jr`),
++        schedules the store into the jump's delay slot.  GNU as can expand the
++        store but cannot reorder it across the branch, so emulate that here.
++        Returns the replacement lines, or None to leave the line for the
++        assembler (previous behaviour)."""
++        if op not in ("sw", "sh", "sb"):
++            return None
++        # Locate the immediately following instruction (skipping .set/labels).
++        label_pattern = r"^\s*([$.\w]+):\s*$"
++        i = self.line_index + 1
++        while i < len(self.lines) and (
++            not is_instruction(self.lines[i], ignore_set=True)
++            or re.match(label_pattern, self.lines[i])
++        ):
++            i += 1
++
++        if i >= len(self.lines):
++            return None
++        nxt = self.lines[i]
++        parts = nxt.split()
++        if len(parts) < 2 or parts[0] not in ("j", "jr") or parts[1] not in (
++            "$31",
++            "$ra",
++        ):
++            return None
++        # A local label is safe to cross unless an in-function transfer targets it.
++        local_labels = {
++            match.group(1)
++            for line in self.lines[self.line_index + 1 : i]
++            if (match := re.match(label_pattern, line))
++        }
++        if local_labels:
++            function_start = None
++            for j in range(self.line_index, -1, -1):
++                if re.match(r"^\s*\.ent\b", strip_comments(self.lines[j])):
++                    function_start = j + 1
++                    break
++
++            if function_start is not None:
++                function_end = len(self.lines)
++                for j in range(i + 1, len(self.lines)):
++                    line = strip_comments(self.lines[j])
++                    if re.match(r"^\s*\.end\b", line) or re.match(
++                        r"^\s*\.ent\b", line
++                    ):
++                        function_end = j
++                        break
++
++                for line in self.lines[function_start:function_end]:
++                    parts = strip_comments(line).split(None, 1)
++                    if (
++                        len(parts) >= 2
++                        and parts[0] in branch_target_mnemonics
++                        and parts[1].rsplit(",", 1)[-1].strip() in local_labels
++                    ):
++                        return None
++
++        # If cc1 already emitted an explicit delay-slot instruction (it wraps
++        # the jump in `.set noreorder` and puts the filler right after it),
++        # leave the store alone -- aspsx keeps that filler in the slot.
++        if i + 1 < len(self.lines) and is_instruction(
++            self.lines[i + 1], ignore_set=True, ignore_label=True
++        ):
++            return None
++        self.skip_instruction_indices.add(i)
++        return [
++            "# EXPAND_AT_STORE_DELAY_SLOT START",
++            ".set\tnoat",
++            f"lui\t$at,%hi({operand})",
++            nxt,
++            f"{op}\t{r_dest},%lo({operand})($at)",
++            ".set\tat",
++            "# EXPAND_AT_STORE_DELAY_SLOT END",
++        ]
+ 
+     def _handle_mflo_mfhi(self, r_source=None) -> List[str]:
+         # we cannot use a div/mult within 2 instructions of mflo/mfhi
+@@ -1093,7 +1191,8 @@
+                 ):
+                     res.append(f"{op}\t{r_dest},{gp_rel}")
+                 else:
+-                    res.append(line)
++                    expansion = self._expand_at_store_delay_slot(op, operand, r_dest)
++                    res.extend(expansion if expansion is not None else [line])
+             elif is_addend and r_source:
+                 # e.g. sw	$a0,ctlbuf($v0)
+                 if self.addiu_at and op != "la":
+@@ -1171,7 +1270,7 @@
+                 return [line]
+ 
+             move_from = "mfhi" if op == "rem" else "mflo"
+-            if self.expand_div:
++            if self.expand_div and not self.expand_div_zero_only:
+                 res.extend(
+                     [
+                         "# EXPAND_DIV START",
+@@ -1193,6 +1292,24 @@
+                         "# EXPAND_DIV END",
+                     ]
+                 )
++            elif self.expand_div_zero_only:
++                # PSX guard against divide-by-zero only (no signed-overflow
++                # check): the move_from stays in place right after the div and
++                # the `break 0x0,0x7` guard is emitted after it, as in retail
++                # st05 `func_800D4D54` (`div $zero,$v0,$s0` / `mfhi $s1` /
++                # `bnez $s0,.L` / `nop` / `break 0,7`).
++                res.extend(
++                    [
++                        "# EXPAND_ZERO_DIV_ONLY START",
++                        f"div\t$zero,{r_source},{r_operand}",
++                        f"{move_from}\t{r_dest}",
++                        f"bnez\t{r_operand},.L_NOT_DIV_BY_ZERO_{self.line_index}",
++                        "nop",
++                        "break\t0x0,0x7",
++                        f".L_NOT_DIV_BY_ZERO_{self.line_index}:",
++                        "# EXPAND_ZERO_DIV_ONLY END",
++                    ]
++                )
+             else:
+                 res.extend(
+                     [
+@@ -1213,7 +1330,7 @@
+                 extra_nops = self._handle_nop_before_next_instruction(
+                     next_instruction, r_dest
+                 )
+-                if self.expand_div or (self.div_branch_nopad and _branch_reads_div(next_instruction)):
++                if self.expand_div or self.expand_div_zero_only or (self.div_branch_nopad and _branch_reads_div(next_instruction)):
+                     extra_nops = []
+                 res.extend(extra_nops)
+ 
+@@ -1224,7 +1341,7 @@
+                 return [line]
+ 
+             move_from = "mfhi" if op == "remu" else "mflo"
+-            if self.expand_div:
++            if self.expand_div and not self.expand_div_zero_only:
+                 res.extend(
+                     [
+                         "# EXPAND_DIVU START",
+@@ -1239,6 +1356,21 @@
+                         "# EXPAND_DIVU END",
+                     ]
+                 )
++            elif self.expand_div_zero_only:
++                # divide-by-zero guard only (divu has no signed-overflow
++                # check), move_from kept in place right after the divu.
++                res.extend(
++                    [
++                        "# EXPAND_ZERO_DIVU_ONLY START",
++                        f"divu\t$zero,{r_source},{r_operand}",
++                        f"{move_from}\t{r_dest}",
++                        f"bnez\t{r_operand},.L_NOT_DIV_BY_ZERO_{self.line_index}",
++                        "nop",
++                        "break\t0x0,0x7",
++                        f".L_NOT_DIV_BY_ZERO_{self.line_index}:",
++                        "# EXPAND_ZERO_DIVU_ONLY END",
++                    ]
++                )
+             else:
+                 res.extend(
+                     [
+@@ -1259,7 +1391,7 @@
+                 extra_nops = self._handle_nop_before_next_instruction(
+                     next_instruction, r_dest
+                 )
+-                if self.expand_div or (self.div_branch_nopad and _branch_reads_div(next_instruction)):
++                if self.expand_div or self.expand_div_zero_only or (self.div_branch_nopad and _branch_reads_div(next_instruction)):
+                     extra_nops = []
+                 res.extend(extra_nops)
+ 

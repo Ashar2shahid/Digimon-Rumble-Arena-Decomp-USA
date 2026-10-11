@@ -6,7 +6,7 @@ $ErrorActionPreference = 'Stop'
 Push-Location $PSScriptRoot
 try {
     switch ($Action) {
-        'generate' { & python tools/bootstrap_local.py --check }
+        'generate' { & python tools/generate_game.py }
         'build' { & python tools/verify.py }
         'compare' { & python tools/verify.py --check }
         'status' { & python tools/game_progress.py }

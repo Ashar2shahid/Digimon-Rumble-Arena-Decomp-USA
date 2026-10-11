@@ -8,8 +8,10 @@ The JP conventions adopted are engine/battle/stage source groups, lower-case ver
 
 `docs/import_manifest.json` records every original source and local build dependency hash. Historical originating metrics are in `docs/verification/`. Fresh verification records are generated under build/us; imported evidence is never misrepresented as proof of the new paths.
 
-The original repository is unchanged. Scratch/hypothesis histories remain there. This separate repository is initialized with its own Git history and repository-local Ashar2shahid identity. No remote repository is created or pushed.
+The original repository is unchanged. Scratch/hypothesis histories remain there. This separate repository retains its own Git history and repository-local Ashar2shahid identity. It is published as Ashar2shahid/Digimon-Rumble-Arena-Decomp-USA.
 
-The reviewed generated assembly and compiler binaries remain ignored local dependencies. Bootstrap can reconstruct this local copy from the accepted original workspace by verified hashes. General clean-disc regeneration and cross-platform toolchain packaging remain future work.
+The initial import required dependencies from the original workspace. The public setup now extracts the executable and overlays from the USA disc, installs exact hash-pinned tools from public sources, and regenerates the reviewed assembly from retail-backed recipes. No original workspace is required. The old bootstrap helper is retained only for legacy import recovery. Cross-platform toolchain validation remains future work.
 
 Fresh checkpoint in this separate project: `analysis/checkpoints/20261011T073051Z`. All fourteen allocated-section byte and placement comparisons passed against the accepted original build. Three automatic objcopy symbols for Ram_Reserved.bin contain absolute input paths, so their names change with the folder; their values, sizes and section metadata remain identical. All other public symbol metadata is unchanged. See `docs/verification/migration.json`.
+
+The completed disc-based workflow is documented in the root README, `TOOLCHAIN_SETUP.md` and `SPLIT_GENERATION.md`. A fresh source-only checkout and the current project both pass all fourteen byte/placement gates and strict allocated-section/public-metadata comparison against the accepted original baseline. All 92 tooling tests pass. The source numerator and denominator are unchanged; see `verification/disc_build.json`.

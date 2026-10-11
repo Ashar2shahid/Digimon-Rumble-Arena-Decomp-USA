@@ -9,7 +9,7 @@ endif
 all:
 	$(PYTHON) tools/verify.py
 generate:
-	$(PYTHON) tools/bootstrap_local.py --check
+	$(PYTHON) tools/generate_game.py
 compare:
 	$(PYTHON) tools/verify.py --check
 report:

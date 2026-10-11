@@ -8,4 +8,4 @@ Probe one concrete source/codegen hypothesis at a time with `tools/decomp_sessio
 
 Freeze writers, run `python tools/verify.py`, then `python tools/game_progress.py --save --require-verified`. A private function match alone earns no source credit. The parent owns shared headers, profiles, version config and full linked gates. Historical scratch packets stay in the original workspace and are not silently imported as accepted source.
 
-The repository-local author identity is Ashar2shahid with GitHub's verified-account-ID noreply address. This config affects only this repository; authenticating or signing commits remains the user's normal GitHub setup.
+Changes to retained assembly boundaries, aliases or data ownership must update the matching `config/us/split/` recipe and generated hash in the same transaction. See [split generation](docs/SPLIT_GENERATION.md). The generator reads retail bytes and preserves the reviewed symbol bindings; it must never be used to rewrite compiler-produced source output or force a function match.

@@ -1,0 +1,204 @@
+{
+  "verified_at_utc": "2026-10-11T09:03:25.956222+00:00",
+  "environment": "Windows x64 / Python 3.13",
+  "validation": "Fresh source-only checkout, USA MODE2/2352 CUE image, publicly downloaded pinned tools. No inherited generated assembly, compiler binaries, game targets or build outputs.",
+  "exact_downloaded_toolchain_files": 18,
+  "generated_input_count": 3035,
+  "recipe_sha256": {
+    "main": "68eb5cc7c1bfbed27df3d577b4f8b13fe9158f1376b031a39448fbe2b2adda8f",
+    "game": "8adeaadc5dfbdca47d9a9ae4e30d40b061c6b15a75dbf019cbc0387683ed65cb",
+    "title": "bc8429106d36b08fce65125b77748277690c864805eee218e722454d4195145c",
+    "movie": "be09d4b8beecc24a195a410ee4d898a16d815576840d6d46574a00d224075bb2",
+    "st00": "12e705082eda47a3d820a0393c1104adb3e444bf492eae651e3cd5ef8b4f662a",
+    "st01": "6db67bb94462c21a41d4db2e1f532ef3492f57969dccb5143e933d6f4123ebbc",
+    "st02": "523187c270b73668961fdb0d13de1e3e27c65fed5bb3fa9137ca9eed15609be9",
+    "st03": "729c7ad6376a41359e8b475559e951a48f73683e5a8dd8c4369d178f13a4459e",
+    "st04": "ea5a41501668ca9f8958f76203876d5f555bcde22eb18a8203533773a7e44ae6",
+    "st05": "97ef88d1fdfe1302c9527f1175f7d7f8f4ae6a7a22aec8a17679d446c9c88c2d",
+    "st06": "c3079845df89e55698ed02d2575244629c62f0a6b427c7af1332968d0bf07f3d",
+    "st07": "2bbdf3081d4c105310456b833d5747221d82a0b16e4a1f3082c9b0eaaace4c21",
+    "st08": "ec680dcbede245c3f2c7a24b7a1738af23ce97ae0d63ae94e945e3761a81cabb",
+    "st09": "5a2aa5f6832cc817c57fc54b3ca0f3f918112c04633ce27e4205523dd7a1e36d"
+  },
+  "recipe_operations": {
+    "d": 32952,
+    "bytes": 462,
+    "p": 4159,
+    "i": 198202
+  },
+  "scaffold_preserved": {
+    "files": 3034,
+    "alignment_directives_preserved": 958,
+    "section_directives_preserved": 44,
+    "mismatches": []
+  },
+  "all_fourteen_byte_placement_gates_passed": true,
+  "tests_passed": 92,
+  "reviewed_source_functions": 2179,
+  "game_function_denominator": 3699,
+  "source_categories": {
+    "assembly": 1305,
+    "ordinary_c": 2095,
+    "empty_c": 50,
+    "assisted_c": 215,
+    "cxx_alias": 34
+  },
+  "units": [
+    {
+      "unit": "main",
+      "retail_sha1": "179a3f7ae84762f9f60dc1ba97994eb7e673582e",
+      "retail_size": 1101824,
+      "output_sha256": "7b1c27885ddac65a7f99105330705b4d6d9b9913c511f1f811ae2dd53d344891",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "9c8a31153e66e8d4a20f70019662fb6d635f7a06a03012287fb214387cc775ea"
+    },
+    {
+      "unit": "game",
+      "retail_sha1": "655cdf891af2caf44ae883eb952f8a60349947ec",
+      "retail_size": 456508,
+      "output_sha256": "3b2c029cae4fb5299dfe3a0afbe662418dd1e99b5675999206dc6024ac4a2753",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "a5d5ae456782ff46c71ae60f40758e26f46cf79de02e115f694b454b5159ca22"
+    },
+    {
+      "unit": "title",
+      "retail_sha1": "bab9b6b1d1ef72c07f2f31c6228715b9d69d5e55",
+      "retail_size": 90752,
+      "output_sha256": "41d16051fcdf77cf620a3e730b820287fd3959dc2a621a50e17a892544491f0c",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "1c732bb25c6390c156d2f03ee4e30da45f35a07359276190a7ca2ad07b480205"
+    },
+    {
+      "unit": "movie",
+      "retail_sha1": "93fba61cdd820b4b889e747360b8888dd47b12f5",
+      "retail_size": 10564,
+      "output_sha256": "0f5dc7173d556e5921cce6a7579b3ff14e55d75c1ba88d312188335bfeefbb61",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "bcec7e451967676bedbef327a91063a7b57e1c67115f72c8c6ac3cf9a9384cf1"
+    },
+    {
+      "unit": "st00",
+      "retail_sha1": "07a7a0ff8cc3b4171f0357cc871426dd96dd5fd3",
+      "retail_size": 27388,
+      "output_sha256": "f5ccffa994161ba5907e43a76211971a81cf0e8962cc8f36b90e14b74ceb1f57",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "d47e771c7a05d4ee6d3485540d5124b58a7884501f2683f386a725323e52cacd"
+    },
+    {
+      "unit": "st01",
+      "retail_sha1": "33720c2cf84d69971f99554d22c271854979bb16",
+      "retail_size": 27064,
+      "output_sha256": "50c7cf46eec8582fc0df36236387c85791f8595b8fe261b593967548d4cdec3e",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "16791eaf2177ff3f4aa557ff8d35c5329d2159631456aecd103448398d3ff2d3"
+    },
+    {
+      "unit": "st02",
+      "retail_sha1": "97f5717a4de3ee386423052956d4205f42a55664",
+      "retail_size": 19660,
+      "output_sha256": "f4bc766fb2fb618621ce3986d4511af3ed66c8fe17d4d477d573afff6f0df20b",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "8eab2d5bc4d8cf0d3577eed1c02c38151bbfbb4be7609405ef9fdf582a78f9da"
+    },
+    {
+      "unit": "st03",
+      "retail_sha1": "d0506eca9e452a281842a6959220e6fef1455cd3",
+      "retail_size": 22100,
+      "output_sha256": "fc445f58f41fc83ee0ef0ec04a0d636a00c3a31c2c2835dd6cd54dd0fb96ae2c",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "fa94a85d7a494125cc67383584b4da196d09463829dcd86ce9144a7ef4570c0b"
+    },
+    {
+      "unit": "st04",
+      "retail_sha1": "437e5a5953fe84ad34127644927c75c946654bbc",
+      "retail_size": 21152,
+      "output_sha256": "04d5ccbcf811598d88d200632c5a7352b08559c6cd94f86c6d8b09cbee02eb46",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "e1737c7d8138d901d3e6a380308b643c29aa049c642ed3e735431d25e69897d8"
+    },
+    {
+      "unit": "st05",
+      "retail_sha1": "e36a7afd2852f603a9c03450c760616218e8a3ee",
+      "retail_size": 13348,
+      "output_sha256": "f55e4029bbd9b91439a31ca0a43e9e2b53b3844eda799e73bbc6501bad27d7c0",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "c861861a4b5894300733ec47da9facdeb0b1978ee464a881df9f441e8c8230e9"
+    },
+    {
+      "unit": "st06",
+      "retail_sha1": "bf87b950879a63d3da33e61cdefe4118c7abe0f2",
+      "retail_size": 9036,
+      "output_sha256": "bc26632f3166d2f4ce0ed9aed9d9210e22f7c53a70d284274be7ac370f13b89e",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "8b2ec83ea9272a356be07ebf41c9151f5ce03fdd890461009748bd315d0bc56b"
+    },
+    {
+      "unit": "st07",
+      "retail_sha1": "d5a325ca58a1d909bec22170b57273261fc31e13",
+      "retail_size": 9860,
+      "output_sha256": "381982dd6ce936043ff4ab288762b45ed7349ba39aac02904a9c9cb77975dc20",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "84759adfbac46e10ec4060491f96db5051fcf1e1bfbfb3ebd0000b73ee6d945b"
+    },
+    {
+      "unit": "st08",
+      "retail_sha1": "c385b48426a4e97a4418f9339cd2d0acc562157c",
+      "retail_size": 4080,
+      "output_sha256": "5e4e643d42814524dbb6842e3f0591f43a32f9a216bd10aad48d620cda25bebf",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "fd3acdf4e80edfcef776778483a968f650e59381eab9cf5cee7e8486848fd947"
+    },
+    {
+      "unit": "st09",
+      "retail_sha1": "277ce1ecc2974053249f89337a76271da4c59b92",
+      "retail_size": 12228,
+      "output_sha256": "323b055e42a57b071faac5180f7f4dafc8c94d1786f32a77de10a57af4198272",
+      "byte_identical": true,
+      "complete_placement_gate": true,
+      "allocated_bytes_flags_sizes_alignments_equal": true,
+      "game_and_sdk_public_metadata_equal": true,
+      "input_fingerprint": "b84fececea64f89d13e319c3cbe05182d85d6efd1249a861c4a7365e758ff0cd"
+    }
+  ],
+  "metadata_note": "Only the three automatic objcopy Ram_Reserved start/end/size symbol names differ with the absolute build folder. Their metadata is equal. Every other public symbol is identical to the accepted baseline.",
+  "limitations": "Original object/compiler provenance and modified runtime integrity remain under review. Linux builds are not validated."
+}

@@ -1,5 +1,11 @@
 # Digimon Rumble Arena: session plan
 
+## Disc-based public setup
+
+The public Windows build now starts from the supported USA disc image. `setup_toolchain.py` installs 18 exact hash-pinned public tools; `setup_game.py` extracts and verifies all 14 retail targets; `generate_game.py` reconstructs 3,035 reviewed assembly/asset inputs using `config/us/split/` metadata. It does not rewrite recovered source or compiler output. The historical splat configurations are research inputs, not the authoritative public generation recipe.
+
+An isolated source-only checkout and this project both pass all fourteen complete byte/placement gates and strict allocated-section and public-symbol comparisons. All 92 tests pass. Three automatic objcopy path labels change only by build folder, with identical metadata. Coverage remains 2,179/3,699; decompilation remains paused. See `docs/verification/disc_build.json`, `docs/TOOLCHAIN_SETUP.md` and `docs/SPLIT_GENERATION.md`. Future retained assembly ownership changes must update the corresponding recipe before the complete linked gate. Latest verified checkpoint: `analysis/checkpoints/20261011T090424Z`, with 3,517 hash-checked inputs.
+
 ## Separate US project checkpoint
 
 This repository imports the accepted US work into the JP-style directory conventions. A fresh build in this folder passed all fourteen complete binary and placement gates; all 88 tests passed. Coverage remains 2,179/3,699 (58.9078%). The local checkpoint is `analysis/checkpoints/20261011T073051Z`. See `docs/MIGRATION.md` and `docs/verification/migration.json` for import provenance and validation.

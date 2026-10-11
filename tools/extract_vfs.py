@@ -21,7 +21,7 @@ def decompress_limited(data: bytes, maximum: int) -> bytes:
     return result
 
 
-def extract(archive: Path, output: Path) -> list[dict]:
+def extract(archive: Path, output: Path, only: set[str] | None = None) -> list[dict]:
     data = archive.read_bytes()
     if len(data) < 0x800 or data[:4] != b"VFS2":
         raise ValueError("Not a VFS2 archive")
@@ -85,6 +85,8 @@ def extract(archive: Path, output: Path) -> list[dict]:
             start = base + offset * 0x800
             if start < base or start + size > len(data):
                 raise ValueError("VFS2 file outside archive")
+            if only is not None and path.lower() not in only:
+                continue
             payload = data[start:start + size]
             compressed = payload.startswith(b"ZP00")
             if compressed:

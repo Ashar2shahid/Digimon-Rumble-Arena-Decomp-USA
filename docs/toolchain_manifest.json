@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "platform": "Windows x64",
+  "upstream_revision": "9979eebe5ad758fba88040ab188c6f1ce5d3b254",
+  "upstream_repository": "https://github.com/Wyrelade/Digimon-World-2-Decomp",
+  "license_notes": {
+    "maspsx": "MIT, Copyright (c) 2023 Mark Street; downloaded LICENSE retained. DRA modifications follow same license.",
+    "binutils": "GNU GPL version 3 or later; binaries are upstream packages, not licensed under the game-source license.",
+    "gcc_host": "GNU GPL version 3 or later; GCC15.2.0; upstream binary package.",
+    "psyq": "Historical Sony/SN Systems modified GNU compiler distributions. GNU components are GPL; archive vendor licensing applies to proprietary additions. Downloads are not redistributed in this repository. Public availability alone is not a license grant."
+  },
+  "files": [
+    {
+      "path": "bin/windows/binutils/mips-linux-gnu-as.exe",
+      "sha256": "ef36036114e1f423f4b326bb69f7c33df93ad6c3dba723fe764008964a941e27",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/binutils/mips-linux-gnu-as.exe"
+    },
+    {
+      "path": "bin/windows/binutils/mips-linux-gnu-ld.exe",
+      "sha256": "17afc996227df1f8f20473dd8d2fc642e57545de3d486836a79759f7d77f6cd6",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/binutils/mips-linux-gnu-ld.exe"
+    },
+    {
+      "path": "bin/windows/binutils/mips-linux-gnu-objcopy.exe",
+      "sha256": "f21573164dea3405276cfba069c8825531c9f1cc406533303abe66120fbeb44b",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/binutils/mips-linux-gnu-objcopy.exe"
+    },
+    {
+      "path": "bin/windows/binutils/mips-linux-gnu-objdump.exe",
+      "sha256": "71fc3af5ecfe5ea05a590496f8be49d73d7b16a80e465d15dfa7dc74b588ec37",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/binutils/mips-linux-gnu-objdump.exe"
+    },
+    {
+      "path": "bin/windows/gcc-2.7.2-win/CC1PSX.EXE",
+      "sha256": "17b0d9dc6a80b2aaec90f912bb442321ec8bc5cecaf7071f5bd187e1d6525d49",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/gcc-2.7.2-win/CC1PSX.EXE"
+    },
+    {
+      "path": "bin/windows/gcc-psx/CC1PSX.EXE",
+      "sha256": "26eb8259fa3e077d1980eb1e0c942006752135953dd03173200bf99ef6f5b6c9",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/gcc-psx/CC1PSX.EXE"
+    },
+    {
+      "path": "bin/windows/gcc-psx/CPPPSX.EXE",
+      "sha256": "8e7424eeb12ec613cc4bb3f2560d3a2f4760494c980b1ea345b8a2d53387e077",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/gcc-psx/CPPPSX.EXE"
+    },
+    {
+      "path": "bin/windows/gcc-win/bin/gcc.exe",
+      "sha256": "9a42efffb4add46d04d248f6382bbcc543088b06e6d2e1942489db93dd58c4cc",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/gcc-win/bin/gcc.exe"
+    },
+    {
+      "path": "bin/windows/gcc-win/x86_64-w64-mingw32/lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe",
+      "sha256": "fb037842d84f4063932ac857185e61ceef493914e7d3d966d4099af069e5dad2",
+      "url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/windows/gcc-win/x86_64-w64-mingw32/lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe"
+    }
+  ],
+  "archives": [
+    {
+      "url": "https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.0.tar.gz",
+      "sha256": "f25a4f6f044eb1b344bbbd3291aa9a4fc1a1124fc637eae9522c0a117d940e28",
+      "members": [
+        {
+          "member": "psyq4.0/CC1PSX.EXE",
+          "path": "bin/cc1_revisions/psyq4.0/CC1PSX.EXE",
+          "sha256": "ddaa03030d1b012716cccce5a88b8a9484378c915529c5f1458e261c6b928220"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.5.tar.gz",
+      "sha256": "75f28034f6844f0f7633e3f17443727865c8955da1cd19147db2c760b40f14f7",
+      "members": [
+        {
+          "member": "psyq4.5/CC1PSX.EXE",
+          "path": "bin/cc1_revisions/esa4.5/psyq4.5/CC1PSX.EXE",
+          "sha256": "a24ed21b8d371ca57048721109506cdfabb40539178e436e21400245d9c4dd76"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.6.tar.gz",
+      "sha256": "635603e09a452c9c2923492fea8b8eb051959dd94f240933b88e94866814b894",
+      "members": [
+        {
+          "member": "psyq4.6/CC1PSX.EXE",
+          "path": "bin/cc1_revisions/psyq46/CC1PSX.EXE",
+          "sha256": "0755e509f148b6018e97e89e798493af37c290a44fc97ecd1ec661182ed56e65"
+        },
+        {
+          "member": "psyq4.6/CC1PLPSX.EXE",
+          "path": "bin/cc1_revisions/CC1PLPSX.EXE",
+          "sha256": "64ad27adaa361804be47ab00ae37a67a4b28fdc2328277d99c0856f216e8ad83"
+        },
+        {
+          "member": "psyq4.6/CPPPSX.EXE",
+          "path": "bin/cc1_revisions/CPPPSX.EXE",
+          "sha256": "5e777698793dfb90bd08831a9767a7c6e5792fb02c8a5088e5037edd62a4b652"
+        }
+      ]
+    }
+  ],
+  "maspsx": {
+    "files": [
+      {
+        "path": "external/maspsx/LICENSE",
+        "source_url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/maspsx/LICENSE",
+        "source_sha256": "4fd8c6ef76afa63ce817a0d6627027e9ecb03c0816fa91964e4544b2119dbfdf",
+        "sha256": "230270212495560dd0bace3aeeff018ffff022232a01c18ceb34d1a7c990fedf",
+        "line_endings": "CRLF"
+      },
+      {
+        "path": "external/maspsx/README.md",
+        "source_url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/maspsx/README.md",
+        "source_sha256": "5f5161b36bf5b91a6e97934405b341de19d696d039cef4131b330fffc700aeec",
+        "sha256": "33a1330088ea620f965aa9559ea5626d03419d5f1b1901d62c735ac2726c338e",
+        "line_endings": "CRLF"
+      },
+      {
+        "path": "external/maspsx/maspsx.py",
+        "source_url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/maspsx/maspsx.py",
+        "source_sha256": "0ae28bcbb05261d859725e30989228891bbca16b2ed4eeaa20f5496ddcef0d32",
+        "sha256": "27eb0604a62e49ce0f7c6e6c7366e850adb9b16e600ebcef6f40d631958af1f6",
+        "line_endings": "CRLF"
+      },
+      {
+        "path": "external/maspsx/maspsx/__init__.py",
+        "source_url": "https://raw.githubusercontent.com/Wyrelade/Digimon-World-2-Decomp/9979eebe5ad758fba88040ab188c6f1ce5d3b254/tools/maspsx/maspsx/__init__.py",
+        "source_sha256": "49c4acc6a971e00a40b8efeac55ee26193556716786c5f4e5bec829e8ac5f6e2",
+        "sha256": "494f55803ca0ad9f19b6dbc8669c398303a97d61c8391b9c84af04a05b1ec196",
+        "line_endings": "CRLF"
+      }
+    ],
+    "patch": "external/maspsx-dra.patch",
+    "patch_sha256": "91427089e7705de4cb9d95f90db225cd41b43340bb015437274da75e5ae56089"
+  }
+}

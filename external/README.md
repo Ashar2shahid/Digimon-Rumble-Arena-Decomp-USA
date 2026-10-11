@@ -1,5 +1,7 @@
-# Local external dependencies
+# External dependencies
 
-The matching snapshot uses the earlier project's patched maspsx, copied locally into `maspsx/` with its upstream license. Upstream is https://github.com/mkst/maspsx, but replacing this patched copy requires a complete build audit. Toolchains are local under `bin/`. None are committed. Bootstrap hashes identify the exact local versions.
+Install the exact Windows compiler and assembler dependencies with `python tools/setup_toolchain.py`. The installer downloads pinned public inputs, applies [the DRA maspsx patch](maspsx-dra.patch), and verifies the resulting file hashes against [the manifest](../docs/toolchain_manifest.json).
 
-m2c and decomp-permuter are optional diagnostic tools. Their configured original workbench paths require local setup before use; they are not required by the full build. Preserve their upstream licenses when installing them. No untested submodules are declared as if already installed.
+The patched maspsx runtime is installed locally in `external/maspsx/`, with its upstream license. Compiler and binutils executables are installed under `bin/`. Download caches, tool binaries and generated game assembly are excluded from version control. See [toolchain setup](../docs/TOOLCHAIN_SETUP.md) for sources and component versions.
+
+m2c and decomp-permuter are optional research tools and are not needed to build the game. Their existing workbench integrations require separate local setup.

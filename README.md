@@ -24,7 +24,7 @@ These figures count game functions with reviewed source free of assembly and reg
 
 PsyQ SDK routines remain symbolized assembly. Their 655 classified entries are excluded from game-source progress.
 
-All fourteen binaries pass complete byte and symbol-placement checks, and all 88 tooling tests pass. GitHub Actions checks Python syntax and source order; full retail verification requires local game files and toolchains. See [verification results](docs/verification/migration.json).
+All fourteen binaries pass complete byte and symbol-placement checks, and all 92 tooling tests pass. GitHub Actions checks Python syntax and source order; full retail verification requires local game files and toolchains. See [verification results](docs/verification/disc_build.json).
 
 Original translation-unit boundaries and compiler provenance remain under investigation. Binary matching does not establish those properties or certify modified runtime layouts; the current evidence is described in [the code-generation model](docs/CODEGEN_MODEL.md).
 
@@ -49,27 +49,41 @@ The game stores its code overlays in the `A.VFS` archive. Overlay builds use the
 
 ## Building
 
-### Requirements
+The supported build environment is **Windows x64**, **Python 3.13** and **Git for Windows**. Setup requires an internet connection to download pinned tools and a disc image of the **USA release (`SLUS_014.04`)**. Supported image formats are a 2048-byte ISO, a raw 2352-byte BIN, or a single-data-track CUE with its referenced BIN.
 
-- Windows and Python.
-- The supported USA game executable and inflated overlays.
-- The compiler, assembler and reviewed assembly inputs identified by [the dependency manifest](docs/import_manifest.json).
-
-**Reproducibility:** the current snapshot builds from an existing, verified dependency set. Automated setup from a disc image alone is not yet supported. Generated assembly includes reviewed boundary and data-ownership changes that a standard splat run would not preserve. Linux builds have not been validated.
-
-### Dependency setup
-
-If you have the original verified US workspace, restore its dependencies with the following command. Replace the placeholder with that workspace's location:
+### 1. Clone and install Python dependencies
 
 ```powershell
-python tools/bootstrap_local.py --from "D:\path\to\original-us-workspace"
+git clone https://github.com/Ashar2shahid/Digimon-Rumble-Arena-Decomp-USA.git
+cd Digimon-Rumble-Arena-Decomp-USA
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 ```
 
-The bootstrap validates input hashes before restoring missing files and refuses to overwrite changed dependencies. See [migration notes](docs/MIGRATION.md) and [external dependencies](external/README.md) for details.
+Keep the virtual environment active for the remaining commands. Python must be available as `python`, and Git as `git`, on `PATH`.
 
-### Build and verify
+### 2. Install the matching toolchain
 
-Run from the repository root after restoring the required dependencies:
+```powershell
+python tools/setup_toolchain.py
+```
+
+The installer downloads the exact compiler and binutils versions, applies the tracked maspsx patch, and verifies all eighteen installed files against [the toolchain manifest](docs/toolchain_manifest.json). No previous decompilation workspace is required. Existing files with unexpected hashes are preserved and reported as errors.
+
+### 3. Extract the USA game inputs
+
+Replace the example path with the location of your disc image:
+
+```powershell
+python tools/setup_game.py "D:\Games\Digimon Rumble Arena (USA).cue"
+```
+
+An `.iso` or `.bin` path can be used instead. CUE input requires its referenced BIN in the same directory.
+
+Setup extracts `SLUS_014.04`, unpacks the thirteen code overlays from `A.VFS`, and verifies every target before installing it. The executable's required SHA-1 is `179a3f7ae84762f9f60dc1ba97994eb7e673582e`; unsupported revisions and altered overlays are rejected. The disc image is never modified.
+
+### 4. Generate, build and verify
 
 ```powershell
 .\decomp.ps1 generate
@@ -77,16 +91,27 @@ Run from the repository root after restoring the required dependencies:
 .\decomp.ps1 compare
 ```
 
-`generate` checks dependency availability. `build` compiles, links and verifies the executable and all overlays. `compare` validates the recorded outputs against the current inputs.
+- `generate` reads instruction and data bytes from the verified game inputs and reconstructs the retained assembly using the reviewed split recipes in `config/us/split/`. Symbol names, relocation bindings, section ownership and alignment are preserved. Recovered source files are not overwritten.
+- `build` compiles and links the executable and all thirteen overlays, then checks complete output bytes and symbol placement against retail.
+- `compare` validates the existing verification records and rejects changed inputs or outputs.
 
-Generate the progress report and run the tooling tests with:
+Outputs are written to `build/us/out/`. Game inputs, generated assembly, tool binaries and download caches remain excluded from version control.
+
+### Progress and tests
 
 ```powershell
 .\decomp.ps1 report
 .\decomp.ps1 test
 ```
 
-GNU Make provides equivalent targets: `make generate`, `make`, `make compare`, `make report` and `make test`.
+`report` updates `config/us/progress.json` from verified builds. `test` runs the tooling tests. To validate installed tools or the generated split without changing files:
+
+```powershell
+python tools/setup_toolchain.py --verify
+python tools/generate_game.py --check
+```
+
+GNU Make is optional; equivalent targets are `make generate`, `make`, `make compare`, `make report` and `make test`. Linux builds have not been validated.
 
 ## Repository layout
 
@@ -107,9 +132,20 @@ Local dependencies and outputs reside in `bin/`, `external/maspsx/`, `disks/us/`
 
 ## Toolchain
 
-The build preserves the compiler revisions and flags that currently reproduce the US binaries. The baseline uses `-O2 -mips1 -mcpu=3000 -funsigned-char -G0`, with recorded overrides for individual source slots. A locally patched maspsx translator handles compiler output before assembly and linking.
+The installer supplies the tools selected by the verified US build profiles:
 
-Effective settings are defined in [the build pipeline](tools/build_dra.py) and documented in [the code-generation model](docs/CODEGEN_MODEL.md). Split configurations are under `config/us/`; the reviewed assembly is maintained as a local dependency.
+| Build stage | Tools |
+| --- | --- |
+| C preprocessing | Windows GCC 15.2.0, used only as a preprocessor |
+| C compilation | PSX GCC 2.8.1 / 2.7.2 and recorded PsyQ 4.0, 4.5 and 4.6 frontend selections |
+| C++ compilation | The recorded PSY-Q native C++ frontend and preprocessor |
+| Assembly translation | Pinned maspsx runtime with the tracked DRA patch |
+| Assembly and linking | GNU Binutils 2.45 for `mips-linux-gnu` |
+| Retained assembly generation | Rabbitizer 1.16.2 and the reviewed retail-backed split recipes |
+
+Compiler selection and flags are applied automatically by [the build pipeline](tools/build_dra.py). The default target flags include `-O2 -mips1 -mcpu=3000 -funsigned-char -G0`, with recorded source-slot overrides. These reproduce the current US build; original compiler and translation-unit provenance remain under review.
+
+Download sources, pinned revisions, hashes and patch details are documented in [toolchain setup](docs/TOOLCHAIN_SETUP.md). The generation format and ownership rules are documented in [split generation](docs/SPLIT_GENERATION.md).
 
 ## Contributing
 

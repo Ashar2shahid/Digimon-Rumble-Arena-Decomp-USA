@@ -1,1 +1,4 @@
 * text=auto eol=lf
+
+# Unified diffs retain blank context lines with a leading space.
+external/*.patch -whitespace
